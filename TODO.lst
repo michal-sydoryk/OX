@@ -1,5 +1,4 @@
-koordynanty:
-    porównywacz koordynantów:
-        w tym samym rzedzie
-        w tej samej kolumnie
-1        w roznych rzedach i kolumnach
+Plansza:
+    mona dodawac punkty:
+        rzuca wyjatek jak jesli punkt po za plansza
+        rzuca wyjatek jestli w danym miejscu juz jest punkt
