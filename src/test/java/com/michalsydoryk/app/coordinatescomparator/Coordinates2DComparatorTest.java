@@ -3,101 +3,42 @@ package com.michalsydoryk.app.coordinatescomparator;
 import com.michalsydoryk.app.coordinates.Coordinates;
 import com.michalsydoryk.app.coordinates.Coordinates2D;
 import org.testng.Assert;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 public class Coordinates2DComparatorTest{
-    @Test
-    public void shouldReturn0IfCoordinatesAreEquals() {
+    @DataProvider
+    public static Object[][] coordinatesDataProvider(){
+        return new Object[][]{
+                {5,4,5,4,0}, //equals
+                {6,15,6,15,0},
+                {1,1,4,4,-1},  //lower Y
+                {6,16,15,32,-1},
+                {8,0,46,100,-1},
+                {5,10,100,4,1},   //bigger Y
+                {6,60,88,20,1},
+                {8,9,46,0,1},
+                {1,4,56,4,-1}, //lower X same Y
+                {5,4,8,4,-1},
+                {8,4,12,4,-1},
+                {50,4,1,4,1},  //bigger x same y
+                {45,4,40,4,1},
+                {12,4,10,4,1}
+        };
+    }
+
+    @Test(dataProvider = "coordinatesDataProvider")
+    public void compareTests(int x1, int y1, int x2, int y2, int result) {
         //Given
-        int x = 1;
-        int y = 2;
-        Coordinates coordinates1 = new Coordinates2D(x, y);
-        Coordinates coordinates2 = new Coordinates2D(x, y);
+        Coordinates coordinates1 = new Coordinates2D(x1, y1);
+        Coordinates coordinates2 = new Coordinates2D(x2, y2);
         Coordinates2DComparator coordinatesComparator = new Coordinates2DComparator();
         //When
         int compareResult = coordinatesComparator.compare((Coordinates2D)coordinates1, (Coordinates2D)coordinates2);
-        int expectedResult = 0;
+        int expectedResult = result;
         //Then
-        Assert.assertEquals(compareResult, expectedResult, "Comparation faild");
+        Assert.assertEquals(compareResult, expectedResult, "Comparation faild! Coordinates1: " + coordinates1.toString() + " Coordinates2: " + coordinates2.toString());
     }
 
-    @Test
-    public void shouldReturnMinus1IfCoordinates1HaveLowerY() {
-        //Given
-        int x = 1;
-        int y1 = 1;
-        int y2 = 2;
-        Coordinates coordinates1 = new Coordinates2D(x, y1);
-        Coordinates coordinates2 = new Coordinates2D(x, y2);
-        Coordinates2DComparator coordinatesComparator = new Coordinates2DComparator();
-        //When
-        int compareResult = coordinatesComparator.compare((Coordinates2D)coordinates1, (Coordinates2D)coordinates2);
-        int expectedResult = -1;
-        //Then
-        Assert.assertEquals(compareResult, expectedResult, "Comparation faild");
-    }
 
-    @Test
-    public void shouldReturn1IfCoordinates1HaveBiggerY() {
-        //Given
-        int x = 1;
-        int y1 = 3;
-        int y2 = 2;
-        Coordinates coordinates1 = new Coordinates2D(x, y1);
-        Coordinates coordinates2 = new Coordinates2D(x, y2);
-        Coordinates2DComparator coordinatesComparator = new Coordinates2DComparator();
-        //When
-        int compareResult = coordinatesComparator.compare((Coordinates2D)coordinates1, (Coordinates2D)coordinates2);
-        int expectedResult = 1;
-        //Then
-        Assert.assertEquals(compareResult, expectedResult, "Comparation faild");
-    }
-
-    @Test
-    public void shouldReturnMinus1IfCoordinates1HaveEqualsYButLowerX() {
-        //Given
-        int x1 = 1;
-        int x2 = 6;
-        int y = 2;
-        Coordinates coordinates1 = new Coordinates2D(x1, y);
-        Coordinates coordinates2 = new Coordinates2D(x2, y);
-        Coordinates2DComparator coordinatesComparator = new Coordinates2DComparator();
-        //When
-        int compareResult = coordinatesComparator.compare((Coordinates2D)coordinates1, (Coordinates2D)coordinates2);
-        int expectedResult = -1;
-        //Then
-        Assert.assertEquals(compareResult, expectedResult, "Comparation faild");
-    }
-
-    @Test
-    public void shouldReturn1IfCoordinates1HaveEqualsYButBiggerX() {
-        //Given
-        int x1 = 20;
-        int x2 = 6;
-        int y = 2;
-        Coordinates coordinates1 = new Coordinates2D(x1, y);
-        Coordinates coordinates2 = new Coordinates2D(x2, y);
-        Coordinates2DComparator coordinatesComparator = new Coordinates2DComparator();
-        //When
-        int compareResult = coordinatesComparator.compare((Coordinates2D)coordinates1, (Coordinates2D)coordinates2);
-        int expectedResult = 1;
-        //Then
-        Assert.assertEquals(compareResult, expectedResult, "Comparation faild");
-    }
-
-    @Test
-    public void shouldReturn0IfCoordinates1HaveEqualsYAndEqualsX() {
-
-        //Given
-        int x = 20;
-        int y = 2;
-        Coordinates coordinates1 = new Coordinates2D(x, y);
-        Coordinates coordinates2 = new Coordinates2D(x, y);
-        Coordinates2DComparator coordinatesComparator = new Coordinates2DComparator();
-        //When
-        int compareResult = coordinatesComparator.compare((Coordinates2D)coordinates1, (Coordinates2D)coordinates2);
-        int expectedResult = 0;
-        //Then
-        Assert.assertEquals(compareResult, expectedResult, "Comparation faild");
-    }
 }
