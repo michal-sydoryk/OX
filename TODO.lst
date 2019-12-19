@@ -1,4 +1,2 @@
 Plansza:
-    można dodawac punkty:
-        rzuca wyjatek jestli w danym miejscu juz jest punkt
-    można pobrać wartość dla punktu
+    mozna pobrać listę koordynantów

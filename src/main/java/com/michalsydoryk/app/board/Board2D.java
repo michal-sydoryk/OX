@@ -1,5 +1,6 @@
 package com.michalsydoryk.app.board;
 
+import com.michalsydoryk.app.board.exception.FieldIsNotEmptyException;
 import com.michalsydoryk.app.board.exception.OutOfBoardBorderException;
 import com.michalsydoryk.app.coordinates.Coordinates2D;
 import com.michalsydoryk.app.coordinatescomparator.Coordinates2DComparator;
@@ -13,11 +14,10 @@ public class Board2D implements Board<Coordinates2D> {
     private static final int MAX_SIZE = Integer.MAX_VALUE;
     private static final int MIN_SIZE = 0;
     Map<Coordinates2D, Sign> fields;
-    private int boardSize;
+    private int boardSize = MAX_SIZE;
 
     public Board2D() {
         this.fields = new TreeMap(new Coordinates2DComparator());
-        this.boardSize = MAX_SIZE;
     }
 
     public Board2D(int boardSize) {
@@ -26,8 +26,12 @@ public class Board2D implements Board<Coordinates2D> {
     }
 
     @Override
-    public void addField(Coordinates2D coordinate, Sign sign) throws OutOfBoardBorderException {
-        if(coordinatesInBoardSize(coordinate)) fields.put(coordinate, sign);
+    public void addField(Coordinates2D coordinate, Sign sign) throws OutOfBoardBorderException, FieldIsNotEmptyException {
+        if(coordinatesInBoardSize(coordinate))
+            if(fields.get(coordinate) == null)
+                fields.put(coordinate, sign);
+            else
+                throw new FieldIsNotEmptyException("Field is not Empty!");
         else throw new OutOfBoardBorderException("Coordinate [" + coordinate.getX()
                 + " " + coordinate.getY() + "]" + " is out of board size: " + boardSize);
     }
@@ -40,7 +44,7 @@ public class Board2D implements Board<Coordinates2D> {
 
     @Override
     public Sign getSignFromField(Coordinates2D coordinate) {
-        return null;
+        return fields.get(coordinate);
     }
 
     @Override
