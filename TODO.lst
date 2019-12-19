@@ -1,0 +1,8 @@
+koordynanty:
+    porównywacz koordynantów:
+        w tym samym rzedzie
+        w tej samej kolumnie
+        w roznych rzedach i kolumnach
+
+    koordynanty:
+        sprawdzenie czy koordynanty są równe i rózne
