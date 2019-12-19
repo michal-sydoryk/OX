@@ -1,6 +1,5 @@
 package com.michalsydoryk.app.coordinatescomparator;
 
-import com.michalsydoryk.app.coordinates.Coordinates;
 import com.michalsydoryk.app.coordinates.Coordinates2D;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
@@ -30,8 +29,8 @@ public class Coordinates2DComparatorTest{
     @Test(dataProvider = "coordinatesDataProvider")
     public void compareTests(int x1, int y1, int x2, int y2, int result) {
         //Given
-        Coordinates coordinates1 = new Coordinates2D(x1, y1);
-        Coordinates coordinates2 = new Coordinates2D(x2, y2);
+        Coordinates2D coordinates1 = new Coordinates2D(x1, y1);
+        Coordinates2D coordinates2 = new Coordinates2D(x2, y2);
         Coordinates2DComparator coordinatesComparator = new Coordinates2DComparator();
         //When
         int compareResult = coordinatesComparator.compare((Coordinates2D)coordinates1, (Coordinates2D)coordinates2);

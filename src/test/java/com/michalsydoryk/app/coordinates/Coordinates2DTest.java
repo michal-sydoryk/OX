@@ -13,8 +13,8 @@ public class Coordinates2DTest {
         //Given
         int x = 1;
         int y = 5;
-        Coordinates coordinates1 = new Coordinates2D(x, y);
-        Coordinates coordinates2 = new Coordinates2D(x, y);
+        Coordinates2D coordinates1 = new Coordinates2D(x, y);
+        Coordinates2D coordinates2 = new Coordinates2D(x, y);
         //When
         boolean equalsResult = coordinates1.equals(coordinates2);
         //Then
@@ -27,8 +27,8 @@ public class Coordinates2DTest {
         int x1 = 4;
         int x2 = 5;
         int y = 0;
-        Coordinates coordinates1 = new Coordinates2D(x1, y);
-        Coordinates coordinates2 = new Coordinates2D(x2, y);
+        Coordinates2D coordinates1 = new Coordinates2D(x1, y);
+        Coordinates2D coordinates2 = new Coordinates2D(x2, y);
         //When
         boolean equalsResult = coordinates1.equals(coordinates2);
         //Then
@@ -41,8 +41,8 @@ public class Coordinates2DTest {
         int x = 4;
         int y1 = 5;
         int y2 = 0;
-        Coordinates coordinates1 = new Coordinates2D(x, y1);
-        Coordinates coordinates2 = new Coordinates2D(x, y2);
+        Coordinates2D coordinates1 = new Coordinates2D(x, y1);
+        Coordinates2D coordinates2 = new Coordinates2D(x, y2);
         //When
         boolean equalsResult = coordinates1.equals(coordinates2);
         //Then
@@ -56,8 +56,8 @@ public class Coordinates2DTest {
         int x2 = 5;
         int y1 = 0;
         int y2 = 68;
-        Coordinates coordinates1 = new Coordinates2D(x1, y1);
-        Coordinates coordinates2 = new Coordinates2D(x2, y2);
+        Coordinates2D coordinates1 = new Coordinates2D(x1, y1);
+        Coordinates2D coordinates2 = new Coordinates2D(x2, y2);
         //When
         boolean equalsResult = coordinates1.equals(coordinates2);
         //Then

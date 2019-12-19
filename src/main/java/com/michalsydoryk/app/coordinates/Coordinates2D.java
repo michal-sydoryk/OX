@@ -1,8 +1,9 @@
 package com.michalsydoryk.app.coordinates;
 
+import java.util.Comparator;
 import java.util.Objects;
 
-public class Coordinates2D implements Coordinates {
+public class Coordinates2D {
     private int x;
     private int y;
 
@@ -18,6 +19,7 @@ public class Coordinates2D implements Coordinates {
     public int getY() {
         return y;
     }
+
 
     @Override
     public boolean equals(Object o) {

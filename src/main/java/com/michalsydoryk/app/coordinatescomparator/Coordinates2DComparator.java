@@ -1,10 +1,9 @@
 package com.michalsydoryk.app.coordinatescomparator;
 
-import com.michalsydoryk.app.coordinates.Coordinates;
+
 import com.michalsydoryk.app.coordinates.Coordinates2D;
 
 import java.util.Comparator;
-
 
 public class Coordinates2DComparator implements Comparator<Coordinates2D> {
 
