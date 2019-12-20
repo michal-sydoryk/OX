@@ -13,7 +13,7 @@ import java.util.TreeMap;
 public class Board2D implements Board<Coordinates2D> {
     private static final int MAX_SIZE = Integer.MAX_VALUE;
     private static final int MIN_SIZE = 0;
-    Map<Coordinates2D, Sign> fields;
+    TreeMap<Coordinates2D, Sign> fields;
     private int boardSize = MAX_SIZE;
 
     public Board2D() {
