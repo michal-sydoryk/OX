@@ -1,0 +1,6 @@
+Win checker
+    sprawdza rzad
+    sprawdza columne
+    sprawdza przekatne x 2
+    dziala na board'zie
+    zwraca true jestli wygrana 
