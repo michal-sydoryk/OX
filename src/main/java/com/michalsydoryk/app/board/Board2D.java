@@ -26,7 +26,7 @@ public class Board2D implements Board<Coordinates2D> {
 
     public Board2D(int boardSize, int combinationSize) {
         this.fields = new TreeMap(new Coordinates2DComparator());
-        this.boardSize = boardSize;
+        this.boardSize = boardSize -1; //for indexing from 0
         this.combinationSize = combinationSize;
     }
 
@@ -65,6 +65,11 @@ public class Board2D implements Board<Coordinates2D> {
     @Override
     public int getCombinationSize() {
         return this.combinationSize;
+    }
+
+    @Override
+    public int getSize() {
+        return this.boardSize;
     }
 
 }

@@ -9,5 +9,5 @@ public interface Board<T> {
     Sign getSignFromField(T coordinates);
     Set<T> getAllCoordinates();
     int getCombinationSize();
-
+    int getSize();
 }
