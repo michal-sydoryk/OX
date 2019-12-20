@@ -2,7 +2,8 @@ package com.michalsydoryk.app.sign;
 
 public enum Sign {
     NAUGHT('O'),
-    CROSS('X');
+    CROSS('X'),
+    EMPTY('c');
 
     char value;
 

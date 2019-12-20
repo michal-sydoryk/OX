@@ -1,8 +1,5 @@
 package com.michalsydoryk.app.board;
 
-import com.michalsydoryk.app.board.exception.FieldIsEmptyException;
-import com.michalsydoryk.app.board.exception.FieldIsNotEmptyException;
-import com.michalsydoryk.app.board.exception.OutOfBoardBorderException;
 import com.michalsydoryk.app.coordinates.Coordinates2D;
 import com.michalsydoryk.app.sign.Sign;
 import org.testng.Assert;
@@ -36,7 +33,7 @@ public class Board2DTest {
     }
 
 
-    public void canAddField() throws OutOfBoardBorderException, FieldIsNotEmptyException {
+    public void canAddField(){
         //Given
         createNewBoard();
         int x = 1;
@@ -45,15 +42,27 @@ public class Board2DTest {
         Sign xSign = Sign.CROSS;
         //When
         board.addField(coordinates, xSign);
-        //only for get fields without getter
-        Sign signAdded = board.fields.get(coordinates);
+        Sign signAdded = board.fields.get(coordinates); //to not use getSignFromField
         //Then
         Assert.assertEquals(signAdded, xSign, "Can not add field!");
     }
 
+    public void shouldReturnTrueWhenTryToAddInEmptyField(){
+        //Given
+        createNewBoard();
+        int x = 1;
+        int y = 2;
+        Coordinates2D coordinates = new Coordinates2D(x, y);
+        Sign xSign = Sign.CROSS;
+        //When
+        boolean addingResult = board.addField(coordinates, xSign);
+        //Then
+        Assert.assertTrue(addingResult,"Can not add field!");
+    }
 
-    @Test(expectedExceptions = OutOfBoardBorderException.class)
-    public void shouldThrowOutOfBoardExceptionWhenTryToAddFieldOutOfBoard() throws OutOfBoardBorderException, FieldIsNotEmptyException {
+
+
+    public void shouldReturnFalseWhenTryToAddFieldOutOfBoard(){
         //Given
         int boardSize = 100;
         board = new Board2D(boardSize);
@@ -62,11 +71,13 @@ public class Board2DTest {
         Coordinates2D coordinates = new Coordinates2D(x, y);
         Sign xSign = Sign.CROSS;
         //when
-        board.addField(coordinates, xSign);
+        boolean addingResult = board.addField(coordinates, xSign);
+        //then
+        Assert.assertFalse(addingResult, "Can add sign out of border!");
     }
 
-    @Test(expectedExceptions = FieldIsNotEmptyException.class)
-    public void shouldThrowFieldIsNotEmptyExceptionWhenTryToAddInNotEmptyField() throws OutOfBoardBorderException, FieldIsNotEmptyException {
+
+    public void shouldReturnFalseWhenTryToAddInNotEmptyField(){
         //Given
         createNewBoard();
         int x = 102;
@@ -75,10 +86,13 @@ public class Board2DTest {
         Sign xSign = Sign.CROSS;
         //When
         board.addField(coordinates, xSign);
-        board.addField(coordinates, xSign);
+        boolean addingResult = board.addField(coordinates, xSign);
+        //then
+        Assert.assertFalse(addingResult, "Can add sign in not empty field!");
+
     }
 
-    public void canGetValueFormNotEmptyField() throws OutOfBoardBorderException, FieldIsNotEmptyException, FieldIsEmptyException {
+    public void canGetValueFormNotEmptyField(){
         //Given
         createNewBoard();
         int x = 1;
@@ -92,8 +106,8 @@ public class Board2DTest {
         Assert.assertEquals(signFromField, xSign, "Can not get field!");
     }
 
-    @Test(expectedExceptions = OutOfBoardBorderException.class)
-    public void shouldThrowOutOfBoardBorderExceptionWhenTryToFieldOutOfBorder() throws OutOfBoardBorderException, FieldIsEmptyException {
+
+    public void shouldReturnSignEMPTYWhenTryToGetFieldOutOfBorder(){
         //Given
         int boardSize = 5;
         board = new Board2D(boardSize);
@@ -101,18 +115,21 @@ public class Board2DTest {
         int y = 7;
         Coordinates2D coordinates = new Coordinates2D(x, y);
         //When
-        board.getSignFromField(coordinates);
+        Sign resultSign = board.getSignFromField(coordinates);
+        //then
+        Assert.assertEquals(resultSign, Sign.EMPTY, "Can get value from field out of border!");
     }
 
-    @Test(expectedExceptions = FieldIsEmptyException.class)
-    public void shouldThrowFieldIsEmptyExceptionWhenTryToGetEmptyField() throws OutOfBoardBorderException, FieldIsEmptyException {
+    public void shouldReturnSignEMPTYWhenTryToGetEmptyField(){
         //Given
         createNewBoard();
         int x = 1;
         int y = 2;
         Coordinates2D coordinates = new Coordinates2D(x, y);
         //When
-        board.getSignFromField(coordinates);
+        Sign resultSign = board.getSignFromField(coordinates);
+        //then
+        Assert.assertEquals(resultSign, Sign.EMPTY, "Can get value from field out of border!");
     }
 
 
@@ -130,7 +147,7 @@ public class Board2DTest {
     }
 
     @Test
-    public void shouldBeTrueIfQueueContainsAllAddedFieldToBoard() throws OutOfBoardBorderException, FieldIsNotEmptyException {
+    public void shouldBeTrueIfQueueContainsAllAddedFieldToBoard(){
         //Given
         createNewBoard();
         Set<Coordinates2D> set = prepareSetToCompare();
