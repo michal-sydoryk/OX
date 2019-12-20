@@ -7,8 +7,11 @@ import com.michalsydoryk.app.coordinates.Coordinates2D;
 import com.michalsydoryk.app.sign.Sign;
 import org.testng.annotations.Test;
 
+import java.util.ArrayDeque;
+import java.util.Queue;
 import java.util.Random;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 @Test
 public class ConsoleBoard2DDrawerTest {
@@ -47,6 +50,45 @@ public class ConsoleBoard2DDrawerTest {
     public void print(){
         prepareBoard();
         Set<Coordinates2D> coordinates = board.getAllCoordinates();
+        int boardSize = board.getSize();
+        for(int row=0; row<boardSize; row++) {
+            printRow(row, board);
+        }
 
     }
+
+
+    private void printRow(int row, Board board) {
+        int boardSize = board.getSize();
+        StringBuilder stringBuilder = new StringBuilder();
+        stringBuilder.append(row);
+        stringBuilder.append("  ");
+        String emptyLine = "_";
+        String bar = "|";
+        String emptyLineBottomBoard = " ";
+        Queue<Coordinates2D> coordinates = new ArrayDeque<>(board.getAllCoordinates());
+        for(int col=0; col<boardSize; col++){
+            int finalCol = col;
+            Queue<Coordinates2D> lineCoordinates = coordinates.stream().filter(c -> c.getY() == finalCol).collect(Collectors.toCollection(ArrayDeque::new));
+            if(lineCoordinates.peek().getX() == col){
+
+            }
+        }
+        System.out.println(stringBuilder.toString());
+    }
+
+/*
+    private static void printIndexRow() {
+        StringBuilder stringBuilder = new StringBuilder();
+        stringBuilder.append("   ");
+        for(int col = 0; col<boardSize; col++){
+            stringBuilder.append(col);
+            stringBuilder.append(" ");
+        }
+        stringBuilder.append("\n");
+        System.out.println(stringBuilder.toString());
+    }
+*/
+
+
 }
