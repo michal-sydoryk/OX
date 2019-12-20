@@ -4,8 +4,8 @@ import java.util.Comparator;
 import java.util.Objects;
 
 public class Coordinates2D {
-    private int x;
-    private int y;
+    private final int x;
+    private final int y;
 
     public Coordinates2D(int x, int y) {
         this.x = x;

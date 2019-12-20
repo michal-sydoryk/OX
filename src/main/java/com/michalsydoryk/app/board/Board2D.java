@@ -1,5 +1,6 @@
 package com.michalsydoryk.app.board;
 
+import com.michalsydoryk.app.board.exception.FieldIsEmptyException;
 import com.michalsydoryk.app.board.exception.FieldIsNotEmptyException;
 import com.michalsydoryk.app.board.exception.OutOfBoardBorderException;
 import com.michalsydoryk.app.coordinates.Coordinates2D;
@@ -8,6 +9,7 @@ import com.michalsydoryk.app.sign.Sign;
 
 import java.util.Map;
 import java.util.Queue;
+import java.util.Set;
 import java.util.TreeMap;
 
 public class Board2D implements Board<Coordinates2D> {
@@ -43,13 +45,22 @@ public class Board2D implements Board<Coordinates2D> {
     }
 
     @Override
-    public Sign getSignFromField(Coordinates2D coordinate) {
-        return fields.get(coordinate);
+    public Sign getSignFromField(Coordinates2D coordinate) throws OutOfBoardBorderException, FieldIsEmptyException {
+        Sign sign;
+        if(coordinatesInBoardSize(coordinate)) {
+            sign = fields.get(coordinate);
+            if (sign != null)
+                return sign;
+            else
+                throw new FieldIsEmptyException("Field is Empty!");
+        }
+        else throw new OutOfBoardBorderException("Coordinate [" + coordinate.getX()
+                    + " " + coordinate.getY() + "]" + " is out of board size: " + boardSize);
     }
 
     @Override
-    public Queue<Coordinates2D> getAllField() {
-        return null;
+    public Set<Coordinates2D> getAllCoordinates() {
+        return fields.keySet();
     }
 
 }
