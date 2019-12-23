@@ -69,10 +69,5 @@ public class ConsoleBoard2DDrawerTest {
 
     }
 
-    public void checkEmptyRowDrawer(){
-        ConsoleBoard2DDrawer boardDrawer = new ConsoleBoard2DDrawer(board);
-        System.out.println(boardDrawer.drawEmptyRow(10));
-    }
-
 
 }
