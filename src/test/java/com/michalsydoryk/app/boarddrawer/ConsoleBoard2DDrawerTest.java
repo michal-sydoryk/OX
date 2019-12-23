@@ -48,7 +48,6 @@ public class ConsoleBoard2DDrawerTest {
     public void checkRow(){
         ConsoleBoard2DDrawer boardDrawer = new ConsoleBoard2DDrawer(board);
         prepareBoard();
-        System.out.println("   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6");
         System.out.println(boardDrawer.draw());
 
     }

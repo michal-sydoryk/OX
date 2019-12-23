@@ -17,6 +17,9 @@ public class ConsoleBoard2DDrawer extends BoardDrawerAbstract<Board, String> {
     private static final String emptyLineWihBar = "_|";
     private static final String emptyLineBottomWithBar = " |";
     private static final String nextLine = "\n";
+    private static final String indexWhitespace = "   ";
+    private static final String indexesUp = "                    1 1 1 1 1 1 1 1 1 1 2 2 2 2 2 2 2 2 2 2";
+    private static final String indexesDown = "0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9";
 
 
     ConsoleBoard2DDrawer(Board board) {
@@ -50,15 +53,16 @@ public class ConsoleBoard2DDrawer extends BoardDrawerAbstract<Board, String> {
         return stringBuilder.toString();
     }
 
-    private String drawIndexRow() {
+    String drawIndexRow() {
         StringBuilder stringBuilder = new StringBuilder();
         int boardSize = board.getSize();
-        int rowNumber = (boardSize - (boardSize%10)) / 10;
-        if ()
-        for (int i = 0; i < rowNumber; i++) {
-            stringBuilder.append("   ");
-
-        }
+        stringBuilder.append(indexWhitespace);
+        stringBuilder.append(indexesUp.substring(0, boardSize*2));
+        stringBuilder.append(nextLine);
+        stringBuilder.append(indexWhitespace);
+        stringBuilder.append(indexesDown.substring(0, boardSize*2));
+        stringBuilder.append(nextLine);
+        return stringBuilder.toString();
     }
 
     String drawLastRow(Queue<Coordinates2D> rowQueue, int rowSize) {
