@@ -17,7 +17,10 @@ import java.util.stream.Collectors;
 public class ConsoleBoard2DDrawerTest {
     int boardSize = 25;
     int combinationSize = 5;
-    Board board = new Board2D(boardSize, combinationSize);
+    Board board = new Board2D.Builder()
+            .boardSize(boardSize)
+            .combinationSize(combinationSize)
+            .build();
 
     private void prepareBoard(){
         board.addField(new Coordinates2D(0, 0), Sign.CROSS);
@@ -46,7 +49,10 @@ public class ConsoleBoard2DDrawerTest {
         //given
         int boardSize = 10;
         int combinationSize = 5;
-        Board board10x10 = new Board2D(boardSize, combinationSize);
+        Board board10x10 = new Board2D.Builder()
+                .boardSize(boardSize)
+                .combinationSize(combinationSize)
+                .build();
         ConsoleBoard2DDrawer boardDrawer = new ConsoleBoard2DDrawer(board10x10);
         prepare10X10Board(board10x10);
         //when

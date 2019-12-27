@@ -12,17 +12,11 @@ import java.util.Set;
 
 @Test
 public class Board2DTest {
-    private Board2D board;
-
-    private void createNewBoard(){
-        board = new Board2D();
-    }
 
     public void shouldBeTrueIfCoordinatesAreInBord() {
         //Given
-        createNewBoard();
         int boardSize = 105;
-        board = new Board2D(boardSize);
+        Board2D board = new Board2D.Builder().boardSize(boardSize).build();
         int x = 102;
         int y = 2;
         Coordinates2D coordinates = new Coordinates2D(x, y);
@@ -35,21 +29,22 @@ public class Board2DTest {
 
     public void canAddField(){
         //Given
-        createNewBoard();
+        Board2D board = new Board2D.Builder().build(); //variable board is type board2D
+                                                       // because, to not use getSignFromField()
         int x = 1;
         int y = 2;
         Coordinates2D coordinates = new Coordinates2D(x, y);
         Sign xSign = Sign.CROSS;
         //When
         board.addField(coordinates, xSign);
-        Sign signAdded = board.fields.get(coordinates); //to not use getSignFromField
+        Sign signAdded = board.fields.get(coordinates);
         //Then
         Assert.assertEquals(signAdded, xSign, "Can not add field!");
     }
 
     public void shouldReturnTrueWhenTryToAddInEmptyField(){
         //Given
-        createNewBoard();
+        Board board = new Board2D.Builder().build();
         int x = 1;
         int y = 2;
         Coordinates2D coordinates = new Coordinates2D(x, y);
@@ -65,7 +60,7 @@ public class Board2DTest {
     public void shouldReturnFalseWhenTryToAddFieldOutOfBoard(){
         //Given
         int boardSize = 100;
-        board = new Board2D(boardSize);
+        Board board = new Board2D.Builder().boardSize(boardSize).build();
         int x = 102;
         int y = 2;
         Coordinates2D coordinates = new Coordinates2D(x, y);
@@ -79,7 +74,7 @@ public class Board2DTest {
 
     public void shouldReturnFalseWhenTryToAddInNotEmptyField(){
         //Given
-        createNewBoard();
+        Board board = new Board2D.Builder().build();
         int x = 102;
         int y = 2;
         Coordinates2D coordinates = new Coordinates2D(x, y);
@@ -94,7 +89,7 @@ public class Board2DTest {
 
     public void canGetValueFormNotEmptyField(){
         //Given
-        createNewBoard();
+        Board board = new Board2D.Builder().build();
         int x = 1;
         int y = 2;
         Coordinates2D coordinates = new Coordinates2D(x, y);
@@ -110,7 +105,7 @@ public class Board2DTest {
     public void shouldReturnSignEMPTYWhenTryToGetFieldOutOfBorder(){
         //Given
         int boardSize = 5;
-        board = new Board2D(boardSize);
+        Board board = new Board2D.Builder().boardSize(boardSize).build();
         int x = 6;
         int y = 7;
         Coordinates2D coordinates = new Coordinates2D(x, y);
@@ -122,7 +117,7 @@ public class Board2DTest {
 
     public void shouldReturnSignEMPTYWhenTryToGetEmptyField(){
         //Given
-        createNewBoard();
+        Board board = new Board2D.Builder().build();
         int x = 1;
         int y = 2;
         Coordinates2D coordinates = new Coordinates2D(x, y);
@@ -149,7 +144,7 @@ public class Board2DTest {
     @Test
     public void shouldBeTrueIfQueueContainsAllAddedFieldToBoard(){
         //Given
-        createNewBoard();
+        Board board = new Board2D.Builder().build();
         Set<Coordinates2D> set = prepareSetToCompare();
         Sign xSign = Sign.CROSS;
 

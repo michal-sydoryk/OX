@@ -7,27 +7,42 @@ import com.michalsydoryk.app.sign.Sign;
 import java.util.Set;
 import java.util.TreeMap;
 
-public class Board2D implements Board<Coordinates2D> {
+public final class Board2D implements Board<Coordinates2D> {
     private static final int MAX_SIZE = Integer.MAX_VALUE;
-    private static final int MIN_SIZE = 0;
-    TreeMap<Coordinates2D, Sign> fields;
+    private static final int MIN_INDEX = 0;
+    final TreeMap<Coordinates2D, Sign> fields;
     private final int boardSize;
-    private int combinationSize;
+    private final int combinationSize;
 
-    public Board2D() {
-        this.fields = new TreeMap(new Coordinates2DComparator());
-        this.boardSize = MAX_SIZE;
-    }
-
-    public Board2D(int boardSize) {
-        this.fields = new TreeMap(new Coordinates2DComparator());
+    private Board2D(TreeMap<Coordinates2D, Sign> fields, int boardSize, int combinationSize) {
+        this.fields = fields;
         this.boardSize = boardSize;
+        this.combinationSize = combinationSize;
     }
 
-    public Board2D(int boardSize, int combinationSize) {
-        this.fields = new TreeMap(new Coordinates2DComparator());
-        this.boardSize = boardSize; //for indexing from 0
-        this.combinationSize = combinationSize;
+    public static class Builder{
+        private TreeMap<Coordinates2D, Sign> fields = new TreeMap();
+        private int boardSize = 3;
+        private int combinationSize = 3;
+
+        public Builder boardSize(int value){
+            boardSize = value;
+            return this;
+        }
+        public Builder combinationSize(int value){
+            combinationSize = value;
+            return this;
+        }
+
+        public Board2D build(){
+            return new Board2D(this);
+        }
+    }
+
+    private Board2D(Builder builder){
+        this.fields = builder.fields;
+        this.boardSize = builder.boardSize;
+        this.combinationSize = builder.combinationSize;
     }
 
     @Override
@@ -43,7 +58,7 @@ public class Board2D implements Board<Coordinates2D> {
     boolean coordinatesInBoardSize(Coordinates2D coordinates){
         int max = Math.max(coordinates.getX(), coordinates.getY());
         int min = Math.min(coordinates.getX(), coordinates.getY());
-        return ((max <= boardSize) && (min >= MIN_SIZE));
+        return ((max <= boardSize) && (min >= MIN_INDEX));
     }
 
     @Override
