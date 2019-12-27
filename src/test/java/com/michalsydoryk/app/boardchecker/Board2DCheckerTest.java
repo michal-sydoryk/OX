@@ -23,13 +23,13 @@ public class Board2DCheckerTest {
         Sign sign = signForTests;
         Object[][] objects = new Object[combinationSize][2];
         for(int i = 0; i < combinationSize; i++){
-            board = new Board2D(boardSize, combinationSize);
+            board = new Board2D.Builder().boardSize(boardSize).combinationSize(combinationSize).build();
             for( int j = i; j < combinationSize + i; j++){
                 Coordinates2D coordinatesToAdd = new Coordinates2D(x, y + combinationSize -1 - j);
                 if(!coordinates.equals(coordinatesToAdd))
                     board.addField(coordinatesToAdd, sign);
             }
-            objects[i][0] = board; //change 0 to i
+            objects[i][0] = board;
             objects[i][1] = coordinates;
         }
         return objects;
@@ -60,13 +60,13 @@ public class Board2DCheckerTest {
         Sign sign = signForTests;
         Object[][] objects = new Object[combinationSize][2];
         for(int i = 0; i < combinationSize; i++){
-            board = new Board2D(boardSize, combinationSize);
+            board = new Board2D.Builder().boardSize(boardSize).combinationSize(combinationSize).build();
             for( int j = i; j < combinationSize + i; j++){
                 Coordinates2D coordinatesToAdd = new Coordinates2D(x + combinationSize -1 - j, y);
                 if(!coordinates.equals(coordinatesToAdd))
                     board.addField(coordinatesToAdd, sign);
             }
-            objects[i][0] = board; //change 0 to i
+            objects[i][0] = board;
             objects[i][1] = coordinates;
         }
         return objects;
@@ -96,13 +96,13 @@ public class Board2DCheckerTest {
         Sign sign = signForTests;
         Object[][] objects = new Object[combinationSize][2];
         for(int i = 0; i < combinationSize; i++){
-            board = new Board2D(boardSize, combinationSize);
+            board = new Board2D.Builder().boardSize(boardSize).combinationSize(combinationSize).build();
             for( int j = i; j < combinationSize + i; j++){
                 Coordinates2D coordinatesToAdd = new Coordinates2D(x + combinationSize -1 - j, y  + combinationSize -1 - j);
                 if(!coordinates.equals(coordinatesToAdd))
                     board.addField(coordinatesToAdd, sign);
             }
-            objects[i][0] = board; //change 0 to i
+            objects[i][0] = board;
             objects[i][1] = coordinates;
         }
         return objects;
@@ -132,13 +132,13 @@ public class Board2DCheckerTest {
         Sign sign = signForTests;
         Object[][] objects = new Object[combinationSize][2];
         for(int i = 0; i < combinationSize; i++){
-            board = new Board2D(boardSize, combinationSize);
+            board = new Board2D.Builder().boardSize(boardSize).combinationSize(combinationSize).build();
             for( int j = i; j < combinationSize + i; j++){
                 Coordinates2D coordinatesToAdd = new Coordinates2D(x + combinationSize -1 - j, y - (combinationSize -1 - j));
                 if(!coordinates.equals(coordinatesToAdd))
                     board.addField(coordinatesToAdd, sign);
             }
-            objects[i][0] = board; //change 0 to i
+            objects[i][0] = board;
             objects[i][1] = coordinates;
         }
         return objects;

@@ -130,18 +130,17 @@ public class Board2DTest {
 
 
     private Set<Coordinates2D> prepareSetToCompare(){
-        Set<Coordinates2D> queue = new HashSet<>();
-        queue.add(new Coordinates2D(11,4));
-        queue.add(new Coordinates2D(1,6));
-        queue.add(new Coordinates2D(0,7));
-        queue.add(new Coordinates2D(4,9));
-        queue.add(new Coordinates2D(16,10));
-        queue.add(new Coordinates2D(81,11));
-        queue.add(new Coordinates2D(20000,100));
-        return queue;
+        Set<Coordinates2D> set = new HashSet<>();
+        set.add(new Coordinates2D(11,4));
+        set.add(new Coordinates2D(1,6));
+        set.add(new Coordinates2D(0,7));
+        set.add(new Coordinates2D(4,9));
+        set.add(new Coordinates2D(16,10));
+        set.add(new Coordinates2D(81,11));
+        set.add(new Coordinates2D(20000,100));
+        return set;
     }
 
-    @Test
     public void shouldBeTrueIfQueueContainsAllAddedFieldToBoard(){
         //Given
         Board board = new Board2D.Builder().build();
@@ -152,6 +151,8 @@ public class Board2DTest {
             board.addField(coordinates, xSign);
         }
         //When
+        System.out.println(set);
+        System.out.println(board.getAllCoordinates());
         boolean containsAllResult = board.getAllCoordinates().containsAll(set);
         //Then
         Assert.assertTrue(containsAllResult, "Board doesn't contains all added elements!");

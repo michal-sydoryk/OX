@@ -21,8 +21,7 @@ public final class Board2D implements Board<Coordinates2D> {
     }
 
     public static class Builder{
-        private TreeMap<Coordinates2D, Sign> fields = new TreeMap();
-        private int boardSize = 3;
+        private int boardSize = MAX_SIZE;
         private int combinationSize = 3;
 
         public Builder boardSize(int value){
@@ -40,7 +39,7 @@ public final class Board2D implements Board<Coordinates2D> {
     }
 
     private Board2D(Builder builder){
-        this.fields = builder.fields;
+        this.fields = new TreeMap(new Coordinates2DComparator());
         this.boardSize = builder.boardSize;
         this.combinationSize = builder.combinationSize;
     }

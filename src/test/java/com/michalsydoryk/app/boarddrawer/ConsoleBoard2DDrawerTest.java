@@ -15,14 +15,8 @@ import java.util.stream.Collectors;
 
 @Test
 public class ConsoleBoard2DDrawerTest {
-    int boardSize = 25;
-    int combinationSize = 5;
-    Board board = new Board2D.Builder()
-            .boardSize(boardSize)
-            .combinationSize(combinationSize)
-            .build();
 
-    private void prepareBoard(){
+    private void addFieldsToBoard(Board board){
         board.addField(new Coordinates2D(0, 0), Sign.CROSS);
         board.addField(new Coordinates2D(1, 1), Sign.CROSS);
         board.addField(new Coordinates2D(9, 0), Sign.CROSS);
@@ -37,7 +31,7 @@ public class ConsoleBoard2DDrawerTest {
         board.addField(new Coordinates2D(24, 24), Sign.NAUGHT);
     }
 
-    private void prepare10X10Board(Board board){
+    private void addFieldsToBoard10x10(Board board){
         board.addField(new Coordinates2D(0, 0), Sign.CROSS);
         board.addField(new Coordinates2D(1, 3), Sign.CROSS);
         board.addField(new Coordinates2D(9, 4), Sign.CROSS);
@@ -49,12 +43,14 @@ public class ConsoleBoard2DDrawerTest {
         //given
         int boardSize = 10;
         int combinationSize = 5;
-        Board board10x10 = new Board2D.Builder()
+        Board board = new Board2D.Builder()
                 .boardSize(boardSize)
                 .combinationSize(combinationSize)
                 .build();
-        ConsoleBoard2DDrawer boardDrawer = new ConsoleBoard2DDrawer(board10x10);
-        prepare10X10Board(board10x10);
+
+        ConsoleBoard2DDrawer boardDrawer = new ConsoleBoard2DDrawer(board);
+        addFieldsToBoard10x10(board);
+
         //when
         String toDraw = boardDrawer.draw();
         String expectedResult = "                       \n" +
@@ -69,6 +65,7 @@ public class ConsoleBoard2DDrawerTest {
                                 " 7 _|_|_|_|_|_|_|_|_|_\n" +
                                 " 8 _|_|_|_|_|_|_|_|_|_\n" +
                                 " 9  | | | | | | | | | \n";
+
         //then
         System.out.println(toDraw);
         Assert.assertEquals(toDraw, expectedResult);
