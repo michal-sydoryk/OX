@@ -7,7 +7,7 @@ import java.math.BigDecimal;
 
 @Test
 public class PointsTest {
-    public void shouldReturn4Coma3Points(){
+    public void shouldReturn4Coma3PointsIfPossibilityToAddPoints(){
         //given
         Points points = new Points();
         points.add(PointsValue.WIN);
@@ -15,8 +15,8 @@ public class PointsTest {
         points.add(PointsValue.LOSE);
         System.out.println(points.toString());
         //when
-        BigDecimal result = points.getPoints();
-        BigDecimal expectedResult = new BigDecimal(4.3);
+        BigDecimal result = points.getValue();
+        BigDecimal expectedResult = new BigDecimal("4.3");
         //then
         Assert.assertEquals(result, expectedResult, "Points are not equals!");
     }
