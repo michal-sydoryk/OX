@@ -151,8 +151,6 @@ public class Board2DTest {
             board.addField(coordinates, xSign);
         }
         //When
-        System.out.println(set);
-        System.out.println(board.getAllCoordinates());
         boolean containsAllResult = board.getAllCoordinates().containsAll(set);
         //Then
         Assert.assertTrue(containsAllResult, "Board doesn't contains all added elements!");
