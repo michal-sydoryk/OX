@@ -3,20 +3,13 @@ package com.michalsydoryk.app.points;
 import java.math.BigDecimal;
 
 public enum PointsValue {
-    WIN(30),
-    DRAW(10),
-    LOSE(3);
+    WIN("3"),
+    DRAW("1"),
+    LOSE("0.3");
 
-    BigDecimal value;
+    private BigDecimal value;
 
-    PointsValue(int value) {
-        BigDecimal tempValue = new BigDecimal(0);
-        tempValue.add(new BigDecimal(value));
-        tempValue.divide(new BigDecimal(10));
-        this.value = tempValue;
-    }
-
-    PointsValue(double value) {
+    PointsValue(String value) {
         this.value = new BigDecimal(value);
     }
 

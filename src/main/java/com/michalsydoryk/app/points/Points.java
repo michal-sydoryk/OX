@@ -3,22 +3,23 @@ package com.michalsydoryk.app.points;
 import java.math.BigDecimal;
 
 public class Points {
-    BigDecimal points;
+    public static final int INITIAL_VALUE = 0;
+    BigDecimal value;
 
     public Points() {
-        points = new BigDecimal(0);
+        value = new BigDecimal(INITIAL_VALUE);
     }
 
-    void add(PointsValue pointsValue){
-        points.add(pointsValue.getValue());
+    public void add(PointsValue pointsValue){
+        value = value.add(pointsValue.getValue());
     }
 
-    public BigDecimal getPoints(){
-        return points;
+    public BigDecimal getValue(){
+        return value;
     }
 
     @Override
     public String toString() {
-        return "Points: " + points;
+        return "Points: " + value;
     }
 }
