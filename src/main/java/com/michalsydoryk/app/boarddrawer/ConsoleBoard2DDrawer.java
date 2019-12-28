@@ -1,7 +1,6 @@
 package com.michalsydoryk.app.boarddrawer;
 
 import com.michalsydoryk.app.board.Board;
-import com.michalsydoryk.app.board.Board2D;
 import com.michalsydoryk.app.coordinates.Coordinates2D;
 import com.michalsydoryk.app.sign.Sign;
 
@@ -11,18 +10,21 @@ import java.util.Set;
 import java.util.stream.Collectors;
 
 public class ConsoleBoard2DDrawer extends BoardDrawerAbstract<Board, String> {
-    private static final String emptyLine = "_";
-    private static final String bar = "|";
-    private static final String emptyLineBottomBoard = " ";
-    private static final String emptyLineWihBar = "_|";
-    private static final String emptyLineBottomWithBar = " |";
-    private static final String nextLine = "\n";
-    private static final String indexWhitespace = "   ";
-    private static final String indexesUp = "                    1 1 1 1 1 1 1 1 1 1 2 2 2 2 2 2 2 2 2 2";
-    private static final String indexesDown = "0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9";
+    private static final int MAX_SIZE = 40;
+    private static final String EMPTY_LINE = "_";
+    private static final String BAR = "|";
+    private static final String EMPTY_LINE_BOTTOM_BOARD = " ";
+    private static final String EMPTY_LINE_WIH_BAR = "_|";
+    private static final String EMPTY_LINE_BOTTOM_WITH_BAR = " |";
+    private static final String NEXT_LINE = "\n";
+    private static final String INDEX_WHITESPACE = "   ";
+    private static final String INDEXES_UP = "                    1 1 1 1 1 1 1 1 1 1 2 2 2 2" +
+                                             " 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 3";
+    private static final String INDEXES_DOWN = "0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 " +
+                                               "0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9";
 
 
-    ConsoleBoard2DDrawer(Board board) {
+    public ConsoleBoard2DDrawer(Board board) {
         super(board);
     }
 
@@ -40,7 +42,7 @@ public class ConsoleBoard2DDrawer extends BoardDrawerAbstract<Board, String> {
                 stringBuilder.append(drawEmptyRow(boardSize));
             else
                 stringBuilder.append(drawRow(rowQueue, boardSize));
-            stringBuilder.append(nextLine);
+            stringBuilder.append(NEXT_LINE);
         }
         rowQueue = createRowQueue(lastRow);
         stringBuilder.append(String.format("%2s ", lastRow));
@@ -49,19 +51,19 @@ public class ConsoleBoard2DDrawer extends BoardDrawerAbstract<Board, String> {
         else
             stringBuilder.append(drawLastRow(rowQueue, boardSize));
 
-        stringBuilder.append(nextLine);
+        stringBuilder.append(NEXT_LINE);
         return stringBuilder.toString();
     }
 
     String drawIndexRow() {
         StringBuilder stringBuilder = new StringBuilder();
         int boardSize = board.getSize();
-        stringBuilder.append(indexWhitespace);
-        stringBuilder.append(indexesUp.substring(0, boardSize*2));
-        stringBuilder.append(nextLine);
-        stringBuilder.append(indexWhitespace);
-        stringBuilder.append(indexesDown.substring(0, boardSize*2));
-        stringBuilder.append(nextLine);
+        stringBuilder.append(INDEX_WHITESPACE);
+        stringBuilder.append(INDEXES_UP.substring(0, boardSize*2));
+        stringBuilder.append(NEXT_LINE);
+        stringBuilder.append(INDEX_WHITESPACE);
+        stringBuilder.append(INDEXES_DOWN.substring(0, boardSize*2));
+        stringBuilder.append(NEXT_LINE);
         return stringBuilder.toString();
     }
 
@@ -74,13 +76,13 @@ public class ConsoleBoard2DDrawer extends BoardDrawerAbstract<Board, String> {
             nearestCoordinates = rowQueue.poll();
             int indexOfNearestCoordinates = nearestCoordinates.getX();
             while (i < indexOfNearestCoordinates) {
-                stringBuilder.append(emptyLineBottomWithBar);
+                stringBuilder.append(EMPTY_LINE_BOTTOM_WITH_BAR);
                 i++;
             }
             Sign sign = board.getSignFromField(nearestCoordinates);
             stringBuilder.append(sign);
             if (i < lastIndexInRow)
-                stringBuilder.append(bar);
+                stringBuilder.append(BAR);
 
             if (rowQueue.isEmpty()) {
                 if (i < lastIndexInRow)
@@ -96,9 +98,9 @@ public class ConsoleBoard2DDrawer extends BoardDrawerAbstract<Board, String> {
         StringBuilder stringBuilder = new StringBuilder();
         int lastIndexInRow = rowSize -1;
         for (int i = 0; i < lastIndexInRow; i++) {
-            stringBuilder.append(emptyLineBottomWithBar);
+            stringBuilder.append(EMPTY_LINE_BOTTOM_WITH_BAR);
         }
-        stringBuilder.append(emptyLineBottomBoard);
+        stringBuilder.append(EMPTY_LINE_BOTTOM_BOARD);
         return stringBuilder.toString();
     }
 
@@ -107,9 +109,9 @@ public class ConsoleBoard2DDrawer extends BoardDrawerAbstract<Board, String> {
         int lastIndexInRow = rowSize -1;
 
         for (int i = 0; i < lastIndexInRow; i++) {
-            stringBuilder.append(emptyLineWihBar);
+            stringBuilder.append(EMPTY_LINE_WIH_BAR);
         }
-        stringBuilder.append(emptyLine);
+        stringBuilder.append(EMPTY_LINE);
         return stringBuilder.toString();
     }
 
@@ -122,13 +124,13 @@ public class ConsoleBoard2DDrawer extends BoardDrawerAbstract<Board, String> {
             nearestCoordinates = rowQueue.poll();
             int indexOfNearestCoordinates = nearestCoordinates.getX();
             while (i < indexOfNearestCoordinates) {
-                stringBuilder.append(emptyLineWihBar);
+                stringBuilder.append(EMPTY_LINE_WIH_BAR);
                 i++;
             }
             Sign sign = board.getSignFromField(nearestCoordinates);
             stringBuilder.append(sign);
             if (i < lastIndexInRow)
-                stringBuilder.append(bar);
+                stringBuilder.append(BAR);
 
             if (rowQueue.isEmpty()) {
                 if (i < lastIndexInRow)

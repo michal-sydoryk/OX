@@ -67,7 +67,6 @@ public class ConsoleBoard2DDrawerTest {
                                 " 9  | | | | | | | | | \n";
 
         //then
-        System.out.println(toDraw);
         Assert.assertEquals(toDraw, expectedResult);
 
     }

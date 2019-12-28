@@ -3,7 +3,8 @@ package com.michalsydoryk.app.points;
 import java.math.BigDecimal;
 
 public class Points {
-    public static final int INITIAL_VALUE = 0;
+
+    private static final int INITIAL_VALUE = 0;
     BigDecimal value;
 
     public Points() {

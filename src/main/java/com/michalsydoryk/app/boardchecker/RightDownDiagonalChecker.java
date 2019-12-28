@@ -1,12 +1,12 @@
 package com.michalsydoryk.app.boardchecker;
 
-import com.michalsydoryk.app.board.Board2D;
+import com.michalsydoryk.app.board.Board;
 import com.michalsydoryk.app.coordinates.Coordinates2D;
 
-class RightDownDiagonalChecker implements UnitChecker<Board2D, Coordinates2D>{
+class RightDownDiagonalChecker implements UnitChecker<Board, Coordinates2D>{
 
     @Override
-    public boolean check(Board2D board, Coordinates2D coordinatesToCheck) {
+    public boolean check(Board board, Coordinates2D coordinatesToCheck) {
         int x = coordinatesToCheck.getX();
         int y = coordinatesToCheck.getY();
         int combinationSize = board.getCombinationSize();

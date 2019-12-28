@@ -1,15 +1,12 @@
 package com.michalsydoryk.app.boardchecker;
 
-import com.michalsydoryk.app.board.Board2D;
+import com.michalsydoryk.app.board.Board;
 import com.michalsydoryk.app.coordinates.Coordinates2D;
 
-import java.util.LinkedList;
+public class Board2DChecker extends BoardCheckerAbstract<Board, Coordinates2D> {
 
-public class Board2DChecker extends BoardCheckerAbstract<Board2D, Coordinates2D> {
-
-    Board2DChecker(Board2D board2D) {
-        super(board2D);
-        unitCheckers = new LinkedList<>();
+    Board2DChecker(Board board) {
+        super(board);
         unitCheckers.add(new VerticalChecker());
         unitCheckers.add(new HorizontalChecker());
         unitCheckers.add(new RightDownDiagonalChecker());

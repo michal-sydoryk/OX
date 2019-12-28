@@ -13,7 +13,7 @@ public enum PointsValue {
         this.value = new BigDecimal(value);
     }
 
-    public BigDecimal getValue() {
+    BigDecimal getValue() {
         return value;
     }
 

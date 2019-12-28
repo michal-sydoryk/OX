@@ -1,7 +1,7 @@
 package com.michalsydoryk.app.ui;
 
-public interface UI {
-    int getNumber();
-    int getString();
-    void print();
+public interface UI<T> {
+    int takeInput();
+    void print(T toPrint);
+    void printBoard();
 }
