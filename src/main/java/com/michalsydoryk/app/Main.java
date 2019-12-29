@@ -1,13 +1,23 @@
 package com.michalsydoryk.app;
 
+import com.michalsydoryk.app.languagechooser.LanguageChooser;
+import com.michalsydoryk.app.ui.ConsoleUI;
+import com.michalsydoryk.app.ui.UI;
 
-import com.michalsydoryk.app.board.Board;
-import com.michalsydoryk.app.board.Board2D;
-import com.michalsydoryk.app.boarddrawer.BoardDrawer;
-import com.michalsydoryk.app.boarddrawer.ConsoleBoard2DDrawer;
+import java.util.ResourceBundle;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        //--------create UI--------
+        UI ui = new ConsoleUI(System.out, new Scanner(System.in));
+
+        //-----choose language-----
+        ResourceBundle resourceBundle = new LanguageChooser(ui).chooseLanguage();
+        ui.setResourceBundle(resourceBundle);
+
+        //-----
+
 
     }
 }

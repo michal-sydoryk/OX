@@ -6,7 +6,7 @@ import java.util.Locale;
 import java.util.Scanner;
 
 @Test
-public class ConsoleUITest {
+public class ConsoleUIInputTest {
 
 
 }

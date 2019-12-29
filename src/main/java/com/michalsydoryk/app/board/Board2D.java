@@ -8,8 +8,6 @@ import java.util.Set;
 import java.util.TreeMap;
 
 public final class Board2D implements Board<Coordinates2D> {
-    private static final int MAX_SIZE = Integer.MAX_VALUE;
-    private static final int MIN_INDEX = 0;
     final TreeMap<Coordinates2D, Sign> fields;
     private final int boardSize;
     private final int combinationSize;
