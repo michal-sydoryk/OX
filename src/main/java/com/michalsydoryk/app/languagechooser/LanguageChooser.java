@@ -16,9 +16,9 @@ public class LanguageChooser {
     public ResourceBundle chooseLanguage() {
         ResourceBundle resourceBundle = null;
         ui.clearScreen();
-        ui.print("Select language:");
-        ui.print("1 - EN");
-        ui.print("2 - PL");
+        ui.print("select_language");
+        ui.print("english_option");
+        ui.print("polish_option");
         String input = ui.takeInput();
         switch (input){
             case "1":

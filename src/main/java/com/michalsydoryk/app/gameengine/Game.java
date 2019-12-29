@@ -19,4 +19,8 @@ public class Game {
         this.playersPoints = playersPoints;
         this.playersSigns = playersSigns;
     }
+
+    public void start() {
+
+    }
 }

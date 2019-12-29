@@ -10,5 +10,6 @@ public interface UI {
     String takeInput();
     void clearScreen();
     void print(String toPrint);
+    void printEmptyBoard(int boardSize);
     void printBoard();
 }
