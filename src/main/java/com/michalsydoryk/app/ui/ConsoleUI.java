@@ -21,7 +21,6 @@ public class ConsoleUI implements UI{
         this.resourceBundle = ResourceBundle.getBundle("OXLabels");
     }
 
-
     @Override
     public void setBoardDrawer(Board board) {
         consoleBoard2DDrawer = new ConsoleBoard2DDrawer(board);

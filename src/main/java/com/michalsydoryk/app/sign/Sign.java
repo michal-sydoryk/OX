@@ -3,7 +3,7 @@ package com.michalsydoryk.app.sign;
 public enum Sign {
     NAUGHT('O'),
     CROSS('X'),
-    EMPTY('c');
+    EMPTY(' ');
 
     char value;
 
