@@ -24,7 +24,7 @@ public class Main {
         gameConfigurator.start();
 
         //----------game-----------
-        Game game = GameBuilder.build(gameConfigurator.getGameConfiguration());
+        Game game = GameBuilder.build(gameConfigurator.getGameConfiguration(), ui);
         game.start();
     }
 }

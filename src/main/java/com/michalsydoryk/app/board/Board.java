@@ -14,4 +14,5 @@ public interface Board<T> {
     Set<T> getAllCoordinates();
     int getCombinationSize();
     int getSize();
+    void clean();
 }

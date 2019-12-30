@@ -84,4 +84,9 @@ public final class Board2D implements Board<Coordinates2D> {
         return this.boardSize;
     }
 
+    @Override
+    public void clean() {
+        fields.clear();
+    }
+
 }
