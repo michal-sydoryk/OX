@@ -19,9 +19,9 @@ public class ConsoleBoard2DDrawer extends BoardDrawerAbstract<Board, String> {
     private static final String NEXT_LINE = "\n";
     private static final String INDEX_WHITESPACE = "   ";
     private static final String INDEXES_UP = "                    1 1 1 1 1 1 1 1 1 1 2 2 2 2" +
-                                             " 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 3";
+                                             " 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 3 ";
     private static final String INDEXES_DOWN = "0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 " +
-                                               "0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9";
+                                               "0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 ";
 
 
     public ConsoleBoard2DDrawer(Board board) {

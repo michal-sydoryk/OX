@@ -28,7 +28,7 @@ public class LanguageChooser {
 
             case  "2":
                 ui.print("Wybrałeś język Polski.");
-                resourceBundle = ResourceBundle.getBundle("OXLabels", Locale.forLanguageTag("pl-PL"));
+                resourceBundle = ResourceBundle.getBundle("OXLabels", Locale.forLanguageTag("pl_PL"));
                 break;
 
             default:

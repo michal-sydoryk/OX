@@ -19,8 +19,8 @@ public class GameConfigurator {
 
     public void start(){
         gameConfiguration.players = createPlayers();
-        int boardSize = addBoardSize();
-        int combinationSize = addCombinationSize();
+        boardSize = addBoardSize();
+        combinationSize = addCombinationSize();
         gameConfiguration.board = new Board2D.Builder()
                 .boardSize(boardSize)
                 .combinationSize(combinationSize)
@@ -49,8 +49,9 @@ public class GameConfigurator {
         while(true){
             ui.print("enter_a_number");
             number = ui.takeInputNumber();
-            if(number == 0 ) break;
-            if(number >= Board.MIN_SIZE && number <= 40) { //chane for max size Boarc.MAX_SIZE
+            ui.print(String.valueOf(number));
+            if(number == 0) break;
+            if(number >= Board.MIN_SIZE && number <= 40) { //change for max size Board.MAX_SIZE
                 boardSize = number;
                 ui.printEmptyBoard(boardSize);
             }

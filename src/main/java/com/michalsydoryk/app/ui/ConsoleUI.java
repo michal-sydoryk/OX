@@ -48,9 +48,9 @@ public class ConsoleUI implements UI{
         }catch (NumberFormatException e){
             print("not_a_number");
             print("enter_a_number");
-            takeInputNumber();
+            number = takeInputNumber();
         }
-        return 0; //should be never return
+        return number;
     }
 
     @Override
