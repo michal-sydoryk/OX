@@ -5,7 +5,7 @@ public enum Sign {
     CROSS('X'),
     EMPTY(' ');
 
-    char value;
+    private final char value;
 
     Sign(char value) {
         this.value = value;

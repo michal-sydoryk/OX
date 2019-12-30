@@ -13,7 +13,7 @@ import java.util.Set;
 @Test
 public class Board2DTest {
 
-    public void shouldBeTrueIfCoordinatesAreInBord() {
+    public void shouldBeTrueIfCoordinatesAreInBoard() {
         //Given
         int boardSize = 105;
         Board2D board = new Board2D.Builder().boardSize(boardSize).build();

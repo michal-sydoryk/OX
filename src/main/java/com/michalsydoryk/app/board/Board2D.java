@@ -4,6 +4,7 @@ import com.michalsydoryk.app.coordinates.Coordinates2D;
 import com.michalsydoryk.app.coordinatescomparator.Coordinates2DComparator;
 import com.michalsydoryk.app.sign.Sign;
 
+import java.math.BigDecimal;
 import java.util.Set;
 import java.util.TreeMap;
 
@@ -11,6 +12,7 @@ public final class Board2D implements Board<Coordinates2D> {
     final TreeMap<Coordinates2D, Sign> fields;
     private final int boardSize;
     private final int combinationSize;
+    private BigDecimal numberOfFilledFields;
 
     private Board2D(TreeMap<Coordinates2D, Sign> fields, int boardSize, int combinationSize) {
         this.fields = fields;
@@ -40,6 +42,7 @@ public final class Board2D implements Board<Coordinates2D> {
         this.fields = new TreeMap(new Coordinates2DComparator());
         this.boardSize = builder.boardSize;
         this.combinationSize = builder.combinationSize;
+        this.numberOfFilledFields = new BigDecimal(0);
     }
 
     @Override
@@ -47,6 +50,7 @@ public final class Board2D implements Board<Coordinates2D> {
         if(coordinatesInBoardSize(coordinate))
             if (fields.get(coordinate) == null) {
                 fields.put(coordinate, sign);
+                numberOfFilledFields = numberOfFilledFields.add(new BigDecimal(1));
                 return true;
             }
         return false;
@@ -82,6 +86,11 @@ public final class Board2D implements Board<Coordinates2D> {
     @Override
     public int getSize() {
         return this.boardSize;
+    }
+
+    @Override
+    public BigDecimal numberOfFilledFields() {
+        return null;
     }
 
     @Override

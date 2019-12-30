@@ -1,5 +1,5 @@
 package com.michalsydoryk.app.boardchecker;
 
 public interface BoardChecker<T> {
-    boolean check(T coordinates);
+    CheckResult check(T coordinates);
 }

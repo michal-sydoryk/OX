@@ -86,7 +86,7 @@ public class ConsoleBoard2DDrawer extends BoardDrawerAbstract<Board, String> {
 
             if (rowQueue.isEmpty()) {
                 if (i < lastIndexInRow)
-                    stringBuilder.append(drawEmptyRow(lastIndexInRow - i));
+                    stringBuilder.append(drawLastEmptyRow(lastIndexInRow - i));
                 break;
             }
         }

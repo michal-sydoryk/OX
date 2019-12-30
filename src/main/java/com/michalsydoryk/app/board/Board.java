@@ -2,6 +2,7 @@ package com.michalsydoryk.app.board;
 
 import com.michalsydoryk.app.sign.Sign;
 
+import java.math.BigDecimal;
 import java.util.Set;
 
 public interface Board<T> {
@@ -14,5 +15,6 @@ public interface Board<T> {
     Set<T> getAllCoordinates();
     int getCombinationSize();
     int getSize();
+    BigDecimal numberOfFilledFields();
     void clean();
 }

@@ -7,7 +7,7 @@ public enum PointsValue {
     DRAW("1"),
     LOSE("0.3");
 
-    private BigDecimal value;
+    private final BigDecimal value;
 
     PointsValue(String value) {
         this.value = new BigDecimal(value);

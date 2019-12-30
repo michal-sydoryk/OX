@@ -8,9 +8,13 @@ public class GameBuilder {
 
     public static Game build(GameConfiguration gameConfiguration , UI ui){
         Board board = gameConfiguration.board;
-        Game game = new Game(board, new Board2DChecker(board),
-                gameConfiguration.players, new PlayersPoints(gameConfiguration.players),
-                new PlayersSigns(gameConfiguration.players), ui);
+        ui.setBoardDrawer(board);
+        Game game = new Game(board,
+                new Board2DChecker(board),
+                gameConfiguration.players,
+                new PlayersPoints(gameConfiguration.players),
+                new PlayersSigns(gameConfiguration.players),
+                ui);
         return game;
     }
 }

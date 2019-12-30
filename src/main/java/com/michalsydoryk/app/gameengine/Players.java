@@ -34,9 +34,10 @@ class Players {
         playerDeque.addLast(player);
     }
 
-    Player getFirstPlayer(){
-        
+    Player getActive(){
+        return playerDeque.peekFirst();
     }
+
 
     public Deque<Player> getPlayerDeque() {
         return new LinkedList<>(playerDeque);

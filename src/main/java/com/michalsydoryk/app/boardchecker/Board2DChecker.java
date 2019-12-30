@@ -3,6 +3,8 @@ package com.michalsydoryk.app.boardchecker;
 import com.michalsydoryk.app.board.Board;
 import com.michalsydoryk.app.coordinates.Coordinates2D;
 
+import java.math.BigDecimal;
+
 public class Board2DChecker extends BoardCheckerAbstract<Board, Coordinates2D> {
 
     public Board2DChecker(Board board) {
@@ -14,10 +16,12 @@ public class Board2DChecker extends BoardCheckerAbstract<Board, Coordinates2D> {
     }
 
     @Override
-    public boolean check(Coordinates2D coordinates2D) {
+    public CheckResult check(Coordinates2D coordinates2D) {
         for(UnitChecker unitChecker: unitCheckers){
-            if(unitChecker.check(board, coordinates2D)) return true;
+            if(unitChecker.check(board, coordinates2D)) return CheckResult.WIN;
         }
-        return false;
+        if (board.numberOfFilledFields() == new BigDecimal(board.getSize()).pow(2))
+            return CheckResult.DRAW;
+        return CheckResult.NOTHING;
     }
 }

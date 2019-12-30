@@ -10,10 +10,10 @@ import java.util.ResourceBundle;
 import java.util.Scanner;
 
 public class ConsoleUI implements UI{
-    PrintStream output;
-    Scanner input;
-    ResourceBundle resourceBundle = null;
-    BoardDrawer consoleBoard2DDrawer;
+    private PrintStream output;
+    private Scanner input;
+    private ResourceBundle resourceBundle = null;
+    private BoardDrawer consoleBoard2DDrawer;
 
     public ConsoleUI(PrintStream output, Scanner input) {
         this.output = output;
@@ -80,6 +80,6 @@ public class ConsoleUI implements UI{
 
     @Override
     public void printBoard() {
-
+        output.println(consoleBoard2DDrawer.draw());
     }
 }
