@@ -22,9 +22,9 @@ public class ConsoleUI implements UI{
     }
 
 
-
     @Override
-    public void setBoardDrawer(BoardDrawer boardDrawer) {
+    public void setBoardDrawer(Board board) {
+        consoleBoard2DDrawer = new ConsoleBoard2DDrawer(board);
     }
 
     @Override
@@ -39,6 +39,21 @@ public class ConsoleUI implements UI{
     }
 
     @Override
+    public int takeInputNumber() {
+        String supposeNumber = input.nextLine();
+        int number = 0;
+        try{
+            number = Integer.parseInt(supposeNumber);
+            return number;
+        }catch (NumberFormatException e){
+            print("not_a_number");
+            print("enter_a_number");
+            takeInputNumber();
+        }
+        return 0; //should be never return
+    }
+
+    @Override
     public void clearScreen() {
 
     }
@@ -48,6 +63,13 @@ public class ConsoleUI implements UI{
         if (resourceBundle.containsKey(toPrint))
             toPrint = resourceBundle.getString(toPrint);
         output.println(toPrint);
+    }
+
+    @Override
+    public void print(String toPrint1, String toPrint2) {
+        if (resourceBundle.containsKey(toPrint1))
+            toPrint1 = resourceBundle.getString(toPrint1);
+        output.println(toPrint1 + " " + toPrint2);
     }
 
     @Override

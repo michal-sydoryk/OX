@@ -1,10 +1,14 @@
 package com.michalsydoryk.app.gameengine;
 
 import com.michalsydoryk.app.board.Board;
+import com.michalsydoryk.app.board.Board2D;
 import com.michalsydoryk.app.player.Player;
 import com.michalsydoryk.app.ui.UI;
 
 public class GameConfigurator {
+    private int boardSize;
+    private int combinationSize;
+
     GameConfiguration gameConfiguration;
     UI ui;
 
@@ -15,16 +19,21 @@ public class GameConfigurator {
 
     public void start(){
         gameConfiguration.players = createPlayers();
-        gameConfiguration.boardSize = addBoardSize();
-        gameConfiguration.combinationSize = addCombinationSize();
+        int boardSize = addBoardSize();
+        int combinationSize = addCombinationSize();
+        gameConfiguration.board = new Board2D.Builder()
+                .boardSize(boardSize)
+                .combinationSize(combinationSize)
+                .build();
+        ui.setBoardDrawer(gameConfiguration.board);
     }
 
     private int addCombinationSize() {
         ui.print("combination_size_info");
         int combinatonSize;
         while (true){
-            combinatonSize = insertNumber();
-            if(combinatonSize >= Board.MIN_SIZE && combinatonSize <= gameConfiguration.boardSize)
+            combinatonSize = ui.takeInputNumber();
+            if(combinatonSize >= Board.MIN_SIZE && combinatonSize <= boardSize)
                 return combinatonSize;
             else {
                 ui.print("wrong_combination_size");
@@ -38,7 +47,8 @@ public class GameConfigurator {
         int boardSize = 3;
         int number;
         while(true){
-            number = insertNumber();
+            ui.print("enter_a_number");
+            number = ui.takeInputNumber();
             if(number == 0 ) break;
             if(number >= Board.MIN_SIZE && number <= 40) { //chane for max size Boarc.MAX_SIZE
                 boardSize = number;
@@ -51,19 +61,6 @@ public class GameConfigurator {
         return boardSize;
     }
 
-    private int insertNumber() {
-        ui.print("enter_number");
-        String supposeNumber = ui.takeInput();
-        int number = 0;
-        try{
-            number = Integer.parseInt(supposeNumber);
-            return number;
-        }catch (NumberFormatException e){
-            ui.print("not_a_number");
-            insertNumber();
-        }
-        return 0; //should be never return
-    }
 
     private Players createPlayers(){
         Players players = new Players();
@@ -90,4 +87,6 @@ public class GameConfigurator {
     public GameConfiguration getGameConfiguration() {
         return gameConfiguration;
     }
+
+
 }

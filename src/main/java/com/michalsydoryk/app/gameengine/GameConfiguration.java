@@ -9,8 +9,7 @@ import java.util.ResourceBundle;
 
 class GameConfiguration {
     //board
-    int boardSize;
-    int combinationSize;
+    Board board;
 
     //players
     Players players;
