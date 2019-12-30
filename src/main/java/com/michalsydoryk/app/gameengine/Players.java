@@ -26,5 +26,7 @@ class Players {
         playerDeque.addLast(player);
     }
 
-
+    public Deque<Player> getPlayerDeque() {
+        return new LinkedList<>(playerDeque);
+    }
 }
