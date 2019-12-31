@@ -4,8 +4,7 @@ import java.math.BigDecimal;
 
 public enum PointsValue {
     WIN("3"),
-    DRAW("1"),
-    LOSE("0.3");
+    DRAW("1");
 
     private final BigDecimal value;
 

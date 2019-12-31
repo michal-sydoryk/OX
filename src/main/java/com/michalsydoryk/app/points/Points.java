@@ -1,14 +1,15 @@
 package com.michalsydoryk.app.points;
 
 import java.math.BigDecimal;
+import java.util.Objects;
 
 public class Points {
 
-    private static final int INITIAL_VALUE = 0;
+    private final BigDecimal INITIAL_VALUE = BigDecimal.ZERO;
     BigDecimal value;
 
     public Points() {
-        value = new BigDecimal(INITIAL_VALUE);
+        value = INITIAL_VALUE;
     }
 
     public void add(PointsValue pointsValue){
@@ -17,6 +18,19 @@ public class Points {
 
     public BigDecimal getValue(){
         return value;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Points points = (Points) o;
+        return Objects.equals(value, points.value);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(INITIAL_VALUE, value);
     }
 
     @Override

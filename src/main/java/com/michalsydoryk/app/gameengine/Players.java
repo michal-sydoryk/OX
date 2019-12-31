@@ -29,10 +29,6 @@ class Players {
         playerHowStartsEarlierGame = playerDeque.getFirst();
     }
 
-    void changeOrder(){
-        Player player = playerDeque.pollFirst();
-        playerDeque.addLast(player);
-    }
 
     Player getActive(){
         return playerDeque.peekFirst();
@@ -42,4 +38,6 @@ class Players {
     public Deque<Player> getPlayerDeque() {
         return new LinkedList<>(playerDeque);
     }
+
+
 }

@@ -7,7 +7,7 @@ import com.michalsydoryk.app.points.PointsValue;
 import java.math.BigDecimal;
 import java.util.*;
 
-public class PlayersPoints {
+class PlayersPoints {
     private Map<Player, Points> playerPointsMap;
 
     public PlayersPoints(Players players) {
@@ -58,11 +58,17 @@ public class PlayersPoints {
     }
 
     boolean haveGameWinner(){
-        Player firstPlayer = getPlayerWithBiggestPointNumber();
-        for(Player player: playerPointsMap.keySet()){
-            if (!playerPointsMap.get(firstPlayer).equals(playerPointsMap.get(player))) return true;
+        List<Points> pointsList = new ArrayList(playerPointsMap.values());
+        Points pointsToCompare = pointsList.get(0);
+        pointsList.remove(pointsToCompare);
+        for (int i = 0; i < pointsList.size(); i++) {
+            if (!pointsToCompare.equals(pointsList.get(i))) return true;
         }
         return false;
+    }
+
+    public Map<Player, Points> getPlayerPointsMap() {
+        return new HashMap<>(playerPointsMap);
     }
 
     @Override

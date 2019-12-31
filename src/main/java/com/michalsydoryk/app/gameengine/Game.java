@@ -39,7 +39,6 @@ public class Game {
             CheckResult roundResult = round();
             addPoints(roundResult);
             ui.print(playersPoints.toString());
-            players.changeOrder();
             board.clean();
             roundCounter++;
         }
@@ -84,7 +83,7 @@ public class Game {
                     ui.printBoard();
                     return checkResult;
                 case NOTHING:
-                    players.changeOrder();
+                    players.nextRoundOrder();
             }
         }
     }
