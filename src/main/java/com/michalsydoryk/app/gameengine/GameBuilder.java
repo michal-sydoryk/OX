@@ -13,7 +13,6 @@ public class GameBuilder {
                 new Board2DChecker(board),
                 gameConfiguration.players,
                 new PlayersPoints(gameConfiguration.players),
-                new PlayersSigns(gameConfiguration.players),
                 ui);
         return game;
     }

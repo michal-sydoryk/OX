@@ -18,18 +18,16 @@ public class Game {
     private final BoardChecker boardChecker;
     private final Players players;
     private final PlayersPoints playersPoints;
-    private final PlayersSigns playersSigns;
     private final int requiredPointNumber = 6;
     private final int numberOfRounds = 3;
 
     private UI ui;
 
-    Game(Board board, BoardChecker boardChecker, Players players, PlayersPoints playersPoints, PlayersSigns playersSigns, UI ui) {
+    Game(Board board, BoardChecker boardChecker, Players players, PlayersPoints playersPoints, UI ui) {
         this.board = board;
         this.boardChecker = boardChecker;
         this.players = players;
         this.playersPoints = playersPoints;
-        this.playersSigns = playersSigns;
         this.ui = ui;
     }
 
@@ -96,7 +94,7 @@ public class Game {
         ui.print("ask_player_for_coordinates");
         ui.print("player", " " + players.getActive().toString());
         Player player = players.getActive();
-        Sign sign = playersSigns.getSign(player);
+        Sign sign = players.getActive().getSign();
         Coordinates2D coordinates2D = takeCoordinates();
         if (!board.addField(coordinates2D, sign)){
             ui.print("field_not_empty");

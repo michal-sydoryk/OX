@@ -3,6 +3,7 @@ package com.michalsydoryk.app.gameengine;
 import com.michalsydoryk.app.board.Board;
 import com.michalsydoryk.app.board.Board2D;
 import com.michalsydoryk.app.player.Player;
+import com.michalsydoryk.app.sign.Sign;
 import com.michalsydoryk.app.ui.UI;
 
 public class GameConfigurator {
@@ -65,18 +66,18 @@ public class GameConfigurator {
 
     private Players createPlayers(){
         Players players = new Players();
-        players.add(addPlayer());
-        players.add(addPlayer());
+        players.add(addPlayer(Sign.CROSS));
+        players.add(addPlayer(Sign.NAUGHT));
         return players;
     }
 
-    private Player addPlayer(){
+    private Player addPlayer(Sign sign){
         ui.clearScreen();
         ui.print("enter_player_name");
         String playerName = ui.takeInput();
-        if (isValidName(playerName)) return new Player(playerName);
+        if (isValidName(playerName)) return new Player(playerName, sign);
         ui.print("wrong_length_of_player_name");
-        return addPlayer();
+        return addPlayer(sign);
     }
 
     private boolean isValidName(String playerName){
