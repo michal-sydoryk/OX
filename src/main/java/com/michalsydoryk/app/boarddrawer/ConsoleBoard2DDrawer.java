@@ -10,17 +10,17 @@ import java.util.Set;
 import java.util.stream.Collectors;
 
 public class ConsoleBoard2DDrawer extends BoardDrawerAbstract<Board, String> {
-    private static final int MAX_SIZE = 40;
-    private static final String EMPTY_LINE = "_";
-    private static final String BAR = "|";
-    private static final String EMPTY_LINE_BOTTOM_BOARD = " ";
-    private static final String EMPTY_LINE_WIH_BAR = "_|";
-    private static final String EMPTY_LINE_BOTTOM_WITH_BAR = " |";
-    private static final String NEXT_LINE = "\n";
-    private static final String INDEX_WHITESPACE = "   ";
-    private static final String INDEXES_UP = "                    1 1 1 1 1 1 1 1 1 1 2 2 2 2" +
+    private final int MAX_SIZE = 40;
+    private final String EMPTY_LINE = "_";
+    private final String BAR = "|";
+    private final String EMPTY_LINE_BOTTOM_BOARD = " ";
+    private final String EMPTY_LINE_WIH_BAR = "_|";
+    private final String EMPTY_LINE_BOTTOM_WITH_BAR = " |";
+    private final String NEXT_LINE = "\n";
+    private final String INDEX_WHITESPACE = "   ";
+    private final String INDEXES_UP = "                    1 1 1 1 1 1 1 1 1 1 2 2 2 2" +
                                              " 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 3 ";
-    private static final String INDEXES_DOWN = "0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 " +
+    private final String INDEXES_DOWN = "0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 " +
                                                "0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 ";
 
 

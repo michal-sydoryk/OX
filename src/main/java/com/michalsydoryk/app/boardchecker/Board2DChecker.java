@@ -17,11 +17,12 @@ public class Board2DChecker extends BoardCheckerAbstract<Board, Coordinates2D> {
 
     @Override
     public CheckResult check(Coordinates2D coordinates2D) {
-        for(UnitChecker unitChecker: unitCheckers){
-            if(unitChecker.check(board, coordinates2D)) return CheckResult.WIN;
+        for (UnitChecker unitChecker : unitCheckers) {
+            if (unitChecker.check(board, coordinates2D)) return CheckResult.WIN;
         }
         if (board.isFull())
             return CheckResult.DRAW;
         return CheckResult.NOTHING;
     }
+
 }
