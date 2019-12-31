@@ -22,7 +22,7 @@ public class LanguageChooser {
         String input = ui.takeInput();
         switch (input){
             case "1":
-                resourceBundle = ResourceBundle.getBundle("OXLabels", Locale.ENGLISH);
+                resourceBundle = ResourceBundle.getBundle("OXLabels", new Locale("en", "US"));
                 break;
 
             case  "2":
@@ -30,11 +30,10 @@ public class LanguageChooser {
                 break;
 
             default:
-                ui.print("Wrong option!");
-                chooseLanguage();
+                ui.print("wrong_option");
+                resourceBundle = chooseLanguage();
                 break;
         }
-        ui.print("chosen_language");
         return resourceBundle;
     }
 }

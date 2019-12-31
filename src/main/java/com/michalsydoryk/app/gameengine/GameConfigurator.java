@@ -47,7 +47,7 @@ public class GameConfigurator {
         int boardSize = 3;
         int number;
         while(true){
-            ui.print("enter_a_number");
+            ui.print("enter_a_number_then_confirm");
             number = ui.takeInputNumber();
             ui.print(String.valueOf(number));
             if(number == 0) break;

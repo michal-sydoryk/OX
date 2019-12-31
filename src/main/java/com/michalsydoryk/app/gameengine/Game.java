@@ -46,9 +46,9 @@ public class Game {
             roundCounter++;
         }
         if (playersPoints.haveGameWinner())
-            ui.print("winner_info", playersPoints.getPlayerWithBiggestPointNumber().toString());
+            ui.print("winner_game_info", playersPoints.getPlayerWithBiggestPointNumber().toString());
         else
-            ui.print("draw_info");
+            ui.print("draw_game_info");
         ui.print("summary_info");
         ui.print(playersPoints.toString());
     }
@@ -65,7 +65,7 @@ public class Game {
                 break;
             case DRAW:
                 playersPoints.addDrawPoints();
-                ui.print("draw_info");
+                ui.print("draw_round_info");
                 break;
         }
     }
