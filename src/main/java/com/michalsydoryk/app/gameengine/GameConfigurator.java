@@ -22,44 +22,52 @@ public class GameConfigurator {
         gameConfiguration.players = createPlayers();
         boardSize = addBoardSize();
         combinationSize = addCombinationSize();
+
         gameConfiguration.board = new Board2D.Builder()
                 .boardSize(boardSize)
                 .combinationSize(combinationSize)
                 .build();
+
         ui.setBoardDrawer(gameConfiguration.board);
     }
 
     private int addCombinationSize() {
         ui.print("combination_size_info");
         int combinatonSize;
+
         while (true){
             combinatonSize = ui.takeInputNumber();
+
             if(combinatonSize >= Board.MIN_SIZE && combinatonSize <= boardSize)
                 return combinatonSize;
-            else {
+            else
                 ui.print("wrong_combination_size");
-            }
         }
     }
 
     private int addBoardSize() {
         ui.print("choose_board_size_info");
         ui.printEmptyBoard(Board.MIN_SIZE);
+
         int boardSize = 3;
         int number;
+
         while(true){
             ui.print("enter_a_number_then_confirm");
             number = ui.takeInputNumber();
             ui.print(String.valueOf(number));
+
             if(number == 0) break;
+
             if(number >= Board.MIN_SIZE && number <= 40) { //change for max size Board.MAX_SIZE
                 boardSize = number;
                 ui.printEmptyBoard(boardSize);
             }
-            else {
+            else
                 ui.print("wrong_board_size");
-            }
+
         }
+
         return boardSize;
     }
 
@@ -74,9 +82,13 @@ public class GameConfigurator {
     private Player addPlayer(Sign sign){
         ui.clearScreen();
         ui.print("enter_player_name");
+
         String playerName = ui.takeInput();
+
         if (isValidName(playerName)) return new Player(playerName, sign);
+
         ui.print("wrong_length_of_player_name");
+        
         return addPlayer(sign);
     }
 

@@ -34,6 +34,7 @@ public class Game {
     public void start() {
         chooseOrder();
         int roundCounter = 0;
+
         while (true) {
             if (onePlayerHasRequiredPointsNumber(requiredPointNumber) || roundCounter >= numberOfRounds) break;
             CheckResult roundResult = round();
@@ -42,10 +43,12 @@ public class Game {
             board.clean();
             roundCounter++;
         }
+
         if (playersPoints.haveGameWinner())
             ui.print("winner_game_info", playersPoints.getPlayerWithBiggestPointNumber().toString());
         else
             ui.print("draw_game_info");
+
         ui.print("summary_info");
         ui.print(playersPoints.toString());
     }
@@ -60,6 +63,7 @@ public class Game {
                 playersPoints.addWinPoints(players.getActive());
                 ui.print("player_win_a_round_info", players.getActive().toString());
                 break;
+
             case DRAW:
                 playersPoints.addDrawPoints();
                 ui.print("draw_round_info");
@@ -67,21 +71,22 @@ public class Game {
         }
     }
 
-
-
     private CheckResult round() {
         while (true){
             Coordinates2D coordinates2D = addCoordinates();
             CheckResult checkResult = boardChecker.check(coordinates2D);
+
             switch (checkResult){
                 case WIN:
                     ui.print("winning_board_combination");
                     ui.printBoard();
                     return checkResult;
+
                 case DRAW:
                     ui.print("draw_board_combination");
                     ui.printBoard();
                     return checkResult;
+
                 case NOTHING:
                     players.nextRoundOrder();
             }
@@ -92,12 +97,15 @@ public class Game {
         ui.printBoard();
         ui.print("ask_player_for_coordinates");
         ui.print("player", " " + players.getActive().toString());
+
         Player player = players.getActive();
         Sign sign = players.getActive().getSign();
         Coordinates2D coordinates2D = takeCoordinates();
+
         if (!board.addField(coordinates2D, sign)){
             ui.print("field_not_empty");
             coordinates2D = addCoordinates();
+
         }
         return coordinates2D;
     }
@@ -105,18 +113,21 @@ public class Game {
     private Coordinates2D takeCoordinates() {
         ui.print("enter_x_coordinate");
         int x = takeCoordinate();
+
         ui.print("enter_y_coordinate");
         int y = takeCoordinate();
-        Coordinates2D coordinates2D = new Coordinates2D(x,y);
-        return coordinates2D;
+
+        return new Coordinates2D(x,y);
     }
 
     private int takeCoordinate() {
         int number = ui.takeInputNumber();
         int MAX_INDEX = board.getSize() - 1;
+
         if(number < Board.MIN_INDEX || number > MAX_INDEX){
             ui.print("board_size_info", String.valueOf(MAX_INDEX));
             number = takeCoordinate();
+
         }
         return number;
     }
@@ -124,14 +135,15 @@ public class Game {
     private void chooseOrder() {
         boolean isNotChoosen = true;
         while(isNotChoosen) {
-        ui.print("choose_order_info");
+            ui.print("choose_order_info");
 
-        List<Player> playerList = new ArrayList<>(players.getPlayerDeque());
-        for (int i = 0; i < playerList.size(); i++) {
-            ui.print(String.valueOf(i) + " - ", playerList.get(i).toString());
-        }
+            List<Player> playerList = new ArrayList<>(players.getPlayerDeque());
+            for (int i = 0; i < playerList.size(); i++) {
+                ui.print(String.valueOf(i) + " - ", playerList.get(i).toString());
+            }
 
             int number = ui.takeInputNumber();
+
             switch (number) {
                 case 0:
                     ui.print("start_first_info", playerList.get(0).toString());
