@@ -20,7 +20,7 @@ public class Board2DChecker extends BoardCheckerAbstract<Board, Coordinates2D> {
         for(UnitChecker unitChecker: unitCheckers){
             if(unitChecker.check(board, coordinates2D)) return CheckResult.WIN;
         }
-        if (board.numberOfFilledFields() == new BigDecimal(board.getSize()).pow(2))
+        if (board.isFull())
             return CheckResult.DRAW;
         return CheckResult.NOTHING;
     }

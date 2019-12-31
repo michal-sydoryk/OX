@@ -19,6 +19,8 @@ public class Game {
     private final Players players;
     private final PlayersPoints playersPoints;
     private final PlayersSigns playersSigns;
+    private final int requiredPointNumber = 6;
+    private final int numberOfRounds = 3;
 
     private UI ui;
 
@@ -33,20 +35,56 @@ public class Game {
 
     public void start() {
         chooseOrder();
-        round();
+        int roundCounter = 0;
+        while (true) {
+            if (onePlayerHasRequiredPointsNumber(requiredPointNumber) || roundCounter >= numberOfRounds) break;
+            CheckResult roundResult = round();
+            addPoints(roundResult);
+            ui.print(playersPoints.toString());
+            players.changeOrder();
+            board.clean();
+            roundCounter++;
+        }
+        if (playersPoints.haveGameWinner())
+            ui.print("winner_info", playersPoints.getPlayerWithBiggestPointNumber().toString());
+        else
+            ui.print("draw_info");
+        ui.print("summary_info");
+        ui.print(playersPoints.toString());
     }
 
-    private void round() {
+    private boolean onePlayerHasRequiredPointsNumber(int requiredPointsNumber) {
+        return playersPoints.onePlayerHasRequiredNumberOfPoints(requiredPointsNumber);
+    }
+
+    private void addPoints(CheckResult roundResult) {
+        switch (roundResult){
+            case WIN:
+                playersPoints.addWinPoints(players.getActive());
+                ui.print("player_win_a_round_info", players.getActive().toString());
+                break;
+            case DRAW:
+                playersPoints.addDrawPoints();
+                ui.print("draw_info");
+                break;
+        }
+    }
+
+
+
+    private CheckResult round() {
         while (true){
             Coordinates2D coordinates2D = addCoordinates();
             CheckResult checkResult = boardChecker.check(coordinates2D);
             switch (checkResult){
                 case WIN:
                     ui.print("winning_board_combination");
-                    break;
+                    ui.printBoard();
+                    return checkResult;
                 case DRAW:
                     ui.print("draw_board_combination");
-                    break;
+                    ui.printBoard();
+                    return checkResult;
                 case NOTHING:
                     players.changeOrder();
             }
@@ -56,6 +94,7 @@ public class Game {
     private Coordinates2D addCoordinates() {
         ui.printBoard();
         ui.print("ask_player_for_coordinates");
+        ui.print("player", " " + players.getActive().toString());
         Player player = players.getActive();
         Sign sign = playersSigns.getSign(player);
         Coordinates2D coordinates2D = takeCoordinates();

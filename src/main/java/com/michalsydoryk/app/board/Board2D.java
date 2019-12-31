@@ -89,12 +89,14 @@ public final class Board2D implements Board<Coordinates2D> {
     }
 
     @Override
-    public BigDecimal numberOfFilledFields() {
-        return null;
+    public boolean isFull() {
+        return numberOfFilledFields.equals(new BigDecimal(boardSize).pow(2));
     }
+
 
     @Override
     public void clean() {
+        numberOfFilledFields = new BigDecimal(0);
         fields.clear();
     }
 

@@ -15,6 +15,6 @@ public interface Board<T> {
     Set<T> getAllCoordinates();
     int getCombinationSize();
     int getSize();
-    BigDecimal numberOfFilledFields();
+    boolean isFull();
     void clean();
 }
