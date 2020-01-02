@@ -1,4 +1,4 @@
-package com.michalsydoryk.app.boarddrawer;
+package com.michalsydoryk.app.ui;
 
 import com.michalsydoryk.app.board.Board;
 import com.michalsydoryk.app.coordinates.Coordinates2D;
@@ -9,7 +9,7 @@ import java.util.Queue;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-public class ConsoleBoard2DDrawer extends BoardDrawerAbstract<Board, String> {
+class ConsoleBoard2DDrawer extends AbstractBoardDrawer<Board, String> {
     private final int MAX_SIZE = 40;
     private final String EMPTY_LINE = "_";
     private final String BAR = "|";

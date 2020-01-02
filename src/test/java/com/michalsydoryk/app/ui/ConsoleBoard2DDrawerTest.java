@@ -1,17 +1,12 @@
-package com.michalsydoryk.app.boarddrawer;
+package com.michalsydoryk.app.ui;
 
-import com.beust.jcommander.internal.Console;
 import com.michalsydoryk.app.board.Board;
 import com.michalsydoryk.app.board.Board2D;
 import com.michalsydoryk.app.coordinates.Coordinates2D;
-import com.michalsydoryk.app.coordinatescomparator.Coordinates2DComparator;
 import com.michalsydoryk.app.sign.Sign;
+import com.michalsydoryk.app.ui.ConsoleBoard2DDrawer;
 import org.testng.Assert;
-import org.testng.ITestNGListener;
 import org.testng.annotations.Test;
-
-import java.util.*;
-import java.util.stream.Collectors;
 
 @Test
 public class ConsoleBoard2DDrawerTest {

@@ -2,8 +2,6 @@ package com.michalsydoryk.app.ui;
 
 import com.michalsydoryk.app.board.Board;
 import com.michalsydoryk.app.board.Board2D;
-import com.michalsydoryk.app.boarddrawer.BoardDrawer;
-import com.michalsydoryk.app.boarddrawer.ConsoleBoard2DDrawer;
 
 import java.io.PrintStream;
 import java.util.ResourceBundle;
