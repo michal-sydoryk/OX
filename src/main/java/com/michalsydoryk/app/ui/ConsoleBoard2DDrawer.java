@@ -1,7 +1,7 @@
 package com.michalsydoryk.app.ui;
 
 import com.michalsydoryk.app.board.Board;
-import com.michalsydoryk.app.coordinates.Coordinates2D;
+import com.michalsydoryk.app.board.Coordinates2D;
 import com.michalsydoryk.app.sign.Sign;
 
 import java.util.LinkedList;
@@ -24,7 +24,7 @@ class ConsoleBoard2DDrawer extends AbstractBoardDrawer<Board, String> {
                                                "0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 ";
 
 
-    public ConsoleBoard2DDrawer(Board board) {
+    ConsoleBoard2DDrawer(Board board) {
         super(board);
     }
 
@@ -55,7 +55,7 @@ class ConsoleBoard2DDrawer extends AbstractBoardDrawer<Board, String> {
         return stringBuilder.toString();
     }
 
-    String drawIndexRow() {
+    private String drawIndexRow() {
         StringBuilder stringBuilder = new StringBuilder();
         int boardSize = board.getSize();
         stringBuilder.append(INDEX_WHITESPACE);
@@ -67,7 +67,7 @@ class ConsoleBoard2DDrawer extends AbstractBoardDrawer<Board, String> {
         return stringBuilder.toString();
     }
 
-    String drawLastRow(Queue<Coordinates2D> rowQueue, int rowSize) {
+    private String drawLastRow(Queue<Coordinates2D> rowQueue, int rowSize) {
         Coordinates2D nearestCoordinates;
         int lastIndexInRow = rowSize - 1;
         StringBuilder stringBuilder = new StringBuilder();
@@ -94,7 +94,7 @@ class ConsoleBoard2DDrawer extends AbstractBoardDrawer<Board, String> {
         return stringBuilder.toString();
     }
 
-     String drawLastEmptyRow(int rowSize) {
+    private String drawLastEmptyRow(int rowSize) {
         StringBuilder stringBuilder = new StringBuilder();
         int lastIndexInRow = rowSize -1;
         for (int i = 0; i < lastIndexInRow; i++) {
@@ -104,7 +104,7 @@ class ConsoleBoard2DDrawer extends AbstractBoardDrawer<Board, String> {
         return stringBuilder.toString();
     }
 
-     String drawEmptyRow(int rowSize) {
+    private String drawEmptyRow(int rowSize) {
         StringBuilder stringBuilder = new StringBuilder();
         int lastIndexInRow = rowSize -1;
 
@@ -115,7 +115,7 @@ class ConsoleBoard2DDrawer extends AbstractBoardDrawer<Board, String> {
         return stringBuilder.toString();
     }
 
-     String drawRow(Queue<Coordinates2D> rowQueue, int rowSize) {
+    private String drawRow(Queue<Coordinates2D> rowQueue, int rowSize) {
         Coordinates2D nearestCoordinates;
         int lastIndexInRow = rowSize - 1;
         StringBuilder stringBuilder = new StringBuilder();
@@ -142,7 +142,7 @@ class ConsoleBoard2DDrawer extends AbstractBoardDrawer<Board, String> {
         return stringBuilder.toString();
     }
 
-     Queue<Coordinates2D> createRowQueue(int rowIndex){
+    private Queue<Coordinates2D> createRowQueue(int rowIndex){
         Set<Coordinates2D> coordinatesSet;
         coordinatesSet = board.getAllCoordinates();
         Queue<Coordinates2D> rowCoorQueue = coordinatesSet.stream()

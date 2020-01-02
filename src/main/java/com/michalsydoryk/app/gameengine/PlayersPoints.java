@@ -1,8 +1,6 @@
 package com.michalsydoryk.app.gameengine;
 
 import com.michalsydoryk.app.player.Player;
-import com.michalsydoryk.app.points.Points;
-import com.michalsydoryk.app.points.PointsValue;
 
 import java.math.BigDecimal;
 import java.util.*;
@@ -10,7 +8,7 @@ import java.util.*;
 class PlayersPoints {
     private Map<Player, Points> playerPointsMap;
 
-    public PlayersPoints(Players players) {
+    PlayersPoints(Players players) {
         playerPointsMap = new HashMap<>();
 
         Deque<Player> playersDeque = players.getPlayerDeque();
@@ -67,7 +65,7 @@ class PlayersPoints {
         return false;
     }
 
-    public Map<Player, Points> getPlayerPointsMap() {
+    Map<Player, Points> getPlayerPointsMap() {
         return new HashMap<>(playerPointsMap);
     }
 

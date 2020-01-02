@@ -35,7 +35,7 @@ class Players {
     }
 
 
-    public Deque<Player> getPlayerDeque() {
+    Deque<Player> getPlayerDeque() {
         return new LinkedList<>(playerDeque);
     }
 

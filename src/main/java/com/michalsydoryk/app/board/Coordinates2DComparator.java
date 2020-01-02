@@ -1,11 +1,9 @@
-package com.michalsydoryk.app.coordinatescomparator;
+package com.michalsydoryk.app.board;
 
-
-import com.michalsydoryk.app.coordinates.Coordinates2D;
 
 import java.util.Comparator;
 
-public class Coordinates2DComparator implements Comparator<Coordinates2D> {
+class Coordinates2DComparator implements Comparator<Coordinates2D> {
 
     @Override
     public int compare(Coordinates2D o1, Coordinates2D o2) {

@@ -1,7 +1,5 @@
 package com.michalsydoryk.app.board;
 
-import com.michalsydoryk.app.coordinates.Coordinates2D;
-import com.michalsydoryk.app.coordinatescomparator.Coordinates2DComparator;
 import com.michalsydoryk.app.sign.Sign;
 
 import java.math.BigDecimal;

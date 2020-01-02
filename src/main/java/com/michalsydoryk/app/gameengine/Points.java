@@ -1,22 +1,22 @@
-package com.michalsydoryk.app.points;
+package com.michalsydoryk.app.gameengine;
 
 import java.math.BigDecimal;
 import java.util.Objects;
 
-public class Points {
+class Points {
 
     private final BigDecimal INITIAL_VALUE = BigDecimal.ZERO;
     BigDecimal value;
 
-    public Points() {
+    Points() {
         value = INITIAL_VALUE;
     }
 
-    public void add(PointsValue pointsValue){
+    void add(PointsValue pointsValue){
         value = value.add(pointsValue.getValue());
     }
 
-    public BigDecimal getValue(){
+    BigDecimal getValue(){
         return value;
     }
 

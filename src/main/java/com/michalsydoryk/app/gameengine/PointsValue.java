@@ -1,8 +1,8 @@
-package com.michalsydoryk.app.points;
+package com.michalsydoryk.app.gameengine;
 
 import java.math.BigDecimal;
 
-public enum PointsValue {
+enum PointsValue {
     WIN("3"),
     DRAW("1");
 

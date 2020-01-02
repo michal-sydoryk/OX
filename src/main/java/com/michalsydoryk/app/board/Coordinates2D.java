@@ -1,6 +1,5 @@
-package com.michalsydoryk.app.coordinates;
+package com.michalsydoryk.app.board;
 
-import java.util.Comparator;
 import java.util.Objects;
 
 public class Coordinates2D {

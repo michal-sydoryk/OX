@@ -1,9 +1,7 @@
 package com.michalsydoryk.app.boardchecker;
 
 import com.michalsydoryk.app.board.Board;
-import com.michalsydoryk.app.coordinates.Coordinates2D;
-
-import java.math.BigDecimal;
+import com.michalsydoryk.app.board.Coordinates2D;
 
 public class Board2DChecker extends BoardCheckerAbstract<Board, Coordinates2D> {
 

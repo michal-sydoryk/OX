@@ -1,6 +1,5 @@
-package com.michalsydoryk.app.coordinatescomparator;
+package com.michalsydoryk.app.board;
 
-import com.michalsydoryk.app.coordinates.Coordinates2D;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;

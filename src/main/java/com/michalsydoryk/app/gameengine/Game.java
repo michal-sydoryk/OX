@@ -3,15 +3,13 @@ package com.michalsydoryk.app.gameengine;
 import com.michalsydoryk.app.board.Board;
 import com.michalsydoryk.app.boardchecker.BoardChecker;
 import com.michalsydoryk.app.boardchecker.CheckResult;
-import com.michalsydoryk.app.coordinates.Coordinates2D;
+import com.michalsydoryk.app.board.Coordinates2D;
 import com.michalsydoryk.app.player.Player;
 import com.michalsydoryk.app.sign.Sign;
 import com.michalsydoryk.app.ui.UI;
 
 import java.util.ArrayList;
-import java.util.Deque;
 import java.util.List;
-import java.util.Queue;
 
 public class Game {
     private final Board board;

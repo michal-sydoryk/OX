@@ -1,4 +1,4 @@
-package com.michalsydoryk.app.points;
+package com.michalsydoryk.app.gameengine;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;

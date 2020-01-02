@@ -1,8 +1,6 @@
 package com.michalsydoryk.app.gameengine;
 
 import com.michalsydoryk.app.player.Player;
-import com.michalsydoryk.app.points.Points;
-import com.michalsydoryk.app.points.PointsValue;
 import com.michalsydoryk.app.sign.Sign;
 import org.testng.Assert;
 import org.testng.annotations.Test;

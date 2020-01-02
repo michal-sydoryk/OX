@@ -2,9 +2,8 @@ package com.michalsydoryk.app.ui;
 
 import com.michalsydoryk.app.board.Board;
 import com.michalsydoryk.app.board.Board2D;
-import com.michalsydoryk.app.coordinates.Coordinates2D;
+import com.michalsydoryk.app.board.Coordinates2D;
 import com.michalsydoryk.app.sign.Sign;
-import com.michalsydoryk.app.ui.ConsoleBoard2DDrawer;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

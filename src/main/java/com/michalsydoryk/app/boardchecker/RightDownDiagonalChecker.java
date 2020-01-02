@@ -1,7 +1,7 @@
 package com.michalsydoryk.app.boardchecker;
 
 import com.michalsydoryk.app.board.Board;
-import com.michalsydoryk.app.coordinates.Coordinates2D;
+import com.michalsydoryk.app.board.Coordinates2D;
 
 class RightDownDiagonalChecker implements UnitChecker<Board, Coordinates2D>{
 

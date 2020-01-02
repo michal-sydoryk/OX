@@ -1,11 +1,8 @@
-package com.michalsydoryk.app.coordinates;
+package com.michalsydoryk.app.board;
 
+import com.michalsydoryk.app.board.Coordinates2D;
 import org.testng.Assert;
-import org.testng.ITestNGListener;
-import org.testng.ITestNGListenerFactory;
-import org.testng.ITestNGMethod;
 import org.testng.annotations.Test;
-import org.w3c.dom.ls.LSOutput;
 
 public class Coordinates2DTest {
     @Test

@@ -1,13 +1,10 @@
 package com.michalsydoryk.app.board;
 
-import com.michalsydoryk.app.coordinates.Coordinates2D;
 import com.michalsydoryk.app.sign.Sign;
 import org.testng.Assert;
 import org.testng.annotations.*;
 
-import java.util.ArrayDeque;
 import java.util.HashSet;
-import java.util.Queue;
 import java.util.Set;
 
 @Test
