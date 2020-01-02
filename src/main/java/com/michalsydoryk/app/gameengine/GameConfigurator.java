@@ -88,7 +88,7 @@ public class GameConfigurator {
         if (isValidName(playerName)) return new Player(playerName, sign);
 
         ui.print("wrong_length_of_player_name");
-        
+
         return addPlayer(sign);
     }
 

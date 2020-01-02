@@ -14,12 +14,6 @@ public final class Board2D implements Board<Coordinates2D> {
     private final int combinationSize;
     private BigDecimal numberOfFilledFields;
 
-    private Board2D(TreeMap<Coordinates2D, Sign> fields, int boardSize, int combinationSize) {
-        this.fields = fields;
-        this.boardSize = boardSize;
-        this.combinationSize = combinationSize;
-    }
-
     public static class Builder{
         private int boardSize = MAX_SIZE;
         private int combinationSize = 3;
