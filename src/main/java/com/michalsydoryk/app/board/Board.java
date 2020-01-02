@@ -13,7 +13,6 @@ public interface Board<T> {
     boolean addField(T coordinates, Sign sign);
     Sign getSignFromField(T coordinates);
     Set<T> getAllCoordinates();
-    int getCombinationSize();
     int getSize();
     boolean isFull();
     void clean();

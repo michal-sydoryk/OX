@@ -9,19 +9,13 @@ import java.util.TreeMap;
 public final class Board2D implements Board<Coordinates2D> {
     final TreeMap<Coordinates2D, Sign> fields;
     private final int boardSize;
-    private final int combinationSize;
     private BigDecimal numberOfFilledFields;
 
     public static class Builder{
         private int boardSize = MAX_SIZE;
-        private int combinationSize = 3;
 
         public Builder boardSize(int value){
             boardSize = value;
-            return this;
-        }
-        public Builder combinationSize(int value){
-            combinationSize = value;
             return this;
         }
 
@@ -33,7 +27,6 @@ public final class Board2D implements Board<Coordinates2D> {
     private Board2D(Builder builder){
         this.fields = new TreeMap(new Coordinates2DComparator());
         this.boardSize = builder.boardSize;
-        this.combinationSize = builder.combinationSize;
         this.numberOfFilledFields = new BigDecimal(0);
     }
 
@@ -68,11 +61,6 @@ public final class Board2D implements Board<Coordinates2D> {
     @Override
     public Set<Coordinates2D> getAllCoordinates() {
         return fields.keySet();
-    }
-
-    @Override
-    public int getCombinationSize() {
-        return this.combinationSize;
     }
 
     @Override

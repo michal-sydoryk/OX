@@ -3,36 +3,21 @@ package com.michalsydoryk.app.boardchecker;
 import com.michalsydoryk.app.board.Board;
 import com.michalsydoryk.app.board.Coordinates2D;
 
-class HorizontalChecker implements UnitChecker<Board, Coordinates2D>{
+class HorizontalChecker extends AbstractUnitChecker2D{
+
+    public HorizontalChecker(Board board, int combinationSize) {
+        super(board, combinationSize);
+    }
 
     @Override
-    public boolean check(Board board, Coordinates2D coordinatesToCheck) {
-        int x = coordinatesToCheck.getX();
-        int y = coordinatesToCheck.getY();
-        int combinationSize = board.getCombinationSize();
-        int actualCombinationSize = 1;
-        int position = 1;
-        boolean leftDirection = true;
-        boolean rightDirection = true;
-        while (leftDirection || rightDirection){
-            if (leftDirection) {
-                if (board.getSignFromField(new Coordinates2D(x - position, y)) == board.getSignFromField(coordinatesToCheck)) {
-                    actualCombinationSize++;
-                } else {
-                    leftDirection = false;
-                }
-            }
-            if(actualCombinationSize == combinationSize) return true;
-            if (rightDirection) {
-                if (board.getSignFromField(new Coordinates2D(x  + position, y)) == board.getSignFromField(coordinatesToCheck)) {
-                    actualCombinationSize++;
-                } else {
-                    rightDirection = false;
-                }
-            }
-            if(actualCombinationSize == combinationSize) return true;
-            position++;
-        }
+    boolean matchingSingInDecreasingDirection(Coordinates2D coordinatesToCheck, int position) {
+        if (board.getSignFromField(new Coordinates2D(coordinatesToCheck.getX() - position, coordinatesToCheck.getY())) == board.getSignFromField(coordinatesToCheck)) return true;
+        return false;
+    }
+
+    @Override
+    boolean matchingSingInIncreasingDirection(Coordinates2D coordinatesToCheck, int position) {
+        if (board.getSignFromField(new Coordinates2D(coordinatesToCheck.getX() + position, coordinatesToCheck.getY())) == board.getSignFromField(coordinatesToCheck)) return true;
         return false;
     }
 }

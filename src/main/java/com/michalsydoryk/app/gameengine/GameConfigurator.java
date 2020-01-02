@@ -2,26 +2,20 @@ package com.michalsydoryk.app.gameengine;
 
 import com.michalsydoryk.app.board.Board;
 import com.michalsydoryk.app.board.Board2D;
-import com.michalsydoryk.app.player.Player;
 import com.michalsydoryk.app.sign.Sign;
 import com.michalsydoryk.app.ui.UI;
 
 public class GameConfigurator {
-    private int boardSize;
-    private int combinationSize;
-
-    GameConfiguration gameConfiguration;
     UI ui;
 
     public GameConfigurator(UI ui) {
-        this.gameConfiguration = new GameConfiguration();
         this.ui = ui;
     }
 
     public void start(){
-        gameConfiguration.players = createPlayers();
-        boardSize = addBoardSize();
-        combinationSize = addCombinationSize();
+        Players players = createPlayers();
+        int boardSize = addBoardSize();
+        int combinationSize = addCombinationSize();
 
         gameConfiguration.board = new Board2D.Builder()
                 .boardSize(boardSize)

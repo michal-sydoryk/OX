@@ -1,14 +1,14 @@
-package com.michalsydoryk.app.player;
+package com.michalsydoryk.app.gameengine;
 
 import com.michalsydoryk.app.sign.Sign;
 
 import java.util.Objects;
 
-public class Player {
+class Player {
     private final String name;
     private final Sign sign;
 
-    public Player(String name, Sign sign) {
+    Player(String name, Sign sign) {
         this.name = name;
         this.sign = sign;
     }
@@ -18,7 +18,7 @@ public class Player {
         return name + " " + sign.toString();
     }
 
-    public Sign getSign() {
+    Sign getSign() {
         return sign;
     }
 

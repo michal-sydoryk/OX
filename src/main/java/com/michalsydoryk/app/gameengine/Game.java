@@ -1,10 +1,11 @@
 package com.michalsydoryk.app.gameengine;
 
 import com.michalsydoryk.app.board.Board;
+import com.michalsydoryk.app.board.Board2D;
+import com.michalsydoryk.app.boardchecker.Board2DChecker;
 import com.michalsydoryk.app.boardchecker.BoardChecker;
 import com.michalsydoryk.app.boardchecker.CheckResult;
 import com.michalsydoryk.app.board.Coordinates2D;
-import com.michalsydoryk.app.player.Player;
 import com.michalsydoryk.app.sign.Sign;
 import com.michalsydoryk.app.ui.UI;
 
@@ -16,17 +17,58 @@ public class Game {
     private final BoardChecker boardChecker;
     private final Players players;
     private final PlayersPoints playersPoints;
-    private final int requiredPointNumber = 6;
-    private final int numberOfRounds = 3;
+    private final int REQUIRED_POINT_NUMBER = 6;
+    private final int NUMBER_OF_ROUNDS = 3;
 
     private UI ui;
 
-    Game(Board board, BoardChecker boardChecker, Players players, PlayersPoints playersPoints, UI ui) {
-        this.board = board;
-        this.boardChecker = boardChecker;
-        this.players = players;
-        this.playersPoints = playersPoints;
-        this.ui = ui;
+    /*
+    Game(GameBuilder gameBuilder){
+
+    }
+
+     */
+
+    private Game(GameBuilder gameBuilder) {
+        this.board = gameBuilder.board;
+        this.boardChecker = gameBuilder.boardChecker;
+        this.players = gameBuilder.players;
+        this.playersPoints = gameBuilder.playersPoints;
+        this.ui = gameBuilder.ui;
+    }
+
+    public static class GameBuilder{
+        private Board board;
+        private Players players;
+        private BoardChecker boardChecker;
+        private PlayersPoints playersPoints;
+        private UI ui;
+
+        public GameBuilder addBoard(int boardSize){
+            board = new Board2D.Builder().boardSize(boardSize).build();
+            return this;
+        }
+
+        public GameBuilder addPlayersAndPlayersPoints(Players players){
+            this.players = players;
+            this.playersPoints = new PlayersPoints(players);
+            return this;
+        }
+
+        public GameBuilder addUI(UI ui){
+            this.ui = ui;
+            return this;
+        }
+
+        public GameBuilder addBoardChecker(int combinationSize){
+            this.boardChecker = new Board2DChecker(board, combinationSize);
+            return this;
+        }
+
+        public Game build(){
+            return new Game(this);
+        }
+
     }
 
     public void start() {
@@ -34,7 +76,7 @@ public class Game {
         int roundCounter = 0;
 
         while (true) {
-            if (onePlayerHasRequiredPointsNumber(requiredPointNumber) || roundCounter >= numberOfRounds) break;
+            if (gameIsFinished(roundCounter)) break;
             CheckResult roundResult = round();
             addPoints(roundResult);
             ui.print(playersPoints.toString());
@@ -49,6 +91,10 @@ public class Game {
 
         ui.print("summary_info");
         ui.print(playersPoints.toString());
+    }
+
+    private boolean gameIsFinished(int roundCounter){
+        return onePlayerHasRequiredPointsNumber(REQUIRED_POINT_NUMBER) || roundCounter >= NUMBER_OF_ROUNDS;
     }
 
     private boolean onePlayerHasRequiredPointsNumber(int requiredPointsNumber) {
@@ -137,7 +183,7 @@ public class Game {
 
             List<Player> playerList = new ArrayList<>(players.getPlayerDeque());
             for (int i = 0; i < playerList.size(); i++) {
-                ui.print(String.valueOf(i) + " - ", playerList.get(i).toString());
+                ui.print(i + " - ", playerList.get(i).toString());
             }
 
             int number = ui.takeInputNumber();

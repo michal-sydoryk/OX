@@ -1,7 +1,5 @@
 package com.michalsydoryk.app.gameengine;
 
-import com.michalsydoryk.app.player.Player;
-
 import java.math.BigDecimal;
 import java.util.*;
 
