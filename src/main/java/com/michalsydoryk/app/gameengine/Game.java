@@ -22,19 +22,13 @@ public class Game {
 
     private UI ui;
 
-    /*
-    Game(GameBuilder gameBuilder){
-
-    }
-
-     */
-
     private Game(GameBuilder gameBuilder) {
         this.board = gameBuilder.board;
         this.boardChecker = gameBuilder.boardChecker;
         this.players = gameBuilder.players;
         this.playersPoints = gameBuilder.playersPoints;
         this.ui = gameBuilder.ui;
+        this.ui.setBoardDrawer(this.board);
     }
 
     public static class GameBuilder{
@@ -80,10 +74,13 @@ public class Game {
             CheckResult roundResult = round();
             addPoints(roundResult);
             ui.print(playersPoints.toString());
+            ui.print("enter_any_sign_to_continue");
+            ui.takeInput();
             board.clean();
+            players.nextRoundOrder();
             roundCounter++;
         }
-
+        ui.clearScreen();
         if (playersPoints.haveGameWinner())
             ui.print("winner_game_info", playersPoints.getPlayerWithBiggestPointNumber().toString());
         else
@@ -93,30 +90,50 @@ public class Game {
         ui.print(playersPoints.toString());
     }
 
+    private void chooseOrder() {
+        ui.clearScreen();
+        boolean isNotChoosen = true;
+        while(isNotChoosen) {
+            ui.print("choose_order_info");
+
+            List<Player> playerList = new ArrayList<>(players.getPlayerDeque());
+            for (int i = 0; i < playerList.size(); i++) {
+                ui.print(i + " - ", playerList.get(i).toString());
+            }
+
+            int number = ui.takeInputNumber();
+
+            switch (number) {
+                case 0:
+                    ui.clearScreen();
+                    ui.print("start_first_info", playerList.get(0).toString());
+                    players.setFirstPlayer(playerList.get(0));
+                    isNotChoosen = false;
+                    break;
+
+                case 1:
+                    ui.clearScreen();
+                    ui.print("start_first_info", playerList.get(1).toString());
+                    players.setFirstPlayer(playerList.get(1));
+                    isNotChoosen = false;
+                    break;
+
+                default:
+                    ui.clearScreen();
+                    ui.print("wrong_number_for_choose_player");
+            }
+        }
+
+
+    }
+
     private boolean gameIsFinished(int roundCounter){
         return onePlayerHasRequiredPointsNumber(REQUIRED_POINT_NUMBER) || roundCounter >= NUMBER_OF_ROUNDS;
     }
 
-    private boolean onePlayerHasRequiredPointsNumber(int requiredPointsNumber) {
-        return playersPoints.onePlayerHasRequiredNumberOfPoints(requiredPointsNumber);
-    }
-
-    private void addPoints(CheckResult roundResult) {
-        switch (roundResult){
-            case WIN:
-                playersPoints.addWinPoints(players.getActive());
-                ui.print("player_win_a_round_info", players.getActive().toString());
-                break;
-
-            case DRAW:
-                playersPoints.addDrawPoints();
-                ui.print("draw_round_info");
-                break;
-        }
-    }
-
     private CheckResult round() {
         while (true){
+            ui.clearScreen();
             Coordinates2D coordinates2D = addCoordinates();
             CheckResult checkResult = boardChecker.check(coordinates2D);
 
@@ -138,20 +155,40 @@ public class Game {
     }
 
     private Coordinates2D addCoordinates() {
+        Player player = players.getActive();
         ui.printBoard();
         ui.print("ask_player_for_coordinates");
-        ui.print("player", " " + players.getActive().toString());
+        ui.print("player", " " + player.toString());
 
-        Player player = players.getActive();
-        Sign sign = players.getActive().getSign();
+        Sign sign = player.getSign();
         Coordinates2D coordinates2D = takeCoordinates();
 
         if (!board.addField(coordinates2D, sign)){
+            ui.clearScreen();
             ui.print("field_not_empty");
             coordinates2D = addCoordinates();
 
         }
         return coordinates2D;
+    }
+
+    private void addPoints(CheckResult roundResult) {
+        ui.clearScreen();
+        switch (roundResult){
+            case WIN:
+                playersPoints.addWinPoints(players.getActive());
+                ui.print("player_win_a_round_info", players.getActive().toString());
+                break;
+
+            case DRAW:
+                playersPoints.addDrawPoints();
+                ui.print("draw_round_info");
+                break;
+        }
+    }
+
+    private boolean onePlayerHasRequiredPointsNumber(int requiredPointsNumber) {
+        return playersPoints.onePlayerHasRequiredNumberOfPoints(requiredPointsNumber);
     }
 
     private Coordinates2D takeCoordinates() {
@@ -174,39 +211,6 @@ public class Game {
 
         }
         return number;
-    }
-
-    private void chooseOrder() {
-        boolean isNotChoosen = true;
-        while(isNotChoosen) {
-            ui.print("choose_order_info");
-
-            List<Player> playerList = new ArrayList<>(players.getPlayerDeque());
-            for (int i = 0; i < playerList.size(); i++) {
-                ui.print(i + " - ", playerList.get(i).toString());
-            }
-
-            int number = ui.takeInputNumber();
-
-            switch (number) {
-                case 0:
-                    ui.print("start_first_info", playerList.get(0).toString());
-                    players.setFirstPlayer(playerList.get(0));
-                    isNotChoosen = false;
-                    break;
-
-                case 1:
-                    ui.print("start_first_info", playerList.get(1).toString());
-                    players.setFirstPlayer(playerList.get(1));
-                    isNotChoosen = false;
-                    break;
-
-                default:
-                    ui.print("wrong_number_for_choose_player");
-            }
-        }
-
-
     }
 
 }

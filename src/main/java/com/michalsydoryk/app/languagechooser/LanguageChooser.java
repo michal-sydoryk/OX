@@ -15,7 +15,6 @@ public class LanguageChooser {
 
     public ResourceBundle chooseLanguage() {
         ResourceBundle resourceBundle = null;
-        ui.clearScreen();
         ui.print("select_language");
         ui.print("english_option");
         ui.print("polish_option");
@@ -30,6 +29,7 @@ public class LanguageChooser {
                 break;
 
             default:
+                ui.clearScreen();
                 ui.print("wrong_option");
                 resourceBundle = chooseLanguage();
                 break;

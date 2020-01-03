@@ -1,7 +1,6 @@
 package com.michalsydoryk.app;
 
 import com.michalsydoryk.app.gameengine.Game;
-import com.michalsydoryk.app.gameengine.GameBuilder;
 import com.michalsydoryk.app.gameengine.GameConfigurator;
 import com.michalsydoryk.app.languagechooser.LanguageChooser;
 import com.michalsydoryk.app.ui.ConsoleUI;
@@ -14,6 +13,7 @@ public class Main {
     public static void main(String[] args) {
         //--------create UI--------
         UI ui = new ConsoleUI(System.out, new Scanner(System.in));
+        ui.clearScreen();
 
         //-----choose language-----
         ResourceBundle resourceBundle = new LanguageChooser(ui).chooseLanguage();
@@ -21,10 +21,9 @@ public class Main {
 
         //----game configurator----
         GameConfigurator gameConfigurator = new GameConfigurator(ui);
-        gameConfigurator.start();
+        Game game = gameConfigurator.createGame();
 
         //----------game-----------
-        Game game = GameBuilder.build(gameConfigurator.getGameConfiguration(), ui);
         game.start();
     }
 }

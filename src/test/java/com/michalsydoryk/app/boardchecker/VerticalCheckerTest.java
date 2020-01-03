@@ -22,7 +22,7 @@ public class VerticalCheckerTest {
         Object[][] objects = new Object[combinationSize][2];
         Board board;
         for(int i = 0; i < combinationSize; i++){
-            board = new Board2D.Builder().boardSize(boardSize).combinationSize(combinationSize).build();
+            board = new Board2D.Builder().boardSize(boardSize).build();
             for( int j = i; j < combinationSize + i; j++){
                 Coordinates2D coordinatesToAdd = new Coordinates2D(x, y + combinationSize -1 - j);
                 if(!coordinates.equals(coordinatesToAdd))
@@ -38,10 +38,10 @@ public class VerticalCheckerTest {
     @Test(dataProvider = "verticalWiningCombinationsFarawayFromBorder")
     public void shouldReturnTrueIfThereIsVerticalWiningCombinationFarawayFromBorder(Board2D boardToCheck, Coordinates2D coordinatesToCheck) {
         //Given
-        UnitChecker verticalChecker = new VerticalChecker();
+        UnitChecker verticalChecker = new VerticalChecker(boardToCheck, combinationSize);
         boardToCheck.addField(coordinatesToCheck, signForTests);
         //When
-        boolean result = verticalChecker.check(boardToCheck, coordinatesToCheck);
+        boolean result = verticalChecker.check(coordinatesToCheck);
         //Then
         Assert.assertTrue(result);
     }

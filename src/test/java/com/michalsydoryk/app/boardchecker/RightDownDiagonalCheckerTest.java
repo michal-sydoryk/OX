@@ -22,7 +22,7 @@ public class RightDownDiagonalCheckerTest {
         Sign sign = signForTests;
         Object[][] objects = new Object[combinationSize][2];
         for(int i = 0; i < combinationSize; i++){
-            board = new Board2D.Builder().boardSize(boardSize).combinationSize(combinationSize).build();
+            board = new Board2D.Builder().boardSize(boardSize).build();
             for( int j = i; j < combinationSize + i; j++){
                 Coordinates2D coordinatesToAdd = new Coordinates2D(x + combinationSize -1 - j, y  + combinationSize -1 - j);
                 if(!coordinates.equals(coordinatesToAdd))
@@ -38,10 +38,10 @@ public class RightDownDiagonalCheckerTest {
     @Test(dataProvider = "diagonalRightDownCornerWiningCombinationsFarawayFromBorder")
     public void shouldReturnTrueIfThereIsDiagonalRightDownWiningCombinationFarawayFromBorder(Board2D boardToCheck, Coordinates2D coordinatesToCheck) {
         //Given
-        UnitChecker rightDownDiagonalChecker = new RightDownDiagonalChecker();
+        UnitChecker rightDownDiagonalChecker = new RightDownDiagonalChecker(boardToCheck, combinationSize);
         boardToCheck.addField(coordinatesToCheck, signForTests);
         //When
-        boolean result = rightDownDiagonalChecker.check(boardToCheck, coordinatesToCheck);
+        boolean result = rightDownDiagonalChecker.check(coordinatesToCheck);
         //Then
         Assert.assertTrue(result);
     }

@@ -39,7 +39,6 @@ public class ConsoleBoard2DDrawerTest {
         int combinationSize = 5;
         Board board = new Board2D.Builder()
                 .boardSize(boardSize)
-                .combinationSize(combinationSize)
                 .build();
 
         ConsoleBoard2DDrawer boardDrawer = new ConsoleBoard2DDrawer(board);

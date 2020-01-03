@@ -23,7 +23,7 @@ public class HorizontalCheckerTest {
         Sign sign = signForTests;
         Object[][] objects = new Object[combinationSize][2];
         for(int i = 0; i < combinationSize; i++){
-            board = new Board2D.Builder().boardSize(boardSize).combinationSize(combinationSize).build();
+            board = new Board2D.Builder().boardSize(boardSize).build();
             for( int j = i; j < combinationSize + i; j++){
                 Coordinates2D coordinatesToAdd = new Coordinates2D(x + combinationSize -1 - j, y);
                 if(!coordinates.equals(coordinatesToAdd))
@@ -39,10 +39,10 @@ public class HorizontalCheckerTest {
     @Test(dataProvider = "horizontalWiningCombinationsFarawayFromBorder")
     public void shouldReturnTrueIfThereIsHorizontalWiningCombinationFarawayFromBorder(Board2D boardToCheck, Coordinates2D coordinatesToCheck) {
         //Given
-        UnitChecker horizontalChecker = new HorizontalChecker();
+        UnitChecker horizontalChecker = new HorizontalChecker(boardToCheck, combinationSize);
         boardToCheck.addField(coordinatesToCheck, signForTests);
         //When
-        boolean result = horizontalChecker.check(boardToCheck, coordinatesToCheck);
+        boolean result = horizontalChecker.check(coordinatesToCheck);
         //Then
         Assert.assertTrue(result);
     }
