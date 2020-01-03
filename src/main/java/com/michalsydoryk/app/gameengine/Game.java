@@ -139,11 +139,13 @@ public class Game {
 
             switch (checkResult){
                 case WIN:
+                    ui.clearScreen();
                     ui.print("winning_board_combination");
                     ui.printBoard();
                     return checkResult;
 
                 case DRAW:
+                    ui.clearScreen();
                     ui.print("draw_board_combination");
                     ui.printBoard();
                     return checkResult;
@@ -173,7 +175,6 @@ public class Game {
     }
 
     private void addPoints(CheckResult roundResult) {
-        ui.clearScreen();
         switch (roundResult){
             case WIN:
                 playersPoints.addWinPoints(players.getActive());

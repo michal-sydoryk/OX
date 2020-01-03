@@ -90,12 +90,14 @@ public class GameConfigurator {
 
         while (true){
             combinationSize = ui.takeInputNumber();
-
-            if(combinationSize >= Board.MIN_SIZE && combinationSize <= boardSize)
-                return combinationSize;
-            else
-                ui.print("wrong_combination_size");
             ui.clearScreen();
+
+            if(combinationSize >= Board.MIN_SIZE && combinationSize <= boardSize) {
+                return combinationSize;
+            }
+            else {
+                ui.print("wrong_combination_size");
+            }
         }
     }
 
