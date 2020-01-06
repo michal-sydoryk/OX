@@ -1,3 +1,4 @@
+
 package com.michalsydoryk.app;
 
 import com.michalsydoryk.app.gameengine.Game;

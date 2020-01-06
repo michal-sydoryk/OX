@@ -1,5 +1,6 @@
 from subprocess import run, PIPE
 import sys
+import InputFormater
 
 
 def run_scenario(scenario):
@@ -11,7 +12,12 @@ def run_scenario(scenario):
     results.write("\n------------------------------------------------------------------\n")
 
 
-args = sys.argv
+# -----------input formatter--------------------
+inputFormatter = InputFormater(sys.argv)
+variables = inputFormatter.format_input()
+
+
+
 
 
 def language_chooser(arg1):
@@ -94,7 +100,7 @@ def draw_combination():
                     gf += str(board_size_int - 2 - step * i) + "\n"
     else:
         half_board_size = int((board_size_int - 1) / 2)
-        for j in range(half_board_size):
+        for j in range(half_oard_size):
             p1x = p1x_start + step*j
             p2x = p2x_start + step*j
             if j%2 == 0:
@@ -258,5 +264,5 @@ base_scenario = language + player1 + player2 + board_size + "\n" + accept_board_
 scenarios = create_scenario()
 
 for scenario in scenarios:
-    print(scenario)
     run_scenario(scenario)
+    #print(scenario)
