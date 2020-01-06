@@ -13,7 +13,6 @@ def run_scenario(scenario):
     results.write("\n------------------------------------------------------------------\n")
 
 
-# -----------input formatter--------------------
 inputFormatter = InputFormatter(sys.argv)
 try:
     variables = inputFormatter.format_input()

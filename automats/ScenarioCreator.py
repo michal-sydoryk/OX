@@ -15,7 +15,7 @@ class ScenarioCreator:
         wining_combination = self.variables["winning_combination"]
         if result == "DRAW":
             game_flow_scenario = DrawScenario(board_size, combination_size)
-            scenario = self.__create_base_scenario() + game_flow_scenario.create_scenario()
+            scenario = [self.__create_base_scenario() + game_flow_scenario.create_scenario()]
         elif result == "WIN":
             if wining_combination == "H":
                 game_flow_scenario = HorizontalScenario(board_size, combination_size).create_scenario()

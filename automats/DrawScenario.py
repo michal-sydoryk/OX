@@ -12,11 +12,13 @@ class DrawScenario(GameFlowScenario):
 
     def create_scenario(self):
         gf = ""  # game flow
-
-        if self.board_size % 2 == 0:
-            gf += self.__even_board_size()
+        if self.board_size == 3:
+            gf += self.__smallest_board()
         else:
-            gf += self.__odd_board_size()
+            if self.board_size % 2 == 0:
+                gf += self.__even_board_size()
+            else:
+                gf += self.__odd_board_size()
 
         return gf + "\n" + gf + "\n" + gf + "\n"
 
@@ -96,3 +98,6 @@ class DrawScenario(GameFlowScenario):
         gf += str(p1x) + "\n"
 
         return gf
+
+    def __smallest_board(self):
+        return "0\n0\n0\n1\n0\n2\n1\n0\n2\n0\n1\n1\n2\n1\n2\n2\n1\n2\n"
