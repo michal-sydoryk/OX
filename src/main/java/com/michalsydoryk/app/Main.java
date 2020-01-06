@@ -3,7 +3,6 @@ package com.michalsydoryk.app;
 
 import com.michalsydoryk.app.gameengine.Game;
 import com.michalsydoryk.app.gameengine.GameConfigurator;
-import com.michalsydoryk.app.languagechooser.LanguageChooser;
 import com.michalsydoryk.app.ui.ConsoleUI;
 import com.michalsydoryk.app.ui.UI;
 
@@ -17,8 +16,7 @@ public class Main {
         ui.clearScreen();
 
         //-----choose language-----
-        ResourceBundle resourceBundle = new LanguageChooser(ui).chooseLanguage();
-        ui.setResourceBundle(resourceBundle);
+        ui.chooseLanguage();
 
         //----game configurator----
         GameConfigurator gameConfigurator = new GameConfigurator(ui);

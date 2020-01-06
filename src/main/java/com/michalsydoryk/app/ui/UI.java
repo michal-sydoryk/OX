@@ -6,7 +6,6 @@ import java.util.ResourceBundle;
 
 public interface UI {
     void setBoardDrawer(Board board);
-    void setResourceBundle(ResourceBundle resourceBundle);
     String takeInput();
     int takeInputNumber();
     void clearScreen();
@@ -14,4 +13,5 @@ public interface UI {
     void print(String toPrint1, String toPrint2);
     void printEmptyBoard(int boardSize);
     void printBoard();
+    void chooseLanguage();
 }

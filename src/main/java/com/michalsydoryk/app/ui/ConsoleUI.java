@@ -25,11 +25,9 @@ public class ConsoleUI implements UI{
         consoleBoard2DDrawer = new ConsoleBoard2DDrawer(board);
     }
 
-    @Override
-    public void setResourceBundle(ResourceBundle resourceBundle) {
+    private void setResourceBundle(ResourceBundle resourceBundle) {
         this.resourceBundle = resourceBundle;
     }
-
 
     @Override
     public String takeInput(){
@@ -80,5 +78,12 @@ public class ConsoleUI implements UI{
     @Override
     public void printBoard() {
         output.println(consoleBoard2DDrawer.draw());
+    }
+
+    @Override
+    public void chooseLanguage() {
+        LanguageChooser languageChooser = new LanguageChooser();
+        languageChooser.setUi(this);
+        setResourceBundle(languageChooser.chooseLanguage());
     }
 }

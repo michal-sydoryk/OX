@@ -1,19 +1,18 @@
-package com.michalsydoryk.app.languagechooser;
+package com.michalsydoryk.app.ui;
 
 import com.michalsydoryk.app.ui.UI;
 
 import java.util.Locale;
 import java.util.ResourceBundle;
 
-public class LanguageChooser {
+class LanguageChooser {
     UI ui;
 
-    public LanguageChooser(UI ui) {
+    void setUi(UI ui) {
         this.ui = ui;
     }
 
-
-    public ResourceBundle chooseLanguage() {
+    ResourceBundle chooseLanguage() {
         ResourceBundle resourceBundle = null;
         ui.print("select_language");
         ui.print("english_option");
@@ -25,7 +24,7 @@ public class LanguageChooser {
                 break;
 
             case  "2":
-                resourceBundle = ResourceBundle.getBundle("OXLabels", Locale.forLanguageTag("pl_PL"));
+                resourceBundle = ResourceBundle.getBundle("OXLabels", new Locale("pl", "PL"));
                 break;
 
             default:
