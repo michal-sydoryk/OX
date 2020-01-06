@@ -20,7 +20,7 @@ class InputFormatter:
                 "board_size": self.__valid_board_size(self.args[2]),
                 "combination_size": self.__valid_combination_size(self.args[2], self.args[3]),
                 "who_starts": self.__valid_who_starts(self.args[4]),
-                "game_result": self.__valid_winning_combination(self.args[5]),
+                "game_result": self.__valid_game_result(self.args[5]),
                 "winning_combination": self.__valid_winning_combination(self.args[6])
             }
         return variables
@@ -54,9 +54,22 @@ class InputFormatter:
         else:
             raise Exception("WHO_STARTS should be X or O.")
 
+    def __valid_game_result(self, game_result):
+        if game_result == "W" or game_result == "w":
+            return "WIN"
+        elif game_result == "D" or game_result == "d":
+            return "DRAW"
+        else:
+            raise Exception("GAME_RESULT should be D (draw) or W (win).")
+
     def __valid_winning_combination(self, wining_combination):
-        if not (wining_combination == "V" or wining_combination == "v" or wining_combination == "H" or
-                wining_combination == "h" or wining_combination == "D1" or wining_combination == "d1" or
-                wining_combination == "D2" or wining_combination == "d2"):
+        if wining_combination == "V" or wining_combination == "v":
+            return "V"
+        elif wining_combination == "H" or wining_combination == "h":
+            return "H"
+        elif wining_combination == "D1" or wining_combination == "d1":
+            return "D1"
+        elif wining_combination == "D2" or wining_combination == "d2":
+            return "D2"
+        else:
             raise Exception("WINING_COMBINATION should be V, H, D1 or D2.")
-        return wining_combination

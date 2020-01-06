@@ -1,0 +1,3445 @@
+[H[2JSelect language:
+1 - English
+2 - Polish
+[H[2JEnter Player name with sign X
+[H[2JEnter Player name with sign O
+[H[2JEnter board size (for this version it is form 3 to 40 included) and confirm by entering 0. Printed board should help you to suits board size to your console: 
+         
+   0 1 2 
+ 0 _|_|_
+ 1 _|_|_
+ 2  | | 
+Enter a number and confirm by entering 0:
+[H[2JEnter board size (for this version it is form 3 to 40 included) and confirm by entering 0. Printed board should help you to suits board size to your console: 
+             
+   0 1 2 3 4 
+ 0 _|_|_|_|_
+ 1 _|_|_|_|_
+ 2 _|_|_|_|_
+ 3 _|_|_|_|_
+ 4  | | | | 
+Enter a number and confirm by entering 0:
+[H[2J[H[2JEnter a wining combination size. It should be greater or equals 3 and less or equals board size.
+[H[2J[H[2JChoose which player starts, by enter a proper number.
+0 -  Player1 X
+1 -  Player2 O
+[H[2JStats player: Player1 X
+[H[2J             
+   0 1 2 3 4 
+ 0 _|_|_|_|_
+ 1 _|_|_|_|_
+ 2 _|_|_|_|_
+ 3 _|_|_|_|_
+ 4  | | | | 
+
+Enter the coordinates:
+Player:  Player1 X
+Enter x coordinate:
+Enter y coordinate:
+[H[2J             
+   0 1 2 3 4 
+ 0 _|_|_|_|_
+ 1 _|_|_|_|_
+ 2 X|_|_|_|_
+ 3 _|_|_|_|_
+ 4  | | | | 
+
+Enter the coordinates:
+Player:  Player2 O
+Enter x coordinate:
+Enter y coordinate:
+[H[2J             
+   0 1 2 3 4 
+ 0 _|_|_|_|_
+ 1 _|_|_|_|_
+ 2 X|_|_|_|_
+ 3 _|_|_|_|_
+ 4 O| | | | 
+
+Enter the coordinates:
+Player:  Player1 X
+Enter x coordinate:
+Enter y coordinate:
+[H[2J             
+   0 1 2 3 4 
+ 0 _|_|_|_|_
+ 1 _|_|_|_|_
+ 2 X|_|_|_|_
+ 3 _|X|_|_|_
+ 4 O| | | | 
+
+Enter the coordinates:
+Player:  Player2 O
+Enter x coordinate:
+Enter y coordinate:
+[H[2J             
+   0 1 2 3 4 
+ 0 _|_|_|_|_
+ 1 _|_|_|_|_
+ 2 X|_|_|_|_
+ 3 _|X|_|_|_
+ 4 O|O| | | 
+
+Enter the coordinates:
+Player:  Player1 X
+Enter x coordinate:
+Enter y coordinate:
+[H[2JFound winning board combination!
+             
+   0 1 2 3 4 
+ 0 _|_|_|_|_
+ 1 _|_|_|_|_
+ 2 X|_|_|_|_
+ 3 _|X|_|_|_
+ 4 O|O|X| | 
+
+Winner of round: Player1 X
+Player2 O -> Points: 0
+Player1 X -> Points: 3
+
+Enter any sign to continue game.
+[H[2J             
+   0 1 2 3 4 
+ 0 _|_|_|_|_
+ 1 _|_|_|_|_
+ 2 _|_|_|_|_
+ 3 _|_|_|_|_
+ 4  | | | | 
+
+Enter the coordinates:
+Player:  Player2 O
+Enter x coordinate:
+Enter y coordinate:
+[H[2J             
+   0 1 2 3 4 
+ 0 _|_|_|_|_
+ 1 O|_|_|_|_
+ 2 _|_|_|_|_
+ 3 _|_|_|_|_
+ 4  | | | | 
+
+Enter the coordinates:
+Player:  Player1 X
+Enter x coordinate:
+Enter y coordinate:
+[H[2J             
+   0 1 2 3 4 
+ 0 _|_|_|_|_
+ 1 O|_|_|_|_
+ 2 _|_|_|_|_
+ 3 _|_|_|_|_
+ 4 X| | | | 
+
+Enter the coordinates:
+Player:  Player2 O
+Enter x coordinate:
+Enter y coordinate:
+[H[2J             
+   0 1 2 3 4 
+ 0 _|_|_|_|_
+ 1 O|_|_|_|_
+ 2 _|O|_|_|_
+ 3 _|_|_|_|_
+ 4 X| | | | 
+
+Enter the coordinates:
+Player:  Player1 X
+Enter x coordinate:
+Enter y coordinate:
+[H[2J             
+   0 1 2 3 4 
+ 0 _|_|_|_|_
+ 1 O|_|_|_|_
+ 2 _|O|_|_|_
+ 3 _|_|_|_|_
+ 4 X|X| | | 
+
+Enter the coordinates:
+Player:  Player2 O
+Enter x coordinate:
+Enter y coordinate:
+[H[2JFound winning board combination!
+             
+   0 1 2 3 4 
+ 0 _|_|_|_|_
+ 1 O|_|_|_|_
+ 2 _|O|_|_|_
+ 3 _|_|O|_|_
+ 4 X|X| | | 
+
+Winner of round: Player2 O
+Player2 O -> Points: 3
+Player1 X -> Points: 3
+
+Enter any sign to continue game.
+[H[2J             
+   0 1 2 3 4 
+ 0 _|_|_|_|_
+ 1 _|_|_|_|_
+ 2 _|_|_|_|_
+ 3 _|_|_|_|_
+ 4  | | | | 
+
+Enter the coordinates:
+Player:  Player1 X
+Enter x coordinate:
+Enter y coordinate:
+[H[2J             
+   0 1 2 3 4 
+ 0 _|_|_|_|_
+ 1 _|_|_|_|_
+ 2 _|X|_|_|_
+ 3 _|_|_|_|_
+ 4  | | | | 
+
+Enter the coordinates:
+Player:  Player2 O
+Enter x coordinate:
+Enter y coordinate:
+[H[2J             
+   0 1 2 3 4 
+ 0 _|_|_|_|_
+ 1 _|_|_|_|_
+ 2 _|X|_|_|_
+ 3 _|_|_|_|_
+ 4 O| | | | 
+
+Enter the coordinates:
+Player:  Player1 X
+Enter x coordinate:
+Enter y coordinate:
+[H[2J             
+   0 1 2 3 4 
+ 0 _|_|_|_|_
+ 1 _|_|_|_|_
+ 2 _|X|_|_|_
+ 3 _|_|X|_|_
+ 4 O| | | | 
+
+Enter the coordinates:
+Player:  Player2 O
+Enter x coordinate:
+Enter y coordinate:
+[H[2J             
+   0 1 2 3 4 
+ 0 _|_|_|_|_
+ 1 _|_|_|_|_
+ 2 _|X|_|_|_
+ 3 _|_|X|_|_
+ 4 O|O| | | 
+
+Enter the coordinates:
+Player:  Player1 X
+Enter x coordinate:
+Enter y coordinate:
+[H[2JFound winning board combination!
+             
+   0 1 2 3 4 
+ 0 _|_|_|_|_
+ 1 _|_|_|_|_
+ 2 _|X|_|_|_
+ 3 _|_|X|_|_
+ 4 O|O| |X| 
+
+Winner of round: Player1 X
+Player2 O -> Points: 3
+Player1 X -> Points: 6
+
+Enter any sign to continue game.
+[H[2JCongratulations! Game winner: Player1 X
+Summary:
+Player2 O -> Points: 3
+Player1 X -> Points: 6
+
+
+------------------------------------------------------------------
+[H[2JSelect language:
+1 - English
+2 - Polish
+[H[2JEnter Player name with sign X
+[H[2JEnter Player name with sign O
+[H[2JEnter board size (for this version it is form 3 to 40 included) and confirm by entering 0. Printed board should help you to suits board size to your console: 
+         
+   0 1 2 
+ 0 _|_|_
+ 1 _|_|_
+ 2  | | 
+Enter a number and confirm by entering 0:
+[H[2JEnter board size (for this version it is form 3 to 40 included) and confirm by entering 0. Printed board should help you to suits board size to your console: 
+             
+   0 1 2 3 4 
+ 0 _|_|_|_|_
+ 1 _|_|_|_|_
+ 2 _|_|_|_|_
+ 3 _|_|_|_|_
+ 4  | | | | 
+Enter a number and confirm by entering 0:
+[H[2J[H[2JEnter a wining combination size. It should be greater or equals 3 and less or equals board size.
+[H[2J[H[2JChoose which player starts, by enter a proper number.
+0 -  Player1 X
+1 -  Player2 O
+[H[2JStats player: Player1 X
+[H[2J             
+   0 1 2 3 4 
+ 0 _|_|_|_|_
+ 1 _|_|_|_|_
+ 2 _|_|_|_|_
+ 3 _|_|_|_|_
+ 4  | | | | 
+
+Enter the coordinates:
+Player:  Player1 X
+Enter x coordinate:
+Enter y coordinate:
+[H[2J             
+   0 1 2 3 4 
+ 0 _|_|_|_|_
+ 1 _|_|_|_|_
+ 2 _|_|_|_|X
+ 3 _|_|_|_|_
+ 4  | | | | 
+
+Enter the coordinates:
+Player:  Player2 O
+Enter x coordinate:
+Enter y coordinate:
+[H[2J             
+   0 1 2 3 4 
+ 0 _|_|_|_|_
+ 1 _|_|_|_|_
+ 2 _|_|_|_|X
+ 3 _|_|_|_|_
+ 4 O| | | | 
+
+Enter the coordinates:
+Player:  Player1 X
+Enter x coordinate:
+Enter y coordinate:
+[H[2J             
+   0 1 2 3 4 
+ 0 _|_|_|_|_
+ 1 _|_|_|X|_
+ 2 _|_|_|_|X
+ 3 _|_|_|_|_
+ 4 O| | | | 
+
+Enter the coordinates:
+Player:  Player2 O
+Enter x coordinate:
+Enter y coordinate:
+[H[2J             
+   0 1 2 3 4 
+ 0 _|_|_|_|_
+ 1 _|_|_|X|_
+ 2 _|_|_|_|X
+ 3 _|_|_|_|_
+ 4 O|O| | | 
+
+Enter the coordinates:
+Player:  Player1 X
+Enter x coordinate:
+Enter y coordinate:
+[H[2JFound winning board combination!
+             
+   0 1 2 3 4 
+ 0 _|_|X|_|_
+ 1 _|_|_|X|_
+ 2 _|_|_|_|X
+ 3 _|_|_|_|_
+ 4 O|O| | | 
+
+Winner of round: Player1 X
+Player2 O -> Points: 0
+Player1 X -> Points: 3
+
+Enter any sign to continue game.
+[H[2J             
+   0 1 2 3 4 
+ 0 _|_|_|_|_
+ 1 _|_|_|_|_
+ 2 _|_|_|_|_
+ 3 _|_|_|_|_
+ 4  | | | | 
+
+Enter the coordinates:
+Player:  Player2 O
+Enter x coordinate:
+Enter y coordinate:
+[H[2J             
+   0 1 2 3 4 
+ 0 _|_|_|_|_
+ 1 _|_|_|_|_
+ 2 _|_|_|_|_
+ 3 _|_|_|_|O
+ 4  | | | | 
+
+Enter the coordinates:
+Player:  Player1 X
+Enter x coordinate:
+Enter y coordinate:
+[H[2J             
+   0 1 2 3 4 
+ 0 _|_|_|_|_
+ 1 _|_|_|_|_
+ 2 _|_|_|_|_
+ 3 _|_|_|_|O
+ 4 X| | | | 
+
+Enter the coordinates:
+Player:  Player2 O
+Enter x coordinate:
+Enter y coordinate:
+[H[2J             
+   0 1 2 3 4 
+ 0 _|_|_|_|_
+ 1 _|_|_|_|_
+ 2 _|_|_|O|_
+ 3 _|_|_|_|O
+ 4 X| | | | 
+
+Enter the coordinates:
+Player:  Player1 X
+Enter x coordinate:
+Enter y coordinate:
+[H[2J             
+   0 1 2 3 4 
+ 0 _|_|_|_|_
+ 1 _|_|_|_|_
+ 2 _|_|_|O|_
+ 3 _|_|_|_|O
+ 4 X|X| | | 
+
+Enter the coordinates:
+Player:  Player2 O
+Enter x coordinate:
+Enter y coordinate:
+[H[2JFound winning board combination!
+             
+   0 1 2 3 4 
+ 0 _|_|_|_|_
+ 1 _|_|O|_|_
+ 2 _|_|_|O|_
+ 3 _|_|_|_|O
+ 4 X|X| | | 
+
+Winner of round: Player2 O
+Player2 O -> Points: 3
+Player1 X -> Points: 3
+
+Enter any sign to continue game.
+[H[2J             
+   0 1 2 3 4 
+ 0 _|_|_|_|_
+ 1 _|_|_|_|_
+ 2 _|_|_|_|_
+ 3 _|_|_|_|_
+ 4  | | | | 
+
+Enter the coordinates:
+Player:  Player1 X
+Enter x coordinate:
+Enter y coordinate:
+[H[2J             
+   0 1 2 3 4 
+ 0 _|_|_|_|_
+ 1 _|_|_|_|_
+ 2 _|_|_|X|_
+ 3 _|_|_|_|_
+ 4  | | | | 
+
+Enter the coordinates:
+Player:  Player2 O
+Enter x coordinate:
+Enter y coordinate:
+[H[2J             
+   0 1 2 3 4 
+ 0 _|_|_|_|_
+ 1 _|_|_|_|_
+ 2 _|_|_|X|_
+ 3 _|_|_|_|_
+ 4 O| | | | 
+
+Enter the coordinates:
+Player:  Player1 X
+Enter x coordinate:
+Enter y coordinate:
+[H[2J             
+   0 1 2 3 4 
+ 0 _|_|_|_|_
+ 1 _|_|X|_|_
+ 2 _|_|_|X|_
+ 3 _|_|_|_|_
+ 4 O| | | | 
+
+Enter the coordinates:
+Player:  Player2 O
+Enter x coordinate:
+Enter y coordinate:
+[H[2J             
+   0 1 2 3 4 
+ 0 _|_|_|_|_
+ 1 _|_|X|_|_
+ 2 _|_|_|X|_
+ 3 _|_|_|_|_
+ 4 O|O| | | 
+
+Enter the coordinates:
+Player:  Player1 X
+Enter x coordinate:
+Enter y coordinate:
+[H[2JFound winning board combination!
+             
+   0 1 2 3 4 
+ 0 _|X|_|_|_
+ 1 _|_|X|_|_
+ 2 _|_|_|X|_
+ 3 _|_|_|_|_
+ 4 O|O| | | 
+
+Winner of round: Player1 X
+Player2 O -> Points: 3
+Player1 X -> Points: 6
+
+Enter any sign to continue game.
+[H[2JCongratulations! Game winner: Player1 X
+Summary:
+Player2 O -> Points: 3
+Player1 X -> Points: 6
+
+
+------------------------------------------------------------------
+[H[2JSelect language:
+1 - English
+2 - Polish
+[H[2JEnter Player name with sign X
+[H[2JEnter Player name with sign O
+[H[2JEnter board size (for this version it is form 3 to 40 included) and confirm by entering 0. Printed board should help you to suits board size to your console: 
+         
+   0 1 2 
+ 0 _|_|_
+ 1 _|_|_
+ 2  | | 
+Enter a number and confirm by entering 0:
+[H[2JEnter board size (for this version it is form 3 to 40 included) and confirm by entering 0. Printed board should help you to suits board size to your console: 
+             
+   0 1 2 3 4 
+ 0 _|_|_|_|_
+ 1 _|_|_|_|_
+ 2 _|_|_|_|_
+ 3 _|_|_|_|_
+ 4  | | | | 
+Enter a number and confirm by entering 0:
+[H[2J[H[2JEnter a wining combination size. It should be greater or equals 3 and less or equals board size.
+[H[2J[H[2JChoose which player starts, by enter a proper number.
+0 -  Player1 X
+1 -  Player2 O
+[H[2JStats player: Player1 X
+[H[2J             
+   0 1 2 3 4 
+ 0 _|_|_|_|_
+ 1 _|_|_|_|_
+ 2 _|_|_|_|_
+ 3 _|_|_|_|_
+ 4  | | | | 
+
+Enter the coordinates:
+Player:  Player1 X
+Enter x coordinate:
+Enter y coordinate:
+[H[2J             
+   0 1 2 3 4 
+ 0 _|_|_|_|_
+ 1 _|_|_|_|_
+ 2 _|_|_|_|_
+ 3 _|_|_|_|_
+ 4  | | | |X
+
+Enter the coordinates:
+Player:  Player2 O
+Enter x coordinate:
+Enter y coordinate:
+[H[2J             
+   0 1 2 3 4 
+ 0 _|_|_|_|_
+ 1 _|_|_|_|_
+ 2 _|_|_|_|_
+ 3 _|_|_|_|_
+ 4 O| | | |X
+
+Enter the coordinates:
+Player:  Player1 X
+Enter x coordinate:
+Enter y coordinate:
+[H[2J             
+   0 1 2 3 4 
+ 0 _|_|_|_|_
+ 1 _|_|_|_|_
+ 2 _|_|_|_|_
+ 3 _|_|_|X|_
+ 4 O| | | |X
+
+Enter the coordinates:
+Player:  Player2 O
+Enter x coordinate:
+Enter y coordinate:
+[H[2J             
+   0 1 2 3 4 
+ 0 _|_|_|_|_
+ 1 _|_|_|_|_
+ 2 _|_|_|_|_
+ 3 _|_|_|X|_
+ 4 O|O| | |X
+
+Enter the coordinates:
+Player:  Player1 X
+Enter x coordinate:
+Enter y coordinate:
+[H[2JFound winning board combination!
+             
+   0 1 2 3 4 
+ 0 _|_|_|_|_
+ 1 _|_|_|_|_
+ 2 _|_|X|_|_
+ 3 _|_|_|X|_
+ 4 O|O| | |X
+
+Winner of round: Player1 X
+Player2 O -> Points: 0
+Player1 X -> Points: 3
+
+Enter any sign to continue game.
+[H[2J             
+   0 1 2 3 4 
+ 0 _|_|_|_|_
+ 1 _|_|_|_|_
+ 2 _|_|_|_|_
+ 3 _|_|_|_|_
+ 4  | | | | 
+
+Enter the coordinates:
+Player:  Player2 O
+Enter x coordinate:
+Enter y coordinate:
+[H[2J             
+   0 1 2 3 4 
+ 0 _|_|_|_|_
+ 1 _|_|_|_|_
+ 2 _|_|_|_|_
+ 3 _|_|_|O|_
+ 4  | | | | 
+
+Enter the coordinates:
+Player:  Player1 X
+Enter x coordinate:
+Enter y coordinate:
+[H[2J             
+   0 1 2 3 4 
+ 0 _|_|_|_|_
+ 1 _|_|_|_|_
+ 2 _|_|_|_|_
+ 3 _|_|_|O|_
+ 4 X| | | | 
+
+Enter the coordinates:
+Player:  Player2 O
+Enter x coordinate:
+Enter y coordinate:
+[H[2J             
+   0 1 2 3 4 
+ 0 _|_|_|_|_
+ 1 _|_|_|_|_
+ 2 _|_|O|_|_
+ 3 _|_|_|O|_
+ 4 X| | | | 
+
+Enter the coordinates:
+Player:  Player1 X
+Enter x coordinate:
+Enter y coordinate:
+[H[2J             
+   0 1 2 3 4 
+ 0 _|_|_|_|_
+ 1 _|_|_|_|_
+ 2 _|_|O|_|_
+ 3 _|_|_|O|_
+ 4 X|X| | | 
+
+Enter the coordinates:
+Player:  Player2 O
+Enter x coordinate:
+Enter y coordinate:
+[H[2JFound winning board combination!
+             
+   0 1 2 3 4 
+ 0 _|_|_|_|_
+ 1 _|O|_|_|_
+ 2 _|_|O|_|_
+ 3 _|_|_|O|_
+ 4 X|X| | | 
+
+Winner of round: Player2 O
+Player2 O -> Points: 3
+Player1 X -> Points: 3
+
+Enter any sign to continue game.
+[H[2J             
+   0 1 2 3 4 
+ 0 _|_|_|_|_
+ 1 _|_|_|_|_
+ 2 _|_|_|_|_
+ 3 _|_|_|_|_
+ 4  | | | | 
+
+Enter the coordinates:
+Player:  Player1 X
+Enter x coordinate:
+Enter y coordinate:
+[H[2J             
+   0 1 2 3 4 
+ 0 _|_|_|_|_
+ 1 _|_|_|_|_
+ 2 _|_|X|_|_
+ 3 _|_|_|_|_
+ 4  | | | | 
+
+Enter the coordinates:
+Player:  Player2 O
+Enter x coordinate:
+Enter y coordinate:
+[H[2J             
+   0 1 2 3 4 
+ 0 _|_|_|_|_
+ 1 _|_|_|_|_
+ 2 _|_|X|_|_
+ 3 _|_|_|_|_
+ 4 O| | | | 
+
+Enter the coordinates:
+Player:  Player1 X
+Enter x coordinate:
+Enter y coordinate:
+[H[2J             
+   0 1 2 3 4 
+ 0 _|_|_|_|_
+ 1 _|X|_|_|_
+ 2 _|_|X|_|_
+ 3 _|_|_|_|_
+ 4 O| | | | 
+
+Enter the coordinates:
+Player:  Player2 O
+Enter x coordinate:
+Enter y coordinate:
+[H[2J             
+   0 1 2 3 4 
+ 0 _|_|_|_|_
+ 1 _|X|_|_|_
+ 2 _|_|X|_|_
+ 3 _|_|_|_|_
+ 4 O|O| | | 
+
+Enter the coordinates:
+Player:  Player1 X
+Enter x coordinate:
+Enter y coordinate:
+[H[2JFound winning board combination!
+             
+   0 1 2 3 4 
+ 0 X|_|_|_|_
+ 1 _|X|_|_|_
+ 2 _|_|X|_|_
+ 3 _|_|_|_|_
+ 4 O|O| | | 
+
+Winner of round: Player1 X
+Player2 O -> Points: 3
+Player1 X -> Points: 6
+
+Enter any sign to continue game.
+[H[2JCongratulations! Game winner: Player1 X
+Summary:
+Player2 O -> Points: 3
+Player1 X -> Points: 6
+
+
+------------------------------------------------------------------
+[H[2JSelect language:
+1 - English
+2 - Polish
+[H[2JEnter Player name with sign X
+[H[2JEnter Player name with sign O
+[H[2JEnter board size (for this version it is form 3 to 40 included) and confirm by entering 0. Printed board should help you to suits board size to your console: 
+         
+   0 1 2 
+ 0 _|_|_
+ 1 _|_|_
+ 2  | | 
+Enter a number and confirm by entering 0:
+[H[2JEnter board size (for this version it is form 3 to 40 included) and confirm by entering 0. Printed board should help you to suits board size to your console: 
+         
+   0 1 2 
+ 0 _|_|_
+ 1 _|_|_
+ 2  | | 
+Enter a number and confirm by entering 0:
+[H[2J[H[2JEnter a wining combination size. It should be greater or equals 3 and less or equals board size.
+[H[2J[H[2JChoose which player starts, by enter a proper number.
+0 -  Player1 X
+1 -  Player2 O
+[H[2JStats player: Player1 X
+[H[2J         
+   0 1 2 
+ 0 _|_|_
+ 1 _|_|_
+ 2  | | 
+
+Enter the coordinates:
+Player:  Player1 X
+Enter x coordinate:
+Enter y coordinate:
+[H[2J         
+   0 1 2 
+ 0 _|_|X
+ 1 _|_|_
+ 2  | | 
+
+Enter the coordinates:
+Player:  Player2 O
+Enter x coordinate:
+Enter y coordinate:
+[H[2J         
+   0 1 2 
+ 0 O|_|X
+ 1 _|_|_
+ 2  | | 
+
+Enter the coordinates:
+Player:  Player1 X
+Enter x coordinate:
+Enter y coordinate:
+[H[2J         
+   0 1 2 
+ 0 O|_|X
+ 1 _|X|_
+ 2  | | 
+
+Enter the coordinates:
+Player:  Player2 O
+Enter x coordinate:
+Enter y coordinate:
+[H[2J         
+   0 1 2 
+ 0 O|O|X
+ 1 _|X|_
+ 2  | | 
+
+Enter the coordinates:
+Player:  Player1 X
+Enter x coordinate:
+Enter y coordinate:
+[H[2JFound winning board combination!
+         
+   0 1 2 
+ 0 O|O|X
+ 1 _|X|_
+ 2 X| | 
+
+Winner of round: Player1 X
+Player2 O -> Points: 0
+Player1 X -> Points: 3
+
+Enter any sign to continue game.
+[H[2J         
+   0 1 2 
+ 0 _|_|_
+ 1 _|_|_
+ 2  | | 
+
+Enter the coordinates:
+Player:  Player2 O
+Enter x coordinate:
+Enter y coordinate:
+[H[2J         
+   0 1 2 
+ 0 _|_|O
+ 1 _|_|_
+ 2  | | 
+
+Enter the coordinates:
+Player:  Player1 X
+Enter x coordinate:
+Enter y coordinate:
+[H[2J         
+   0 1 2 
+ 0 X|_|O
+ 1 _|_|_
+ 2  | | 
+
+Enter the coordinates:
+Player:  Player2 O
+Enter x coordinate:
+Enter y coordinate:
+[H[2J         
+   0 1 2 
+ 0 X|_|O
+ 1 _|O|_
+ 2  | | 
+
+Enter the coordinates:
+Player:  Player1 X
+Enter x coordinate:
+Enter y coordinate:
+[H[2J         
+   0 1 2 
+ 0 X|X|O
+ 1 _|O|_
+ 2  | | 
+
+Enter the coordinates:
+Player:  Player2 O
+Enter x coordinate:
+Enter y coordinate:
+[H[2JFound winning board combination!
+         
+   0 1 2 
+ 0 X|X|O
+ 1 _|O|_
+ 2 O| | 
+
+Winner of round: Player2 O
+Player2 O -> Points: 3
+Player1 X -> Points: 3
+
+Enter any sign to continue game.
+[H[2J         
+   0 1 2 
+ 0 _|_|_
+ 1 _|_|_
+ 2  | | 
+
+Enter the coordinates:
+Player:  Player1 X
+Enter x coordinate:
+Enter y coordinate:
+[H[2J         
+   0 1 2 
+ 0 _|_|X
+ 1 _|_|_
+ 2  | | 
+
+Enter the coordinates:
+Player:  Player2 O
+Enter x coordinate:
+Enter y coordinate:
+[H[2J         
+   0 1 2 
+ 0 O|_|X
+ 1 _|_|_
+ 2  | | 
+
+Enter the coordinates:
+Player:  Player1 X
+Enter x coordinate:
+Enter y coordinate:
+[H[2J         
+   0 1 2 
+ 0 O|_|X
+ 1 _|X|_
+ 2  | | 
+
+Enter the coordinates:
+Player:  Player2 O
+Enter x coordinate:
+Enter y coordinate:
+[H[2J         
+   0 1 2 
+ 0 O|O|X
+ 1 _|X|_
+ 2  | | 
+
+Enter the coordinates:
+Player:  Player1 X
+Enter x coordinate:
+Enter y coordinate:
+[H[2JFound winning board combination!
+         
+   0 1 2 
+ 0 O|O|X
+ 1 _|X|_
+ 2 X| | 
+
+Winner of round: Player1 X
+Player2 O -> Points: 3
+Player1 X -> Points: 6
+
+Enter any sign to continue game.
+[H[2JCongratulations! Game winner: Player1 X
+Summary:
+Player2 O -> Points: 3
+Player1 X -> Points: 6
+
+
+------------------------------------------------------------------
+[H[2JSelect language:
+1 - English
+2 - Polish
+[H[2JEnter Player name with sign X
+[H[2JEnter Player name with sign O
+[H[2JEnter board size (for this version it is form 3 to 40 included) and confirm by entering 0. Printed board should help you to suits board size to your console: 
+         
+   0 1 2 
+ 0 _|_|_
+ 1 _|_|_
+ 2  | | 
+Enter a number and confirm by entering 0:
+[H[2JEnter board size (for this version it is form 3 to 40 included) and confirm by entering 0. Printed board should help you to suits board size to your console: 
+         
+   0 1 2 
+ 0 _|_|_
+ 1 _|_|_
+ 2  | | 
+Enter a number and confirm by entering 0:
+[H[2J[H[2JEnter a wining combination size. It should be greater or equals 3 and less or equals board size.
+[H[2J[H[2JChoose which player starts, by enter a proper number.
+0 -  Player1 X
+1 -  Player2 O
+[H[2JStats player: Player1 X
+[H[2J         
+   0 1 2 
+ 0 _|_|_
+ 1 _|_|_
+ 2  | | 
+
+Enter the coordinates:
+Player:  Player1 X
+Enter x coordinate:
+Enter y coordinate:
+[H[2J         
+   0 1 2 
+ 0 _|_|_
+ 1 _|_|_
+ 2  | |X
+
+Enter the coordinates:
+Player:  Player2 O
+Enter x coordinate:
+Enter y coordinate:
+[H[2J         
+   0 1 2 
+ 0 _|_|_
+ 1 _|_|_
+ 2 O| |X
+
+Enter the coordinates:
+Player:  Player1 X
+Enter x coordinate:
+Enter y coordinate:
+[H[2J         
+   0 1 2 
+ 0 _|_|_
+ 1 _|X|_
+ 2 O| |X
+
+Enter the coordinates:
+Player:  Player2 O
+Enter x coordinate:
+Enter y coordinate:
+[H[2J         
+   0 1 2 
+ 0 _|_|_
+ 1 _|X|_
+ 2 O|O|X
+
+Enter the coordinates:
+Player:  Player1 X
+Enter x coordinate:
+Enter y coordinate:
+[H[2JFound winning board combination!
+         
+   0 1 2 
+ 0 X|_|_
+ 1 _|X|_
+ 2 O|O|X
+
+Winner of round: Player1 X
+Player2 O -> Points: 0
+Player1 X -> Points: 3
+
+Enter any sign to continue game.
+[H[2J         
+   0 1 2 
+ 0 _|_|_
+ 1 _|_|_
+ 2  | | 
+
+Enter the coordinates:
+Player:  Player2 O
+Enter x coordinate:
+Enter y coordinate:
+[H[2J         
+   0 1 2 
+ 0 _|_|_
+ 1 _|_|_
+ 2  | |O
+
+Enter the coordinates:
+Player:  Player1 X
+Enter x coordinate:
+Enter y coordinate:
+[H[2J         
+   0 1 2 
+ 0 _|_|_
+ 1 _|_|_
+ 2 X| |O
+
+Enter the coordinates:
+Player:  Player2 O
+Enter x coordinate:
+Enter y coordinate:
+[H[2J         
+   0 1 2 
+ 0 _|_|_
+ 1 _|O|_
+ 2 X| |O
+
+Enter the coordinates:
+Player:  Player1 X
+Enter x coordinate:
+Enter y coordinate:
+[H[2J         
+   0 1 2 
+ 0 _|_|_
+ 1 _|O|_
+ 2 X|X|O
+
+Enter the coordinates:
+Player:  Player2 O
+Enter x coordinate:
+Enter y coordinate:
+[H[2JFound winning board combination!
+         
+   0 1 2 
+ 0 O|_|_
+ 1 _|O|_
+ 2 X|X|O
+
+Winner of round: Player2 O
+Player2 O -> Points: 3
+Player1 X -> Points: 3
+
+Enter any sign to continue game.
+[H[2J         
+   0 1 2 
+ 0 _|_|_
+ 1 _|_|_
+ 2  | | 
+
+Enter the coordinates:
+Player:  Player1 X
+Enter x coordinate:
+Enter y coordinate:
+[H[2J         
+   0 1 2 
+ 0 _|_|_
+ 1 _|_|_
+ 2  | |X
+
+Enter the coordinates:
+Player:  Player2 O
+Enter x coordinate:
+Enter y coordinate:
+[H[2J         
+   0 1 2 
+ 0 _|_|_
+ 1 _|_|_
+ 2 O| |X
+
+Enter the coordinates:
+Player:  Player1 X
+Enter x coordinate:
+Enter y coordinate:
+[H[2J         
+   0 1 2 
+ 0 _|_|_
+ 1 _|X|_
+ 2 O| |X
+
+Enter the coordinates:
+Player:  Player2 O
+Enter x coordinate:
+Enter y coordinate:
+[H[2J         
+   0 1 2 
+ 0 _|_|_
+ 1 _|X|_
+ 2 O|O|X
+
+Enter the coordinates:
+Player:  Player1 X
+Enter x coordinate:
+Enter y coordinate:
+[H[2JFound winning board combination!
+         
+   0 1 2 
+ 0 X|_|_
+ 1 _|X|_
+ 2 O|O|X
+
+Winner of round: Player1 X
+Player2 O -> Points: 3
+Player1 X -> Points: 6
+
+Enter any sign to continue game.
+[H[2JCongratulations! Game winner: Player1 X
+Summary:
+Player2 O -> Points: 3
+Player1 X -> Points: 6
+
+
+------------------------------------------------------------------
+[H[2JSelect language:
+1 - English
+2 - Polish
+[H[2JEnter Player name with sign X
+[H[2JEnter Player name with sign O
+[H[2JEnter board size (for this version it is form 3 to 40 included) and confirm by entering 0. Printed board should help you to suits board size to your console: 
+         
+   0 1 2 
+ 0 _|_|_
+ 1 _|_|_
+ 2  | | 
+Enter a number and confirm by entering 0:
+[H[2JEnter board size (for this version it is form 3 to 40 included) and confirm by entering 0. Printed board should help you to suits board size to your console: 
+         
+   0 1 2 
+ 0 _|_|_
+ 1 _|_|_
+ 2  | | 
+Enter a number and confirm by entering 0:
+[H[2J[H[2JEnter a wining combination size. It should be greater or equals 3 and less or equals board size.
+[H[2J[H[2JChoose which player starts, by enter a proper number.
+0 -  Player1 X
+1 -  Player2 O
+[H[2JStats player: Player1 X
+[H[2J         
+   0 1 2 
+ 0 _|_|_
+ 1 _|_|_
+ 2  | | 
+
+Enter the coordinates:
+Player:  Player1 X
+Enter x coordinate:
+Enter y coordinate:
+[H[2J         
+   0 1 2 
+ 0 _|_|_
+ 1 _|_|_
+ 2  | |X
+
+Enter the coordinates:
+Player:  Player2 O
+Enter x coordinate:
+Enter y coordinate:
+[H[2J         
+   0 1 2 
+ 0 _|_|_
+ 1 _|_|_
+ 2 O| |X
+
+Enter the coordinates:
+Player:  Player1 X
+Enter x coordinate:
+Enter y coordinate:
+[H[2J         
+   0 1 2 
+ 0 _|_|_
+ 1 _|X|_
+ 2 O| |X
+
+Enter the coordinates:
+Player:  Player2 O
+Enter x coordinate:
+Enter y coordinate:
+[H[2J         
+   0 1 2 
+ 0 _|_|_
+ 1 _|X|_
+ 2 O|O|X
+
+Enter the coordinates:
+Player:  Player1 X
+Enter x coordinate:
+Enter y coordinate:
+[H[2JFound winning board combination!
+         
+   0 1 2 
+ 0 X|_|_
+ 1 _|X|_
+ 2 O|O|X
+
+Winner of round: Player1 X
+Player2 O -> Points: 0
+Player1 X -> Points: 3
+
+Enter any sign to continue game.
+[H[2J         
+   0 1 2 
+ 0 _|_|_
+ 1 _|_|_
+ 2  | | 
+
+Enter the coordinates:
+Player:  Player2 O
+Enter x coordinate:
+Enter y coordinate:
+[H[2J         
+   0 1 2 
+ 0 _|_|_
+ 1 _|_|_
+ 2  | |O
+
+Enter the coordinates:
+Player:  Player1 X
+Enter x coordinate:
+Enter y coordinate:
+[H[2J         
+   0 1 2 
+ 0 _|_|_
+ 1 _|_|_
+ 2 X| |O
+
+Enter the coordinates:
+Player:  Player2 O
+Enter x coordinate:
+Enter y coordinate:
+[H[2J         
+   0 1 2 
+ 0 _|_|_
+ 1 _|O|_
+ 2 X| |O
+
+Enter the coordinates:
+Player:  Player1 X
+Enter x coordinate:
+Enter y coordinate:
+[H[2J         
+   0 1 2 
+ 0 _|_|_
+ 1 _|O|_
+ 2 X|X|O
+
+Enter the coordinates:
+Player:  Player2 O
+Enter x coordinate:
+Enter y coordinate:
+[H[2JFound winning board combination!
+         
+   0 1 2 
+ 0 O|_|_
+ 1 _|O|_
+ 2 X|X|O
+
+Winner of round: Player2 O
+Player2 O -> Points: 3
+Player1 X -> Points: 3
+
+Enter any sign to continue game.
+[H[2J         
+   0 1 2 
+ 0 _|_|_
+ 1 _|_|_
+ 2  | | 
+
+Enter the coordinates:
+Player:  Player1 X
+Enter x coordinate:
+Enter y coordinate:
+[H[2J         
+   0 1 2 
+ 0 _|_|_
+ 1 _|_|_
+ 2  | |X
+
+Enter the coordinates:
+Player:  Player2 O
+Enter x coordinate:
+Enter y coordinate:
+[H[2J         
+   0 1 2 
+ 0 _|_|_
+ 1 _|_|_
+ 2 O| |X
+
+Enter the coordinates:
+Player:  Player1 X
+Enter x coordinate:
+Enter y coordinate:
+[H[2J         
+   0 1 2 
+ 0 _|_|_
+ 1 _|X|_
+ 2 O| |X
+
+Enter the coordinates:
+Player:  Player2 O
+Enter x coordinate:
+Enter y coordinate:
+[H[2J         
+   0 1 2 
+ 0 _|_|_
+ 1 _|X|_
+ 2 O|O|X
+
+Enter the coordinates:
+Player:  Player1 X
+Enter x coordinate:
+Enter y coordinate:
+[H[2JFound winning board combination!
+         
+   0 1 2 
+ 0 X|_|_
+ 1 _|X|_
+ 2 O|O|X
+
+Winner of round: Player1 X
+Player2 O -> Points: 3
+Player1 X -> Points: 6
+
+Enter any sign to continue game.
+[H[2JCongratulations! Game winner: Player1 X
+Summary:
+Player2 O -> Points: 3
+Player1 X -> Points: 6
+
+
+------------------------------------------------------------------
+[H[2JSelect language:
+1 - English
+2 - Polish
+[H[2JEnter Player name with sign X
+[H[2JEnter Player name with sign O
+[H[2JEnter board size (for this version it is form 3 to 40 included) and confirm by entering 0. Printed board should help you to suits board size to your console: 
+         
+   0 1 2 
+ 0 _|_|_
+ 1 _|_|_
+ 2  | | 
+Enter a number and confirm by entering 0:
+[H[2JEnter board size (for this version it is form 3 to 40 included) and confirm by entering 0. Printed board should help you to suits board size to your console: 
+                       1 1 1 1 1 
+   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 
+ 0 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 1 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 2 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 3 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 4 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 5 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 6 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 7 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 8 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 9 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+10 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+11 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+12 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+13 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+14  | | | | | | | | | | | | | | 
+Enter a number and confirm by entering 0:
+[H[2J[H[2JEnter a wining combination size. It should be greater or equals 3 and less or equals board size.
+[H[2J[H[2JChoose which player starts, by enter a proper number.
+0 -  Player1 X
+1 -  Player2 O
+[H[2JStats player: Player1 X
+[H[2J                       1 1 1 1 1 
+   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 
+ 0 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 1 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 2 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 3 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 4 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 5 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 6 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 7 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 8 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 9 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+10 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+11 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+12 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+13 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+14  | | | | | | | | | | | | | | 
+
+Enter the coordinates:
+Player:  Player1 X
+Enter x coordinate:
+Enter y coordinate:
+[H[2J                       1 1 1 1 1 
+   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 
+ 0 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 1 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 2 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 3 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 4 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 5 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 6 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 7 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 8 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 9 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+10 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+11 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+12 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+13 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+14  | | | | | | | | | | | | | |X
+
+Enter the coordinates:
+Player:  Player2 O
+Enter x coordinate:
+Enter y coordinate:
+[H[2J                       1 1 1 1 1 
+   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 
+ 0 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 1 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 2 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 3 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 4 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 5 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 6 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 7 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 8 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 9 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+10 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+11 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+12 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+13 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+14 O| | | | | | | | | | | | | |X
+
+Enter the coordinates:
+Player:  Player1 X
+Enter x coordinate:
+Enter y coordinate:
+[H[2J                       1 1 1 1 1 
+   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 
+ 0 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 1 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 2 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 3 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 4 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 5 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 6 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 7 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 8 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 9 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+10 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+11 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+12 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+13 _|_|_|_|_|_|_|_|_|_|_|_|_|X|_
+14 O| | | | | | | | | | | | | |X
+
+Enter the coordinates:
+Player:  Player2 O
+Enter x coordinate:
+Enter y coordinate:
+[H[2J                       1 1 1 1 1 
+   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 
+ 0 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 1 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 2 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 3 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 4 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 5 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 6 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 7 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 8 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 9 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+10 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+11 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+12 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+13 _|_|_|_|_|_|_|_|_|_|_|_|_|X|_
+14 O|O| | | | | | | | | | | | |X
+
+Enter the coordinates:
+Player:  Player1 X
+Enter x coordinate:
+Enter y coordinate:
+[H[2J                       1 1 1 1 1 
+   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 
+ 0 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 1 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 2 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 3 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 4 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 5 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 6 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 7 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 8 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 9 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+10 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+11 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+12 _|_|_|_|_|_|_|_|_|_|_|_|X|_|_
+13 _|_|_|_|_|_|_|_|_|_|_|_|_|X|_
+14 O|O| | | | | | | | | | | | |X
+
+Enter the coordinates:
+Player:  Player2 O
+Enter x coordinate:
+Enter y coordinate:
+[H[2J                       1 1 1 1 1 
+   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 
+ 0 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 1 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 2 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 3 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 4 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 5 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 6 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 7 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 8 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 9 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+10 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+11 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+12 _|_|_|_|_|_|_|_|_|_|_|_|X|_|_
+13 _|_|_|_|_|_|_|_|_|_|_|_|_|X|_
+14 O|O|O| | | | | | | | | | | |X
+
+Enter the coordinates:
+Player:  Player1 X
+Enter x coordinate:
+Enter y coordinate:
+[H[2J                       1 1 1 1 1 
+   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 
+ 0 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 1 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 2 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 3 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 4 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 5 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 6 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 7 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 8 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 9 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+10 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+11 _|_|_|_|_|_|_|_|_|_|_|X|_|_|_
+12 _|_|_|_|_|_|_|_|_|_|_|_|X|_|_
+13 _|_|_|_|_|_|_|_|_|_|_|_|_|X|_
+14 O|O|O| | | | | | | | | | | |X
+
+Enter the coordinates:
+Player:  Player2 O
+Enter x coordinate:
+Enter y coordinate:
+[H[2J                       1 1 1 1 1 
+   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 
+ 0 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 1 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 2 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 3 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 4 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 5 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 6 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 7 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 8 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 9 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+10 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+11 _|_|_|_|_|_|_|_|_|_|_|X|_|_|_
+12 _|_|_|_|_|_|_|_|_|_|_|_|X|_|_
+13 _|_|_|_|_|_|_|_|_|_|_|_|_|X|_
+14 O|O|O|O| | | | | | | | | | |X
+
+Enter the coordinates:
+Player:  Player1 X
+Enter x coordinate:
+Enter y coordinate:
+[H[2J                       1 1 1 1 1 
+   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 
+ 0 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 1 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 2 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 3 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 4 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 5 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 6 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 7 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 8 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 9 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+10 _|_|_|_|_|_|_|_|_|_|X|_|_|_|_
+11 _|_|_|_|_|_|_|_|_|_|_|X|_|_|_
+12 _|_|_|_|_|_|_|_|_|_|_|_|X|_|_
+13 _|_|_|_|_|_|_|_|_|_|_|_|_|X|_
+14 O|O|O|O| | | | | | | | | | |X
+
+Enter the coordinates:
+Player:  Player2 O
+Enter x coordinate:
+Enter y coordinate:
+[H[2J                       1 1 1 1 1 
+   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 
+ 0 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 1 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 2 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 3 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 4 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 5 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 6 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 7 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 8 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 9 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+10 _|_|_|_|_|_|_|_|_|_|X|_|_|_|_
+11 _|_|_|_|_|_|_|_|_|_|_|X|_|_|_
+12 _|_|_|_|_|_|_|_|_|_|_|_|X|_|_
+13 _|_|_|_|_|_|_|_|_|_|_|_|_|X|_
+14 O|O|O|O|O| | | | | | | | | |X
+
+Enter the coordinates:
+Player:  Player1 X
+Enter x coordinate:
+Enter y coordinate:
+[H[2J                       1 1 1 1 1 
+   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 
+ 0 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 1 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 2 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 3 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 4 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 5 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 6 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 7 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 8 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 9 _|_|_|_|_|_|_|_|_|X|_|_|_|_|_
+10 _|_|_|_|_|_|_|_|_|_|X|_|_|_|_
+11 _|_|_|_|_|_|_|_|_|_|_|X|_|_|_
+12 _|_|_|_|_|_|_|_|_|_|_|_|X|_|_
+13 _|_|_|_|_|_|_|_|_|_|_|_|_|X|_
+14 O|O|O|O|O| | | | | | | | | |X
+
+Enter the coordinates:
+Player:  Player2 O
+Enter x coordinate:
+Enter y coordinate:
+[H[2J                       1 1 1 1 1 
+   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 
+ 0 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 1 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 2 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 3 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 4 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 5 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 6 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 7 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 8 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 9 _|_|_|_|_|_|_|_|_|X|_|_|_|_|_
+10 _|_|_|_|_|_|_|_|_|_|X|_|_|_|_
+11 _|_|_|_|_|_|_|_|_|_|_|X|_|_|_
+12 _|_|_|_|_|_|_|_|_|_|_|_|X|_|_
+13 _|_|_|_|_|_|_|_|_|_|_|_|_|X|_
+14 O|O|O|O|O|O| | | | | | | | |X
+
+Enter the coordinates:
+Player:  Player1 X
+Enter x coordinate:
+Enter y coordinate:
+[H[2J                       1 1 1 1 1 
+   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 
+ 0 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 1 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 2 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 3 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 4 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 5 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 6 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 7 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 8 _|_|_|_|_|_|_|_|X|_|_|_|_|_|_
+ 9 _|_|_|_|_|_|_|_|_|X|_|_|_|_|_
+10 _|_|_|_|_|_|_|_|_|_|X|_|_|_|_
+11 _|_|_|_|_|_|_|_|_|_|_|X|_|_|_
+12 _|_|_|_|_|_|_|_|_|_|_|_|X|_|_
+13 _|_|_|_|_|_|_|_|_|_|_|_|_|X|_
+14 O|O|O|O|O|O| | | | | | | | |X
+
+Enter the coordinates:
+Player:  Player2 O
+Enter x coordinate:
+Enter y coordinate:
+[H[2J                       1 1 1 1 1 
+   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 
+ 0 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 1 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 2 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 3 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 4 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 5 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 6 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 7 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 8 _|_|_|_|_|_|_|_|X|_|_|_|_|_|_
+ 9 _|_|_|_|_|_|_|_|_|X|_|_|_|_|_
+10 _|_|_|_|_|_|_|_|_|_|X|_|_|_|_
+11 _|_|_|_|_|_|_|_|_|_|_|X|_|_|_
+12 _|_|_|_|_|_|_|_|_|_|_|_|X|_|_
+13 _|_|_|_|_|_|_|_|_|_|_|_|_|X|_
+14 O|O|O|O|O|O|O| | | | | | | |X
+
+Enter the coordinates:
+Player:  Player1 X
+Enter x coordinate:
+Enter y coordinate:
+[H[2J                       1 1 1 1 1 
+   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 
+ 0 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 1 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 2 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 3 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 4 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 5 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 6 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 7 _|_|_|_|_|_|_|X|_|_|_|_|_|_|_
+ 8 _|_|_|_|_|_|_|_|X|_|_|_|_|_|_
+ 9 _|_|_|_|_|_|_|_|_|X|_|_|_|_|_
+10 _|_|_|_|_|_|_|_|_|_|X|_|_|_|_
+11 _|_|_|_|_|_|_|_|_|_|_|X|_|_|_
+12 _|_|_|_|_|_|_|_|_|_|_|_|X|_|_
+13 _|_|_|_|_|_|_|_|_|_|_|_|_|X|_
+14 O|O|O|O|O|O|O| | | | | | | |X
+
+Enter the coordinates:
+Player:  Player2 O
+Enter x coordinate:
+Enter y coordinate:
+[H[2J                       1 1 1 1 1 
+   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 
+ 0 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 1 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 2 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 3 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 4 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 5 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 6 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 7 _|_|_|_|_|_|_|X|_|_|_|_|_|_|_
+ 8 _|_|_|_|_|_|_|_|X|_|_|_|_|_|_
+ 9 _|_|_|_|_|_|_|_|_|X|_|_|_|_|_
+10 _|_|_|_|_|_|_|_|_|_|X|_|_|_|_
+11 _|_|_|_|_|_|_|_|_|_|_|X|_|_|_
+12 _|_|_|_|_|_|_|_|_|_|_|_|X|_|_
+13 _|_|_|_|_|_|_|_|_|_|_|_|_|X|_
+14 O|O|O|O|O|O|O|O| | | | | | |X
+
+Enter the coordinates:
+Player:  Player1 X
+Enter x coordinate:
+Enter y coordinate:
+[H[2J                       1 1 1 1 1 
+   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 
+ 0 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 1 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 2 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 3 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 4 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 5 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 6 _|_|_|_|_|_|X|_|_|_|_|_|_|_|_
+ 7 _|_|_|_|_|_|_|X|_|_|_|_|_|_|_
+ 8 _|_|_|_|_|_|_|_|X|_|_|_|_|_|_
+ 9 _|_|_|_|_|_|_|_|_|X|_|_|_|_|_
+10 _|_|_|_|_|_|_|_|_|_|X|_|_|_|_
+11 _|_|_|_|_|_|_|_|_|_|_|X|_|_|_
+12 _|_|_|_|_|_|_|_|_|_|_|_|X|_|_
+13 _|_|_|_|_|_|_|_|_|_|_|_|_|X|_
+14 O|O|O|O|O|O|O|O| | | | | | |X
+
+Enter the coordinates:
+Player:  Player2 O
+Enter x coordinate:
+Enter y coordinate:
+[H[2J                       1 1 1 1 1 
+   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 
+ 0 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 1 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 2 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 3 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 4 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 5 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 6 _|_|_|_|_|_|X|_|_|_|_|_|_|_|_
+ 7 _|_|_|_|_|_|_|X|_|_|_|_|_|_|_
+ 8 _|_|_|_|_|_|_|_|X|_|_|_|_|_|_
+ 9 _|_|_|_|_|_|_|_|_|X|_|_|_|_|_
+10 _|_|_|_|_|_|_|_|_|_|X|_|_|_|_
+11 _|_|_|_|_|_|_|_|_|_|_|X|_|_|_
+12 _|_|_|_|_|_|_|_|_|_|_|_|X|_|_
+13 _|_|_|_|_|_|_|_|_|_|_|_|_|X|_
+14 O|O|O|O|O|O|O|O|O| | | | | |X
+
+Enter the coordinates:
+Player:  Player1 X
+Enter x coordinate:
+Enter y coordinate:
+[H[2J                       1 1 1 1 1 
+   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 
+ 0 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 1 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 2 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 3 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 4 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 5 _|_|_|_|_|X|_|_|_|_|_|_|_|_|_
+ 6 _|_|_|_|_|_|X|_|_|_|_|_|_|_|_
+ 7 _|_|_|_|_|_|_|X|_|_|_|_|_|_|_
+ 8 _|_|_|_|_|_|_|_|X|_|_|_|_|_|_
+ 9 _|_|_|_|_|_|_|_|_|X|_|_|_|_|_
+10 _|_|_|_|_|_|_|_|_|_|X|_|_|_|_
+11 _|_|_|_|_|_|_|_|_|_|_|X|_|_|_
+12 _|_|_|_|_|_|_|_|_|_|_|_|X|_|_
+13 _|_|_|_|_|_|_|_|_|_|_|_|_|X|_
+14 O|O|O|O|O|O|O|O|O| | | | | |X
+
+Enter the coordinates:
+Player:  Player2 O
+Enter x coordinate:
+Enter y coordinate:
+[H[2J                       1 1 1 1 1 
+   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 
+ 0 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 1 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 2 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 3 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 4 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 5 _|_|_|_|_|X|_|_|_|_|_|_|_|_|_
+ 6 _|_|_|_|_|_|X|_|_|_|_|_|_|_|_
+ 7 _|_|_|_|_|_|_|X|_|_|_|_|_|_|_
+ 8 _|_|_|_|_|_|_|_|X|_|_|_|_|_|_
+ 9 _|_|_|_|_|_|_|_|_|X|_|_|_|_|_
+10 _|_|_|_|_|_|_|_|_|_|X|_|_|_|_
+11 _|_|_|_|_|_|_|_|_|_|_|X|_|_|_
+12 _|_|_|_|_|_|_|_|_|_|_|_|X|_|_
+13 _|_|_|_|_|_|_|_|_|_|_|_|_|X|_
+14 O|O|O|O|O|O|O|O|O|O| | | | |X
+
+Enter the coordinates:
+Player:  Player1 X
+Enter x coordinate:
+Enter y coordinate:
+[H[2J                       1 1 1 1 1 
+   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 
+ 0 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 1 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 2 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 3 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 4 _|_|_|_|X|_|_|_|_|_|_|_|_|_|_
+ 5 _|_|_|_|_|X|_|_|_|_|_|_|_|_|_
+ 6 _|_|_|_|_|_|X|_|_|_|_|_|_|_|_
+ 7 _|_|_|_|_|_|_|X|_|_|_|_|_|_|_
+ 8 _|_|_|_|_|_|_|_|X|_|_|_|_|_|_
+ 9 _|_|_|_|_|_|_|_|_|X|_|_|_|_|_
+10 _|_|_|_|_|_|_|_|_|_|X|_|_|_|_
+11 _|_|_|_|_|_|_|_|_|_|_|X|_|_|_
+12 _|_|_|_|_|_|_|_|_|_|_|_|X|_|_
+13 _|_|_|_|_|_|_|_|_|_|_|_|_|X|_
+14 O|O|O|O|O|O|O|O|O|O| | | | |X
+
+Enter the coordinates:
+Player:  Player2 O
+Enter x coordinate:
+Enter y coordinate:
+[H[2J                       1 1 1 1 1 
+   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 
+ 0 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 1 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 2 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 3 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 4 _|_|_|_|X|_|_|_|_|_|_|_|_|_|_
+ 5 _|_|_|_|_|X|_|_|_|_|_|_|_|_|_
+ 6 _|_|_|_|_|_|X|_|_|_|_|_|_|_|_
+ 7 _|_|_|_|_|_|_|X|_|_|_|_|_|_|_
+ 8 _|_|_|_|_|_|_|_|X|_|_|_|_|_|_
+ 9 _|_|_|_|_|_|_|_|_|X|_|_|_|_|_
+10 _|_|_|_|_|_|_|_|_|_|X|_|_|_|_
+11 _|_|_|_|_|_|_|_|_|_|_|X|_|_|_
+12 _|_|_|_|_|_|_|_|_|_|_|_|X|_|_
+13 _|_|_|_|_|_|_|_|_|_|_|_|_|X|_
+14 O|O|O|O|O|O|O|O|O|O|O| | | |X
+
+Enter the coordinates:
+Player:  Player1 X
+Enter x coordinate:
+Enter y coordinate:
+[H[2J                       1 1 1 1 1 
+   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 
+ 0 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 1 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 2 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 3 _|_|_|X|_|_|_|_|_|_|_|_|_|_|_
+ 4 _|_|_|_|X|_|_|_|_|_|_|_|_|_|_
+ 5 _|_|_|_|_|X|_|_|_|_|_|_|_|_|_
+ 6 _|_|_|_|_|_|X|_|_|_|_|_|_|_|_
+ 7 _|_|_|_|_|_|_|X|_|_|_|_|_|_|_
+ 8 _|_|_|_|_|_|_|_|X|_|_|_|_|_|_
+ 9 _|_|_|_|_|_|_|_|_|X|_|_|_|_|_
+10 _|_|_|_|_|_|_|_|_|_|X|_|_|_|_
+11 _|_|_|_|_|_|_|_|_|_|_|X|_|_|_
+12 _|_|_|_|_|_|_|_|_|_|_|_|X|_|_
+13 _|_|_|_|_|_|_|_|_|_|_|_|_|X|_
+14 O|O|O|O|O|O|O|O|O|O|O| | | |X
+
+Enter the coordinates:
+Player:  Player2 O
+Enter x coordinate:
+Enter y coordinate:
+[H[2J                       1 1 1 1 1 
+   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 
+ 0 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 1 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 2 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 3 _|_|_|X|_|_|_|_|_|_|_|_|_|_|_
+ 4 _|_|_|_|X|_|_|_|_|_|_|_|_|_|_
+ 5 _|_|_|_|_|X|_|_|_|_|_|_|_|_|_
+ 6 _|_|_|_|_|_|X|_|_|_|_|_|_|_|_
+ 7 _|_|_|_|_|_|_|X|_|_|_|_|_|_|_
+ 8 _|_|_|_|_|_|_|_|X|_|_|_|_|_|_
+ 9 _|_|_|_|_|_|_|_|_|X|_|_|_|_|_
+10 _|_|_|_|_|_|_|_|_|_|X|_|_|_|_
+11 _|_|_|_|_|_|_|_|_|_|_|X|_|_|_
+12 _|_|_|_|_|_|_|_|_|_|_|_|X|_|_
+13 _|_|_|_|_|_|_|_|_|_|_|_|_|X|_
+14 O|O|O|O|O|O|O|O|O|O|O|O| | |X
+
+Enter the coordinates:
+Player:  Player1 X
+Enter x coordinate:
+Enter y coordinate:
+[H[2J                       1 1 1 1 1 
+   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 
+ 0 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 1 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 2 _|_|X|_|_|_|_|_|_|_|_|_|_|_|_
+ 3 _|_|_|X|_|_|_|_|_|_|_|_|_|_|_
+ 4 _|_|_|_|X|_|_|_|_|_|_|_|_|_|_
+ 5 _|_|_|_|_|X|_|_|_|_|_|_|_|_|_
+ 6 _|_|_|_|_|_|X|_|_|_|_|_|_|_|_
+ 7 _|_|_|_|_|_|_|X|_|_|_|_|_|_|_
+ 8 _|_|_|_|_|_|_|_|X|_|_|_|_|_|_
+ 9 _|_|_|_|_|_|_|_|_|X|_|_|_|_|_
+10 _|_|_|_|_|_|_|_|_|_|X|_|_|_|_
+11 _|_|_|_|_|_|_|_|_|_|_|X|_|_|_
+12 _|_|_|_|_|_|_|_|_|_|_|_|X|_|_
+13 _|_|_|_|_|_|_|_|_|_|_|_|_|X|_
+14 O|O|O|O|O|O|O|O|O|O|O|O| | |X
+
+Enter the coordinates:
+Player:  Player2 O
+Enter x coordinate:
+Enter y coordinate:
+[H[2J                       1 1 1 1 1 
+   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 
+ 0 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 1 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 2 _|_|X|_|_|_|_|_|_|_|_|_|_|_|_
+ 3 _|_|_|X|_|_|_|_|_|_|_|_|_|_|_
+ 4 _|_|_|_|X|_|_|_|_|_|_|_|_|_|_
+ 5 _|_|_|_|_|X|_|_|_|_|_|_|_|_|_
+ 6 _|_|_|_|_|_|X|_|_|_|_|_|_|_|_
+ 7 _|_|_|_|_|_|_|X|_|_|_|_|_|_|_
+ 8 _|_|_|_|_|_|_|_|X|_|_|_|_|_|_
+ 9 _|_|_|_|_|_|_|_|_|X|_|_|_|_|_
+10 _|_|_|_|_|_|_|_|_|_|X|_|_|_|_
+11 _|_|_|_|_|_|_|_|_|_|_|X|_|_|_
+12 _|_|_|_|_|_|_|_|_|_|_|_|X|_|_
+13 _|_|_|_|_|_|_|_|_|_|_|_|_|X|_
+14 O|O|O|O|O|O|O|O|O|O|O|O|O| |X
+
+Enter the coordinates:
+Player:  Player1 X
+Enter x coordinate:
+Enter y coordinate:
+[H[2J                       1 1 1 1 1 
+   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 
+ 0 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 1 _|X|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 2 _|_|X|_|_|_|_|_|_|_|_|_|_|_|_
+ 3 _|_|_|X|_|_|_|_|_|_|_|_|_|_|_
+ 4 _|_|_|_|X|_|_|_|_|_|_|_|_|_|_
+ 5 _|_|_|_|_|X|_|_|_|_|_|_|_|_|_
+ 6 _|_|_|_|_|_|X|_|_|_|_|_|_|_|_
+ 7 _|_|_|_|_|_|_|X|_|_|_|_|_|_|_
+ 8 _|_|_|_|_|_|_|_|X|_|_|_|_|_|_
+ 9 _|_|_|_|_|_|_|_|_|X|_|_|_|_|_
+10 _|_|_|_|_|_|_|_|_|_|X|_|_|_|_
+11 _|_|_|_|_|_|_|_|_|_|_|X|_|_|_
+12 _|_|_|_|_|_|_|_|_|_|_|_|X|_|_
+13 _|_|_|_|_|_|_|_|_|_|_|_|_|X|_
+14 O|O|O|O|O|O|O|O|O|O|O|O|O| |X
+
+Enter the coordinates:
+Player:  Player2 O
+Enter x coordinate:
+Enter y coordinate:
+[H[2J                       1 1 1 1 1 
+   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 
+ 0 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 1 _|X|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 2 _|_|X|_|_|_|_|_|_|_|_|_|_|_|_
+ 3 _|_|_|X|_|_|_|_|_|_|_|_|_|_|_
+ 4 _|_|_|_|X|_|_|_|_|_|_|_|_|_|_
+ 5 _|_|_|_|_|X|_|_|_|_|_|_|_|_|_
+ 6 _|_|_|_|_|_|X|_|_|_|_|_|_|_|_
+ 7 _|_|_|_|_|_|_|X|_|_|_|_|_|_|_
+ 8 _|_|_|_|_|_|_|_|X|_|_|_|_|_|_
+ 9 _|_|_|_|_|_|_|_|_|X|_|_|_|_|_
+10 _|_|_|_|_|_|_|_|_|_|X|_|_|_|_
+11 _|_|_|_|_|_|_|_|_|_|_|X|_|_|_
+12 _|_|_|_|_|_|_|_|_|_|_|_|X|_|_
+13 _|_|_|_|_|_|_|_|_|_|_|_|_|X|_
+14 O|O|O|O|O|O|O|O|O|O|O|O|O|O|X
+
+Enter the coordinates:
+Player:  Player1 X
+Enter x coordinate:
+Enter y coordinate:
+[H[2JFound winning board combination!
+                       1 1 1 1 1 
+   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 
+ 0 X|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 1 _|X|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 2 _|_|X|_|_|_|_|_|_|_|_|_|_|_|_
+ 3 _|_|_|X|_|_|_|_|_|_|_|_|_|_|_
+ 4 _|_|_|_|X|_|_|_|_|_|_|_|_|_|_
+ 5 _|_|_|_|_|X|_|_|_|_|_|_|_|_|_
+ 6 _|_|_|_|_|_|X|_|_|_|_|_|_|_|_
+ 7 _|_|_|_|_|_|_|X|_|_|_|_|_|_|_
+ 8 _|_|_|_|_|_|_|_|X|_|_|_|_|_|_
+ 9 _|_|_|_|_|_|_|_|_|X|_|_|_|_|_
+10 _|_|_|_|_|_|_|_|_|_|X|_|_|_|_
+11 _|_|_|_|_|_|_|_|_|_|_|X|_|_|_
+12 _|_|_|_|_|_|_|_|_|_|_|_|X|_|_
+13 _|_|_|_|_|_|_|_|_|_|_|_|_|X|_
+14 O|O|O|O|O|O|O|O|O|O|O|O|O|O|X
+
+Winner of round: Player1 X
+Player2 O -> Points: 0
+Player1 X -> Points: 3
+
+Enter any sign to continue game.
+[H[2J                       1 1 1 1 1 
+   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 
+ 0 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 1 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 2 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 3 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 4 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 5 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 6 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 7 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 8 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 9 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+10 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+11 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+12 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+13 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+14  | | | | | | | | | | | | | | 
+
+Enter the coordinates:
+Player:  Player2 O
+Enter x coordinate:
+Enter y coordinate:
+[H[2J                       1 1 1 1 1 
+   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 
+ 0 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 1 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 2 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 3 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 4 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 5 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 6 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 7 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 8 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 9 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+10 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+11 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+12 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+13 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+14  | | | | | | | | | | | | | |O
+
+Enter the coordinates:
+Player:  Player1 X
+Enter x coordinate:
+Enter y coordinate:
+[H[2J                       1 1 1 1 1 
+   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 
+ 0 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 1 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 2 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 3 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 4 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 5 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 6 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 7 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 8 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 9 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+10 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+11 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+12 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+13 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+14 X| | | | | | | | | | | | | |O
+
+Enter the coordinates:
+Player:  Player2 O
+Enter x coordinate:
+Enter y coordinate:
+[H[2J                       1 1 1 1 1 
+   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 
+ 0 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 1 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 2 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 3 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 4 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 5 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 6 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 7 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 8 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 9 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+10 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+11 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+12 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+13 _|_|_|_|_|_|_|_|_|_|_|_|_|O|_
+14 X| | | | | | | | | | | | | |O
+
+Enter the coordinates:
+Player:  Player1 X
+Enter x coordinate:
+Enter y coordinate:
+[H[2J                       1 1 1 1 1 
+   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 
+ 0 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 1 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 2 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 3 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 4 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 5 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 6 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 7 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 8 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 9 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+10 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+11 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+12 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+13 _|_|_|_|_|_|_|_|_|_|_|_|_|O|_
+14 X|X| | | | | | | | | | | | |O
+
+Enter the coordinates:
+Player:  Player2 O
+Enter x coordinate:
+Enter y coordinate:
+[H[2J                       1 1 1 1 1 
+   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 
+ 0 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 1 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 2 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 3 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 4 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 5 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 6 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 7 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 8 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 9 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+10 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+11 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+12 _|_|_|_|_|_|_|_|_|_|_|_|O|_|_
+13 _|_|_|_|_|_|_|_|_|_|_|_|_|O|_
+14 X|X| | | | | | | | | | | | |O
+
+Enter the coordinates:
+Player:  Player1 X
+Enter x coordinate:
+Enter y coordinate:
+[H[2J                       1 1 1 1 1 
+   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 
+ 0 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 1 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 2 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 3 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 4 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 5 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 6 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 7 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 8 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 9 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+10 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+11 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+12 _|_|_|_|_|_|_|_|_|_|_|_|O|_|_
+13 _|_|_|_|_|_|_|_|_|_|_|_|_|O|_
+14 X|X|X| | | | | | | | | | | |O
+
+Enter the coordinates:
+Player:  Player2 O
+Enter x coordinate:
+Enter y coordinate:
+[H[2J                       1 1 1 1 1 
+   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 
+ 0 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 1 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 2 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 3 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 4 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 5 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 6 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 7 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 8 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 9 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+10 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+11 _|_|_|_|_|_|_|_|_|_|_|O|_|_|_
+12 _|_|_|_|_|_|_|_|_|_|_|_|O|_|_
+13 _|_|_|_|_|_|_|_|_|_|_|_|_|O|_
+14 X|X|X| | | | | | | | | | | |O
+
+Enter the coordinates:
+Player:  Player1 X
+Enter x coordinate:
+Enter y coordinate:
+[H[2J                       1 1 1 1 1 
+   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 
+ 0 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 1 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 2 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 3 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 4 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 5 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 6 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 7 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 8 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 9 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+10 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+11 _|_|_|_|_|_|_|_|_|_|_|O|_|_|_
+12 _|_|_|_|_|_|_|_|_|_|_|_|O|_|_
+13 _|_|_|_|_|_|_|_|_|_|_|_|_|O|_
+14 X|X|X|X| | | | | | | | | | |O
+
+Enter the coordinates:
+Player:  Player2 O
+Enter x coordinate:
+Enter y coordinate:
+[H[2J                       1 1 1 1 1 
+   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 
+ 0 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 1 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 2 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 3 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 4 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 5 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 6 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 7 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 8 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 9 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+10 _|_|_|_|_|_|_|_|_|_|O|_|_|_|_
+11 _|_|_|_|_|_|_|_|_|_|_|O|_|_|_
+12 _|_|_|_|_|_|_|_|_|_|_|_|O|_|_
+13 _|_|_|_|_|_|_|_|_|_|_|_|_|O|_
+14 X|X|X|X| | | | | | | | | | |O
+
+Enter the coordinates:
+Player:  Player1 X
+Enter x coordinate:
+Enter y coordinate:
+[H[2J                       1 1 1 1 1 
+   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 
+ 0 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 1 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 2 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 3 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 4 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 5 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 6 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 7 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 8 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 9 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+10 _|_|_|_|_|_|_|_|_|_|O|_|_|_|_
+11 _|_|_|_|_|_|_|_|_|_|_|O|_|_|_
+12 _|_|_|_|_|_|_|_|_|_|_|_|O|_|_
+13 _|_|_|_|_|_|_|_|_|_|_|_|_|O|_
+14 X|X|X|X|X| | | | | | | | | |O
+
+Enter the coordinates:
+Player:  Player2 O
+Enter x coordinate:
+Enter y coordinate:
+[H[2J                       1 1 1 1 1 
+   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 
+ 0 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 1 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 2 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 3 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 4 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 5 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 6 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 7 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 8 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 9 _|_|_|_|_|_|_|_|_|O|_|_|_|_|_
+10 _|_|_|_|_|_|_|_|_|_|O|_|_|_|_
+11 _|_|_|_|_|_|_|_|_|_|_|O|_|_|_
+12 _|_|_|_|_|_|_|_|_|_|_|_|O|_|_
+13 _|_|_|_|_|_|_|_|_|_|_|_|_|O|_
+14 X|X|X|X|X| | | | | | | | | |O
+
+Enter the coordinates:
+Player:  Player1 X
+Enter x coordinate:
+Enter y coordinate:
+[H[2J                       1 1 1 1 1 
+   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 
+ 0 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 1 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 2 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 3 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 4 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 5 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 6 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 7 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 8 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 9 _|_|_|_|_|_|_|_|_|O|_|_|_|_|_
+10 _|_|_|_|_|_|_|_|_|_|O|_|_|_|_
+11 _|_|_|_|_|_|_|_|_|_|_|O|_|_|_
+12 _|_|_|_|_|_|_|_|_|_|_|_|O|_|_
+13 _|_|_|_|_|_|_|_|_|_|_|_|_|O|_
+14 X|X|X|X|X|X| | | | | | | | |O
+
+Enter the coordinates:
+Player:  Player2 O
+Enter x coordinate:
+Enter y coordinate:
+[H[2J                       1 1 1 1 1 
+   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 
+ 0 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 1 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 2 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 3 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 4 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 5 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 6 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 7 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 8 _|_|_|_|_|_|_|_|O|_|_|_|_|_|_
+ 9 _|_|_|_|_|_|_|_|_|O|_|_|_|_|_
+10 _|_|_|_|_|_|_|_|_|_|O|_|_|_|_
+11 _|_|_|_|_|_|_|_|_|_|_|O|_|_|_
+12 _|_|_|_|_|_|_|_|_|_|_|_|O|_|_
+13 _|_|_|_|_|_|_|_|_|_|_|_|_|O|_
+14 X|X|X|X|X|X| | | | | | | | |O
+
+Enter the coordinates:
+Player:  Player1 X
+Enter x coordinate:
+Enter y coordinate:
+[H[2J                       1 1 1 1 1 
+   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 
+ 0 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 1 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 2 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 3 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 4 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 5 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 6 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 7 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 8 _|_|_|_|_|_|_|_|O|_|_|_|_|_|_
+ 9 _|_|_|_|_|_|_|_|_|O|_|_|_|_|_
+10 _|_|_|_|_|_|_|_|_|_|O|_|_|_|_
+11 _|_|_|_|_|_|_|_|_|_|_|O|_|_|_
+12 _|_|_|_|_|_|_|_|_|_|_|_|O|_|_
+13 _|_|_|_|_|_|_|_|_|_|_|_|_|O|_
+14 X|X|X|X|X|X|X| | | | | | | |O
+
+Enter the coordinates:
+Player:  Player2 O
+Enter x coordinate:
+Enter y coordinate:
+[H[2J                       1 1 1 1 1 
+   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 
+ 0 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 1 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 2 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 3 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 4 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 5 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 6 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 7 _|_|_|_|_|_|_|O|_|_|_|_|_|_|_
+ 8 _|_|_|_|_|_|_|_|O|_|_|_|_|_|_
+ 9 _|_|_|_|_|_|_|_|_|O|_|_|_|_|_
+10 _|_|_|_|_|_|_|_|_|_|O|_|_|_|_
+11 _|_|_|_|_|_|_|_|_|_|_|O|_|_|_
+12 _|_|_|_|_|_|_|_|_|_|_|_|O|_|_
+13 _|_|_|_|_|_|_|_|_|_|_|_|_|O|_
+14 X|X|X|X|X|X|X| | | | | | | |O
+
+Enter the coordinates:
+Player:  Player1 X
+Enter x coordinate:
+Enter y coordinate:
+[H[2J                       1 1 1 1 1 
+   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 
+ 0 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 1 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 2 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 3 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 4 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 5 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 6 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 7 _|_|_|_|_|_|_|O|_|_|_|_|_|_|_
+ 8 _|_|_|_|_|_|_|_|O|_|_|_|_|_|_
+ 9 _|_|_|_|_|_|_|_|_|O|_|_|_|_|_
+10 _|_|_|_|_|_|_|_|_|_|O|_|_|_|_
+11 _|_|_|_|_|_|_|_|_|_|_|O|_|_|_
+12 _|_|_|_|_|_|_|_|_|_|_|_|O|_|_
+13 _|_|_|_|_|_|_|_|_|_|_|_|_|O|_
+14 X|X|X|X|X|X|X|X| | | | | | |O
+
+Enter the coordinates:
+Player:  Player2 O
+Enter x coordinate:
+Enter y coordinate:
+[H[2J                       1 1 1 1 1 
+   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 
+ 0 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 1 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 2 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 3 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 4 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 5 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 6 _|_|_|_|_|_|O|_|_|_|_|_|_|_|_
+ 7 _|_|_|_|_|_|_|O|_|_|_|_|_|_|_
+ 8 _|_|_|_|_|_|_|_|O|_|_|_|_|_|_
+ 9 _|_|_|_|_|_|_|_|_|O|_|_|_|_|_
+10 _|_|_|_|_|_|_|_|_|_|O|_|_|_|_
+11 _|_|_|_|_|_|_|_|_|_|_|O|_|_|_
+12 _|_|_|_|_|_|_|_|_|_|_|_|O|_|_
+13 _|_|_|_|_|_|_|_|_|_|_|_|_|O|_
+14 X|X|X|X|X|X|X|X| | | | | | |O
+
+Enter the coordinates:
+Player:  Player1 X
+Enter x coordinate:
+Enter y coordinate:
+[H[2J                       1 1 1 1 1 
+   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 
+ 0 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 1 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 2 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 3 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 4 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 5 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 6 _|_|_|_|_|_|O|_|_|_|_|_|_|_|_
+ 7 _|_|_|_|_|_|_|O|_|_|_|_|_|_|_
+ 8 _|_|_|_|_|_|_|_|O|_|_|_|_|_|_
+ 9 _|_|_|_|_|_|_|_|_|O|_|_|_|_|_
+10 _|_|_|_|_|_|_|_|_|_|O|_|_|_|_
+11 _|_|_|_|_|_|_|_|_|_|_|O|_|_|_
+12 _|_|_|_|_|_|_|_|_|_|_|_|O|_|_
+13 _|_|_|_|_|_|_|_|_|_|_|_|_|O|_
+14 X|X|X|X|X|X|X|X|X| | | | | |O
+
+Enter the coordinates:
+Player:  Player2 O
+Enter x coordinate:
+Enter y coordinate:
+[H[2J                       1 1 1 1 1 
+   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 
+ 0 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 1 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 2 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 3 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 4 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 5 _|_|_|_|_|O|_|_|_|_|_|_|_|_|_
+ 6 _|_|_|_|_|_|O|_|_|_|_|_|_|_|_
+ 7 _|_|_|_|_|_|_|O|_|_|_|_|_|_|_
+ 8 _|_|_|_|_|_|_|_|O|_|_|_|_|_|_
+ 9 _|_|_|_|_|_|_|_|_|O|_|_|_|_|_
+10 _|_|_|_|_|_|_|_|_|_|O|_|_|_|_
+11 _|_|_|_|_|_|_|_|_|_|_|O|_|_|_
+12 _|_|_|_|_|_|_|_|_|_|_|_|O|_|_
+13 _|_|_|_|_|_|_|_|_|_|_|_|_|O|_
+14 X|X|X|X|X|X|X|X|X| | | | | |O
+
+Enter the coordinates:
+Player:  Player1 X
+Enter x coordinate:
+Enter y coordinate:
+[H[2J                       1 1 1 1 1 
+   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 
+ 0 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 1 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 2 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 3 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 4 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 5 _|_|_|_|_|O|_|_|_|_|_|_|_|_|_
+ 6 _|_|_|_|_|_|O|_|_|_|_|_|_|_|_
+ 7 _|_|_|_|_|_|_|O|_|_|_|_|_|_|_
+ 8 _|_|_|_|_|_|_|_|O|_|_|_|_|_|_
+ 9 _|_|_|_|_|_|_|_|_|O|_|_|_|_|_
+10 _|_|_|_|_|_|_|_|_|_|O|_|_|_|_
+11 _|_|_|_|_|_|_|_|_|_|_|O|_|_|_
+12 _|_|_|_|_|_|_|_|_|_|_|_|O|_|_
+13 _|_|_|_|_|_|_|_|_|_|_|_|_|O|_
+14 X|X|X|X|X|X|X|X|X|X| | | | |O
+
+Enter the coordinates:
+Player:  Player2 O
+Enter x coordinate:
+Enter y coordinate:
+[H[2J                       1 1 1 1 1 
+   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 
+ 0 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 1 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 2 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 3 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 4 _|_|_|_|O|_|_|_|_|_|_|_|_|_|_
+ 5 _|_|_|_|_|O|_|_|_|_|_|_|_|_|_
+ 6 _|_|_|_|_|_|O|_|_|_|_|_|_|_|_
+ 7 _|_|_|_|_|_|_|O|_|_|_|_|_|_|_
+ 8 _|_|_|_|_|_|_|_|O|_|_|_|_|_|_
+ 9 _|_|_|_|_|_|_|_|_|O|_|_|_|_|_
+10 _|_|_|_|_|_|_|_|_|_|O|_|_|_|_
+11 _|_|_|_|_|_|_|_|_|_|_|O|_|_|_
+12 _|_|_|_|_|_|_|_|_|_|_|_|O|_|_
+13 _|_|_|_|_|_|_|_|_|_|_|_|_|O|_
+14 X|X|X|X|X|X|X|X|X|X| | | | |O
+
+Enter the coordinates:
+Player:  Player1 X
+Enter x coordinate:
+Enter y coordinate:
+[H[2J                       1 1 1 1 1 
+   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 
+ 0 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 1 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 2 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 3 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 4 _|_|_|_|O|_|_|_|_|_|_|_|_|_|_
+ 5 _|_|_|_|_|O|_|_|_|_|_|_|_|_|_
+ 6 _|_|_|_|_|_|O|_|_|_|_|_|_|_|_
+ 7 _|_|_|_|_|_|_|O|_|_|_|_|_|_|_
+ 8 _|_|_|_|_|_|_|_|O|_|_|_|_|_|_
+ 9 _|_|_|_|_|_|_|_|_|O|_|_|_|_|_
+10 _|_|_|_|_|_|_|_|_|_|O|_|_|_|_
+11 _|_|_|_|_|_|_|_|_|_|_|O|_|_|_
+12 _|_|_|_|_|_|_|_|_|_|_|_|O|_|_
+13 _|_|_|_|_|_|_|_|_|_|_|_|_|O|_
+14 X|X|X|X|X|X|X|X|X|X|X| | | |O
+
+Enter the coordinates:
+Player:  Player2 O
+Enter x coordinate:
+Enter y coordinate:
+[H[2J                       1 1 1 1 1 
+   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 
+ 0 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 1 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 2 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 3 _|_|_|O|_|_|_|_|_|_|_|_|_|_|_
+ 4 _|_|_|_|O|_|_|_|_|_|_|_|_|_|_
+ 5 _|_|_|_|_|O|_|_|_|_|_|_|_|_|_
+ 6 _|_|_|_|_|_|O|_|_|_|_|_|_|_|_
+ 7 _|_|_|_|_|_|_|O|_|_|_|_|_|_|_
+ 8 _|_|_|_|_|_|_|_|O|_|_|_|_|_|_
+ 9 _|_|_|_|_|_|_|_|_|O|_|_|_|_|_
+10 _|_|_|_|_|_|_|_|_|_|O|_|_|_|_
+11 _|_|_|_|_|_|_|_|_|_|_|O|_|_|_
+12 _|_|_|_|_|_|_|_|_|_|_|_|O|_|_
+13 _|_|_|_|_|_|_|_|_|_|_|_|_|O|_
+14 X|X|X|X|X|X|X|X|X|X|X| | | |O
+
+Enter the coordinates:
+Player:  Player1 X
+Enter x coordinate:
+Enter y coordinate:
+[H[2J                       1 1 1 1 1 
+   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 
+ 0 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 1 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 2 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 3 _|_|_|O|_|_|_|_|_|_|_|_|_|_|_
+ 4 _|_|_|_|O|_|_|_|_|_|_|_|_|_|_
+ 5 _|_|_|_|_|O|_|_|_|_|_|_|_|_|_
+ 6 _|_|_|_|_|_|O|_|_|_|_|_|_|_|_
+ 7 _|_|_|_|_|_|_|O|_|_|_|_|_|_|_
+ 8 _|_|_|_|_|_|_|_|O|_|_|_|_|_|_
+ 9 _|_|_|_|_|_|_|_|_|O|_|_|_|_|_
+10 _|_|_|_|_|_|_|_|_|_|O|_|_|_|_
+11 _|_|_|_|_|_|_|_|_|_|_|O|_|_|_
+12 _|_|_|_|_|_|_|_|_|_|_|_|O|_|_
+13 _|_|_|_|_|_|_|_|_|_|_|_|_|O|_
+14 X|X|X|X|X|X|X|X|X|X|X|X| | |O
+
+Enter the coordinates:
+Player:  Player2 O
+Enter x coordinate:
+Enter y coordinate:
+[H[2J                       1 1 1 1 1 
+   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 
+ 0 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 1 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 2 _|_|O|_|_|_|_|_|_|_|_|_|_|_|_
+ 3 _|_|_|O|_|_|_|_|_|_|_|_|_|_|_
+ 4 _|_|_|_|O|_|_|_|_|_|_|_|_|_|_
+ 5 _|_|_|_|_|O|_|_|_|_|_|_|_|_|_
+ 6 _|_|_|_|_|_|O|_|_|_|_|_|_|_|_
+ 7 _|_|_|_|_|_|_|O|_|_|_|_|_|_|_
+ 8 _|_|_|_|_|_|_|_|O|_|_|_|_|_|_
+ 9 _|_|_|_|_|_|_|_|_|O|_|_|_|_|_
+10 _|_|_|_|_|_|_|_|_|_|O|_|_|_|_
+11 _|_|_|_|_|_|_|_|_|_|_|O|_|_|_
+12 _|_|_|_|_|_|_|_|_|_|_|_|O|_|_
+13 _|_|_|_|_|_|_|_|_|_|_|_|_|O|_
+14 X|X|X|X|X|X|X|X|X|X|X|X| | |O
+
+Enter the coordinates:
+Player:  Player1 X
+Enter x coordinate:
+Enter y coordinate:
+[H[2J                       1 1 1 1 1 
+   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 
+ 0 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 1 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 2 _|_|O|_|_|_|_|_|_|_|_|_|_|_|_
+ 3 _|_|_|O|_|_|_|_|_|_|_|_|_|_|_
+ 4 _|_|_|_|O|_|_|_|_|_|_|_|_|_|_
+ 5 _|_|_|_|_|O|_|_|_|_|_|_|_|_|_
+ 6 _|_|_|_|_|_|O|_|_|_|_|_|_|_|_
+ 7 _|_|_|_|_|_|_|O|_|_|_|_|_|_|_
+ 8 _|_|_|_|_|_|_|_|O|_|_|_|_|_|_
+ 9 _|_|_|_|_|_|_|_|_|O|_|_|_|_|_
+10 _|_|_|_|_|_|_|_|_|_|O|_|_|_|_
+11 _|_|_|_|_|_|_|_|_|_|_|O|_|_|_
+12 _|_|_|_|_|_|_|_|_|_|_|_|O|_|_
+13 _|_|_|_|_|_|_|_|_|_|_|_|_|O|_
+14 X|X|X|X|X|X|X|X|X|X|X|X|X| |O
+
+Enter the coordinates:
+Player:  Player2 O
+Enter x coordinate:
+Enter y coordinate:
+[H[2J                       1 1 1 1 1 
+   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 
+ 0 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 1 _|O|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 2 _|_|O|_|_|_|_|_|_|_|_|_|_|_|_
+ 3 _|_|_|O|_|_|_|_|_|_|_|_|_|_|_
+ 4 _|_|_|_|O|_|_|_|_|_|_|_|_|_|_
+ 5 _|_|_|_|_|O|_|_|_|_|_|_|_|_|_
+ 6 _|_|_|_|_|_|O|_|_|_|_|_|_|_|_
+ 7 _|_|_|_|_|_|_|O|_|_|_|_|_|_|_
+ 8 _|_|_|_|_|_|_|_|O|_|_|_|_|_|_
+ 9 _|_|_|_|_|_|_|_|_|O|_|_|_|_|_
+10 _|_|_|_|_|_|_|_|_|_|O|_|_|_|_
+11 _|_|_|_|_|_|_|_|_|_|_|O|_|_|_
+12 _|_|_|_|_|_|_|_|_|_|_|_|O|_|_
+13 _|_|_|_|_|_|_|_|_|_|_|_|_|O|_
+14 X|X|X|X|X|X|X|X|X|X|X|X|X| |O
+
+Enter the coordinates:
+Player:  Player1 X
+Enter x coordinate:
+Enter y coordinate:
+[H[2J                       1 1 1 1 1 
+   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 
+ 0 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 1 _|O|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 2 _|_|O|_|_|_|_|_|_|_|_|_|_|_|_
+ 3 _|_|_|O|_|_|_|_|_|_|_|_|_|_|_
+ 4 _|_|_|_|O|_|_|_|_|_|_|_|_|_|_
+ 5 _|_|_|_|_|O|_|_|_|_|_|_|_|_|_
+ 6 _|_|_|_|_|_|O|_|_|_|_|_|_|_|_
+ 7 _|_|_|_|_|_|_|O|_|_|_|_|_|_|_
+ 8 _|_|_|_|_|_|_|_|O|_|_|_|_|_|_
+ 9 _|_|_|_|_|_|_|_|_|O|_|_|_|_|_
+10 _|_|_|_|_|_|_|_|_|_|O|_|_|_|_
+11 _|_|_|_|_|_|_|_|_|_|_|O|_|_|_
+12 _|_|_|_|_|_|_|_|_|_|_|_|O|_|_
+13 _|_|_|_|_|_|_|_|_|_|_|_|_|O|_
+14 X|X|X|X|X|X|X|X|X|X|X|X|X|X|O
+
+Enter the coordinates:
+Player:  Player2 O
+Enter x coordinate:
+Enter y coordinate:
+[H[2JFound winning board combination!
+                       1 1 1 1 1 
+   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 
+ 0 O|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 1 _|O|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 2 _|_|O|_|_|_|_|_|_|_|_|_|_|_|_
+ 3 _|_|_|O|_|_|_|_|_|_|_|_|_|_|_
+ 4 _|_|_|_|O|_|_|_|_|_|_|_|_|_|_
+ 5 _|_|_|_|_|O|_|_|_|_|_|_|_|_|_
+ 6 _|_|_|_|_|_|O|_|_|_|_|_|_|_|_
+ 7 _|_|_|_|_|_|_|O|_|_|_|_|_|_|_
+ 8 _|_|_|_|_|_|_|_|O|_|_|_|_|_|_
+ 9 _|_|_|_|_|_|_|_|_|O|_|_|_|_|_
+10 _|_|_|_|_|_|_|_|_|_|O|_|_|_|_
+11 _|_|_|_|_|_|_|_|_|_|_|O|_|_|_
+12 _|_|_|_|_|_|_|_|_|_|_|_|O|_|_
+13 _|_|_|_|_|_|_|_|_|_|_|_|_|O|_
+14 X|X|X|X|X|X|X|X|X|X|X|X|X|X|O
+
+Winner of round: Player2 O
+Player2 O -> Points: 3
+Player1 X -> Points: 3
+
+Enter any sign to continue game.
+[H[2J                       1 1 1 1 1 
+   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 
+ 0 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 1 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 2 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 3 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 4 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 5 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 6 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 7 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 8 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 9 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+10 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+11 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+12 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+13 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+14  | | | | | | | | | | | | | | 
+
+Enter the coordinates:
+Player:  Player1 X
+Enter x coordinate:
+Enter y coordinate:
+[H[2J                       1 1 1 1 1 
+   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 
+ 0 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 1 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 2 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 3 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 4 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 5 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 6 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 7 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 8 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 9 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+10 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+11 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+12 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+13 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+14  | | | | | | | | | | | | | |X
+
+Enter the coordinates:
+Player:  Player2 O
+Enter x coordinate:
+Enter y coordinate:
+[H[2J                       1 1 1 1 1 
+   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 
+ 0 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 1 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 2 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 3 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 4 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 5 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 6 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 7 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 8 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 9 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+10 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+11 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+12 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+13 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+14 O| | | | | | | | | | | | | |X
+
+Enter the coordinates:
+Player:  Player1 X
+Enter x coordinate:
+Enter y coordinate:
+[H[2J                       1 1 1 1 1 
+   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 
+ 0 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 1 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 2 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 3 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 4 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 5 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 6 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 7 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 8 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 9 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+10 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+11 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+12 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+13 _|_|_|_|_|_|_|_|_|_|_|_|_|X|_
+14 O| | | | | | | | | | | | | |X
+
+Enter the coordinates:
+Player:  Player2 O
+Enter x coordinate:
+Enter y coordinate:
+[H[2J                       1 1 1 1 1 
+   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 
+ 0 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 1 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 2 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 3 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 4 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 5 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 6 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 7 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 8 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 9 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+10 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+11 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+12 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+13 _|_|_|_|_|_|_|_|_|_|_|_|_|X|_
+14 O|O| | | | | | | | | | | | |X
+
+Enter the coordinates:
+Player:  Player1 X
+Enter x coordinate:
+Enter y coordinate:
+[H[2J                       1 1 1 1 1 
+   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 
+ 0 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 1 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 2 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 3 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 4 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 5 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 6 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 7 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 8 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 9 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+10 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+11 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+12 _|_|_|_|_|_|_|_|_|_|_|_|X|_|_
+13 _|_|_|_|_|_|_|_|_|_|_|_|_|X|_
+14 O|O| | | | | | | | | | | | |X
+
+Enter the coordinates:
+Player:  Player2 O
+Enter x coordinate:
+Enter y coordinate:
+[H[2J                       1 1 1 1 1 
+   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 
+ 0 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 1 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 2 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 3 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 4 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 5 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 6 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 7 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 8 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 9 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+10 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+11 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+12 _|_|_|_|_|_|_|_|_|_|_|_|X|_|_
+13 _|_|_|_|_|_|_|_|_|_|_|_|_|X|_
+14 O|O|O| | | | | | | | | | | |X
+
+Enter the coordinates:
+Player:  Player1 X
+Enter x coordinate:
+Enter y coordinate:
+[H[2J                       1 1 1 1 1 
+   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 
+ 0 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 1 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 2 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 3 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 4 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 5 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 6 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 7 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 8 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 9 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+10 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+11 _|_|_|_|_|_|_|_|_|_|_|X|_|_|_
+12 _|_|_|_|_|_|_|_|_|_|_|_|X|_|_
+13 _|_|_|_|_|_|_|_|_|_|_|_|_|X|_
+14 O|O|O| | | | | | | | | | | |X
+
+Enter the coordinates:
+Player:  Player2 O
+Enter x coordinate:
+Enter y coordinate:
+[H[2J                       1 1 1 1 1 
+   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 
+ 0 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 1 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 2 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 3 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 4 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 5 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 6 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 7 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 8 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 9 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+10 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+11 _|_|_|_|_|_|_|_|_|_|_|X|_|_|_
+12 _|_|_|_|_|_|_|_|_|_|_|_|X|_|_
+13 _|_|_|_|_|_|_|_|_|_|_|_|_|X|_
+14 O|O|O|O| | | | | | | | | | |X
+
+Enter the coordinates:
+Player:  Player1 X
+Enter x coordinate:
+Enter y coordinate:
+[H[2J                       1 1 1 1 1 
+   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 
+ 0 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 1 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 2 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 3 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 4 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 5 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 6 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 7 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 8 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 9 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+10 _|_|_|_|_|_|_|_|_|_|X|_|_|_|_
+11 _|_|_|_|_|_|_|_|_|_|_|X|_|_|_
+12 _|_|_|_|_|_|_|_|_|_|_|_|X|_|_
+13 _|_|_|_|_|_|_|_|_|_|_|_|_|X|_
+14 O|O|O|O| | | | | | | | | | |X
+
+Enter the coordinates:
+Player:  Player2 O
+Enter x coordinate:
+Enter y coordinate:
+[H[2J                       1 1 1 1 1 
+   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 
+ 0 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 1 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 2 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 3 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 4 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 5 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 6 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 7 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 8 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 9 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+10 _|_|_|_|_|_|_|_|_|_|X|_|_|_|_
+11 _|_|_|_|_|_|_|_|_|_|_|X|_|_|_
+12 _|_|_|_|_|_|_|_|_|_|_|_|X|_|_
+13 _|_|_|_|_|_|_|_|_|_|_|_|_|X|_
+14 O|O|O|O|O| | | | | | | | | |X
+
+Enter the coordinates:
+Player:  Player1 X
+Enter x coordinate:
+Enter y coordinate:
+[H[2J                       1 1 1 1 1 
+   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 
+ 0 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 1 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 2 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 3 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 4 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 5 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 6 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 7 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 8 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 9 _|_|_|_|_|_|_|_|_|X|_|_|_|_|_
+10 _|_|_|_|_|_|_|_|_|_|X|_|_|_|_
+11 _|_|_|_|_|_|_|_|_|_|_|X|_|_|_
+12 _|_|_|_|_|_|_|_|_|_|_|_|X|_|_
+13 _|_|_|_|_|_|_|_|_|_|_|_|_|X|_
+14 O|O|O|O|O| | | | | | | | | |X
+
+Enter the coordinates:
+Player:  Player2 O
+Enter x coordinate:
+Enter y coordinate:
+[H[2J                       1 1 1 1 1 
+   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 
+ 0 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 1 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 2 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 3 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 4 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 5 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 6 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 7 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 8 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 9 _|_|_|_|_|_|_|_|_|X|_|_|_|_|_
+10 _|_|_|_|_|_|_|_|_|_|X|_|_|_|_
+11 _|_|_|_|_|_|_|_|_|_|_|X|_|_|_
+12 _|_|_|_|_|_|_|_|_|_|_|_|X|_|_
+13 _|_|_|_|_|_|_|_|_|_|_|_|_|X|_
+14 O|O|O|O|O|O| | | | | | | | |X
+
+Enter the coordinates:
+Player:  Player1 X
+Enter x coordinate:
+Enter y coordinate:
+[H[2J                       1 1 1 1 1 
+   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 
+ 0 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 1 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 2 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 3 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 4 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 5 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 6 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 7 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 8 _|_|_|_|_|_|_|_|X|_|_|_|_|_|_
+ 9 _|_|_|_|_|_|_|_|_|X|_|_|_|_|_
+10 _|_|_|_|_|_|_|_|_|_|X|_|_|_|_
+11 _|_|_|_|_|_|_|_|_|_|_|X|_|_|_
+12 _|_|_|_|_|_|_|_|_|_|_|_|X|_|_
+13 _|_|_|_|_|_|_|_|_|_|_|_|_|X|_
+14 O|O|O|O|O|O| | | | | | | | |X
+
+Enter the coordinates:
+Player:  Player2 O
+Enter x coordinate:
+Enter y coordinate:
+[H[2J                       1 1 1 1 1 
+   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 
+ 0 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 1 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 2 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 3 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 4 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 5 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 6 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 7 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 8 _|_|_|_|_|_|_|_|X|_|_|_|_|_|_
+ 9 _|_|_|_|_|_|_|_|_|X|_|_|_|_|_
+10 _|_|_|_|_|_|_|_|_|_|X|_|_|_|_
+11 _|_|_|_|_|_|_|_|_|_|_|X|_|_|_
+12 _|_|_|_|_|_|_|_|_|_|_|_|X|_|_
+13 _|_|_|_|_|_|_|_|_|_|_|_|_|X|_
+14 O|O|O|O|O|O|O| | | | | | | |X
+
+Enter the coordinates:
+Player:  Player1 X
+Enter x coordinate:
+Enter y coordinate:
+[H[2J                       1 1 1 1 1 
+   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 
+ 0 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 1 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 2 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 3 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 4 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 5 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 6 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 7 _|_|_|_|_|_|_|X|_|_|_|_|_|_|_
+ 8 _|_|_|_|_|_|_|_|X|_|_|_|_|_|_
+ 9 _|_|_|_|_|_|_|_|_|X|_|_|_|_|_
+10 _|_|_|_|_|_|_|_|_|_|X|_|_|_|_
+11 _|_|_|_|_|_|_|_|_|_|_|X|_|_|_
+12 _|_|_|_|_|_|_|_|_|_|_|_|X|_|_
+13 _|_|_|_|_|_|_|_|_|_|_|_|_|X|_
+14 O|O|O|O|O|O|O| | | | | | | |X
+
+Enter the coordinates:
+Player:  Player2 O
+Enter x coordinate:
+Enter y coordinate:
+[H[2J                       1 1 1 1 1 
+   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 
+ 0 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 1 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 2 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 3 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 4 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 5 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 6 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 7 _|_|_|_|_|_|_|X|_|_|_|_|_|_|_
+ 8 _|_|_|_|_|_|_|_|X|_|_|_|_|_|_
+ 9 _|_|_|_|_|_|_|_|_|X|_|_|_|_|_
+10 _|_|_|_|_|_|_|_|_|_|X|_|_|_|_
+11 _|_|_|_|_|_|_|_|_|_|_|X|_|_|_
+12 _|_|_|_|_|_|_|_|_|_|_|_|X|_|_
+13 _|_|_|_|_|_|_|_|_|_|_|_|_|X|_
+14 O|O|O|O|O|O|O|O| | | | | | |X
+
+Enter the coordinates:
+Player:  Player1 X
+Enter x coordinate:
+Enter y coordinate:
+[H[2J                       1 1 1 1 1 
+   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 
+ 0 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 1 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 2 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 3 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 4 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 5 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 6 _|_|_|_|_|_|X|_|_|_|_|_|_|_|_
+ 7 _|_|_|_|_|_|_|X|_|_|_|_|_|_|_
+ 8 _|_|_|_|_|_|_|_|X|_|_|_|_|_|_
+ 9 _|_|_|_|_|_|_|_|_|X|_|_|_|_|_
+10 _|_|_|_|_|_|_|_|_|_|X|_|_|_|_
+11 _|_|_|_|_|_|_|_|_|_|_|X|_|_|_
+12 _|_|_|_|_|_|_|_|_|_|_|_|X|_|_
+13 _|_|_|_|_|_|_|_|_|_|_|_|_|X|_
+14 O|O|O|O|O|O|O|O| | | | | | |X
+
+Enter the coordinates:
+Player:  Player2 O
+Enter x coordinate:
+Enter y coordinate:
+[H[2J                       1 1 1 1 1 
+   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 
+ 0 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 1 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 2 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 3 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 4 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 5 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 6 _|_|_|_|_|_|X|_|_|_|_|_|_|_|_
+ 7 _|_|_|_|_|_|_|X|_|_|_|_|_|_|_
+ 8 _|_|_|_|_|_|_|_|X|_|_|_|_|_|_
+ 9 _|_|_|_|_|_|_|_|_|X|_|_|_|_|_
+10 _|_|_|_|_|_|_|_|_|_|X|_|_|_|_
+11 _|_|_|_|_|_|_|_|_|_|_|X|_|_|_
+12 _|_|_|_|_|_|_|_|_|_|_|_|X|_|_
+13 _|_|_|_|_|_|_|_|_|_|_|_|_|X|_
+14 O|O|O|O|O|O|O|O|O| | | | | |X
+
+Enter the coordinates:
+Player:  Player1 X
+Enter x coordinate:
+Enter y coordinate:
+[H[2J                       1 1 1 1 1 
+   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 
+ 0 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 1 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 2 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 3 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 4 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 5 _|_|_|_|_|X|_|_|_|_|_|_|_|_|_
+ 6 _|_|_|_|_|_|X|_|_|_|_|_|_|_|_
+ 7 _|_|_|_|_|_|_|X|_|_|_|_|_|_|_
+ 8 _|_|_|_|_|_|_|_|X|_|_|_|_|_|_
+ 9 _|_|_|_|_|_|_|_|_|X|_|_|_|_|_
+10 _|_|_|_|_|_|_|_|_|_|X|_|_|_|_
+11 _|_|_|_|_|_|_|_|_|_|_|X|_|_|_
+12 _|_|_|_|_|_|_|_|_|_|_|_|X|_|_
+13 _|_|_|_|_|_|_|_|_|_|_|_|_|X|_
+14 O|O|O|O|O|O|O|O|O| | | | | |X
+
+Enter the coordinates:
+Player:  Player2 O
+Enter x coordinate:
+Enter y coordinate:
+[H[2J                       1 1 1 1 1 
+   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 
+ 0 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 1 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 2 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 3 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 4 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 5 _|_|_|_|_|X|_|_|_|_|_|_|_|_|_
+ 6 _|_|_|_|_|_|X|_|_|_|_|_|_|_|_
+ 7 _|_|_|_|_|_|_|X|_|_|_|_|_|_|_
+ 8 _|_|_|_|_|_|_|_|X|_|_|_|_|_|_
+ 9 _|_|_|_|_|_|_|_|_|X|_|_|_|_|_
+10 _|_|_|_|_|_|_|_|_|_|X|_|_|_|_
+11 _|_|_|_|_|_|_|_|_|_|_|X|_|_|_
+12 _|_|_|_|_|_|_|_|_|_|_|_|X|_|_
+13 _|_|_|_|_|_|_|_|_|_|_|_|_|X|_
+14 O|O|O|O|O|O|O|O|O|O| | | | |X
+
+Enter the coordinates:
+Player:  Player1 X
+Enter x coordinate:
+Enter y coordinate:
+[H[2J                       1 1 1 1 1 
+   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 
+ 0 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 1 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 2 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 3 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 4 _|_|_|_|X|_|_|_|_|_|_|_|_|_|_
+ 5 _|_|_|_|_|X|_|_|_|_|_|_|_|_|_
+ 6 _|_|_|_|_|_|X|_|_|_|_|_|_|_|_
+ 7 _|_|_|_|_|_|_|X|_|_|_|_|_|_|_
+ 8 _|_|_|_|_|_|_|_|X|_|_|_|_|_|_
+ 9 _|_|_|_|_|_|_|_|_|X|_|_|_|_|_
+10 _|_|_|_|_|_|_|_|_|_|X|_|_|_|_
+11 _|_|_|_|_|_|_|_|_|_|_|X|_|_|_
+12 _|_|_|_|_|_|_|_|_|_|_|_|X|_|_
+13 _|_|_|_|_|_|_|_|_|_|_|_|_|X|_
+14 O|O|O|O|O|O|O|O|O|O| | | | |X
+
+Enter the coordinates:
+Player:  Player2 O
+Enter x coordinate:
+Enter y coordinate:
+[H[2J                       1 1 1 1 1 
+   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 
+ 0 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 1 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 2 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 3 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 4 _|_|_|_|X|_|_|_|_|_|_|_|_|_|_
+ 5 _|_|_|_|_|X|_|_|_|_|_|_|_|_|_
+ 6 _|_|_|_|_|_|X|_|_|_|_|_|_|_|_
+ 7 _|_|_|_|_|_|_|X|_|_|_|_|_|_|_
+ 8 _|_|_|_|_|_|_|_|X|_|_|_|_|_|_
+ 9 _|_|_|_|_|_|_|_|_|X|_|_|_|_|_
+10 _|_|_|_|_|_|_|_|_|_|X|_|_|_|_
+11 _|_|_|_|_|_|_|_|_|_|_|X|_|_|_
+12 _|_|_|_|_|_|_|_|_|_|_|_|X|_|_
+13 _|_|_|_|_|_|_|_|_|_|_|_|_|X|_
+14 O|O|O|O|O|O|O|O|O|O|O| | | |X
+
+Enter the coordinates:
+Player:  Player1 X
+Enter x coordinate:
+Enter y coordinate:
+[H[2J                       1 1 1 1 1 
+   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 
+ 0 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 1 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 2 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 3 _|_|_|X|_|_|_|_|_|_|_|_|_|_|_
+ 4 _|_|_|_|X|_|_|_|_|_|_|_|_|_|_
+ 5 _|_|_|_|_|X|_|_|_|_|_|_|_|_|_
+ 6 _|_|_|_|_|_|X|_|_|_|_|_|_|_|_
+ 7 _|_|_|_|_|_|_|X|_|_|_|_|_|_|_
+ 8 _|_|_|_|_|_|_|_|X|_|_|_|_|_|_
+ 9 _|_|_|_|_|_|_|_|_|X|_|_|_|_|_
+10 _|_|_|_|_|_|_|_|_|_|X|_|_|_|_
+11 _|_|_|_|_|_|_|_|_|_|_|X|_|_|_
+12 _|_|_|_|_|_|_|_|_|_|_|_|X|_|_
+13 _|_|_|_|_|_|_|_|_|_|_|_|_|X|_
+14 O|O|O|O|O|O|O|O|O|O|O| | | |X
+
+Enter the coordinates:
+Player:  Player2 O
+Enter x coordinate:
+Enter y coordinate:
+[H[2J                       1 1 1 1 1 
+   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 
+ 0 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 1 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 2 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 3 _|_|_|X|_|_|_|_|_|_|_|_|_|_|_
+ 4 _|_|_|_|X|_|_|_|_|_|_|_|_|_|_
+ 5 _|_|_|_|_|X|_|_|_|_|_|_|_|_|_
+ 6 _|_|_|_|_|_|X|_|_|_|_|_|_|_|_
+ 7 _|_|_|_|_|_|_|X|_|_|_|_|_|_|_
+ 8 _|_|_|_|_|_|_|_|X|_|_|_|_|_|_
+ 9 _|_|_|_|_|_|_|_|_|X|_|_|_|_|_
+10 _|_|_|_|_|_|_|_|_|_|X|_|_|_|_
+11 _|_|_|_|_|_|_|_|_|_|_|X|_|_|_
+12 _|_|_|_|_|_|_|_|_|_|_|_|X|_|_
+13 _|_|_|_|_|_|_|_|_|_|_|_|_|X|_
+14 O|O|O|O|O|O|O|O|O|O|O|O| | |X
+
+Enter the coordinates:
+Player:  Player1 X
+Enter x coordinate:
+Enter y coordinate:
+[H[2J                       1 1 1 1 1 
+   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 
+ 0 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 1 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 2 _|_|X|_|_|_|_|_|_|_|_|_|_|_|_
+ 3 _|_|_|X|_|_|_|_|_|_|_|_|_|_|_
+ 4 _|_|_|_|X|_|_|_|_|_|_|_|_|_|_
+ 5 _|_|_|_|_|X|_|_|_|_|_|_|_|_|_
+ 6 _|_|_|_|_|_|X|_|_|_|_|_|_|_|_
+ 7 _|_|_|_|_|_|_|X|_|_|_|_|_|_|_
+ 8 _|_|_|_|_|_|_|_|X|_|_|_|_|_|_
+ 9 _|_|_|_|_|_|_|_|_|X|_|_|_|_|_
+10 _|_|_|_|_|_|_|_|_|_|X|_|_|_|_
+11 _|_|_|_|_|_|_|_|_|_|_|X|_|_|_
+12 _|_|_|_|_|_|_|_|_|_|_|_|X|_|_
+13 _|_|_|_|_|_|_|_|_|_|_|_|_|X|_
+14 O|O|O|O|O|O|O|O|O|O|O|O| | |X
+
+Enter the coordinates:
+Player:  Player2 O
+Enter x coordinate:
+Enter y coordinate:
+[H[2J                       1 1 1 1 1 
+   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 
+ 0 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 1 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 2 _|_|X|_|_|_|_|_|_|_|_|_|_|_|_
+ 3 _|_|_|X|_|_|_|_|_|_|_|_|_|_|_
+ 4 _|_|_|_|X|_|_|_|_|_|_|_|_|_|_
+ 5 _|_|_|_|_|X|_|_|_|_|_|_|_|_|_
+ 6 _|_|_|_|_|_|X|_|_|_|_|_|_|_|_
+ 7 _|_|_|_|_|_|_|X|_|_|_|_|_|_|_
+ 8 _|_|_|_|_|_|_|_|X|_|_|_|_|_|_
+ 9 _|_|_|_|_|_|_|_|_|X|_|_|_|_|_
+10 _|_|_|_|_|_|_|_|_|_|X|_|_|_|_
+11 _|_|_|_|_|_|_|_|_|_|_|X|_|_|_
+12 _|_|_|_|_|_|_|_|_|_|_|_|X|_|_
+13 _|_|_|_|_|_|_|_|_|_|_|_|_|X|_
+14 O|O|O|O|O|O|O|O|O|O|O|O|O| |X
+
+Enter the coordinates:
+Player:  Player1 X
+Enter x coordinate:
+Enter y coordinate:
+[H[2J                       1 1 1 1 1 
+   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 
+ 0 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 1 _|X|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 2 _|_|X|_|_|_|_|_|_|_|_|_|_|_|_
+ 3 _|_|_|X|_|_|_|_|_|_|_|_|_|_|_
+ 4 _|_|_|_|X|_|_|_|_|_|_|_|_|_|_
+ 5 _|_|_|_|_|X|_|_|_|_|_|_|_|_|_
+ 6 _|_|_|_|_|_|X|_|_|_|_|_|_|_|_
+ 7 _|_|_|_|_|_|_|X|_|_|_|_|_|_|_
+ 8 _|_|_|_|_|_|_|_|X|_|_|_|_|_|_
+ 9 _|_|_|_|_|_|_|_|_|X|_|_|_|_|_
+10 _|_|_|_|_|_|_|_|_|_|X|_|_|_|_
+11 _|_|_|_|_|_|_|_|_|_|_|X|_|_|_
+12 _|_|_|_|_|_|_|_|_|_|_|_|X|_|_
+13 _|_|_|_|_|_|_|_|_|_|_|_|_|X|_
+14 O|O|O|O|O|O|O|O|O|O|O|O|O| |X
+
+Enter the coordinates:
+Player:  Player2 O
+Enter x coordinate:
+Enter y coordinate:
+[H[2J                       1 1 1 1 1 
+   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 
+ 0 _|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 1 _|X|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 2 _|_|X|_|_|_|_|_|_|_|_|_|_|_|_
+ 3 _|_|_|X|_|_|_|_|_|_|_|_|_|_|_
+ 4 _|_|_|_|X|_|_|_|_|_|_|_|_|_|_
+ 5 _|_|_|_|_|X|_|_|_|_|_|_|_|_|_
+ 6 _|_|_|_|_|_|X|_|_|_|_|_|_|_|_
+ 7 _|_|_|_|_|_|_|X|_|_|_|_|_|_|_
+ 8 _|_|_|_|_|_|_|_|X|_|_|_|_|_|_
+ 9 _|_|_|_|_|_|_|_|_|X|_|_|_|_|_
+10 _|_|_|_|_|_|_|_|_|_|X|_|_|_|_
+11 _|_|_|_|_|_|_|_|_|_|_|X|_|_|_
+12 _|_|_|_|_|_|_|_|_|_|_|_|X|_|_
+13 _|_|_|_|_|_|_|_|_|_|_|_|_|X|_
+14 O|O|O|O|O|O|O|O|O|O|O|O|O|O|X
+
+Enter the coordinates:
+Player:  Player1 X
+Enter x coordinate:
+Enter y coordinate:
+[H[2JFound winning board combination!
+                       1 1 1 1 1 
+   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 
+ 0 X|_|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 1 _|X|_|_|_|_|_|_|_|_|_|_|_|_|_
+ 2 _|_|X|_|_|_|_|_|_|_|_|_|_|_|_
+ 3 _|_|_|X|_|_|_|_|_|_|_|_|_|_|_
+ 4 _|_|_|_|X|_|_|_|_|_|_|_|_|_|_
+ 5 _|_|_|_|_|X|_|_|_|_|_|_|_|_|_
+ 6 _|_|_|_|_|_|X|_|_|_|_|_|_|_|_
+ 7 _|_|_|_|_|_|_|X|_|_|_|_|_|_|_
+ 8 _|_|_|_|_|_|_|_|X|_|_|_|_|_|_
+ 9 _|_|_|_|_|_|_|_|_|X|_|_|_|_|_
+10 _|_|_|_|_|_|_|_|_|_|X|_|_|_|_
+11 _|_|_|_|_|_|_|_|_|_|_|X|_|_|_
+12 _|_|_|_|_|_|_|_|_|_|_|_|X|_|_
+13 _|_|_|_|_|_|_|_|_|_|_|_|_|X|_
+14 O|O|O|O|O|O|O|O|O|O|O|O|O|O|X
+
+Winner of round: Player1 X
+Player2 O -> Points: 3
+Player1 X -> Points: 6
+
+Enter any sign to continue game.
+[H[2JCongratulations! Game winner: Player1 X
+Summary:
+Player2 O -> Points: 3
+Player1 X -> Points: 6
+
+
+------------------------------------------------------------------
