@@ -78,12 +78,37 @@ class DrawScenario(GameFlowScenario):
                     gf += str(self.board_size - 3 - self.step * i) + "\n"
 
         p1x = self.p1x_start
-        p2x = self.p2x_start
+        p2x = 0
 
-        for i in range(half_board_size):
-            gf += str(p1x + self.step * i) + "\n"
+        if half_board_size % 2 == 0:
+            for i in range(half_board_size):
+                if i % 2 == 0:
+                    gf += str(p1x + self.step*i) + "\n"
+                    gf += str(self.board_size - 1) + "\n"
+                    gf += str(p2x + self.step * (i+1)) + "\n"
+                    gf += str(self.board_size - 1) + "\n"
+                else:
+                    gf += str(p1x + self.step*i - 1) + "\n"
+                    gf += str(self.board_size - 1) + "\n"
+                    gf += str(p2x + self.step*i + 1) + "\n"
+                    gf += str(self.board_size - 1) + "\n"
+        else:
+            for i in range(half_board_size - 1):
+                if i % 2 == 0:
+                    gf += str(p1x + self.step*i) + "\n"
+                    gf += str(self.board_size - 1) + "\n"
+                    gf += str(p2x + self.step * (i+1)) + "\n"
+                    gf += str(self.board_size - 1) + "\n"
+                else:
+                    gf += str(p1x + self.step*i - 1) + "\n"
+                    gf += str(self.board_size - 1) + "\n"
+                    gf += str(p2x + self.step*i + 1) + "\n"
+                    gf += str(self.board_size - 1) + "\n"
+            gf += str(self.board_size - 3) + "\n"
             gf += str(self.board_size - 1) + "\n"
-            gf += str(p2x + self.step * i + 1) + "\n"
+            gf += str(self.board_size - 1) + "\n"
+            gf += str(self.board_size - 1) + "\n"
+            gf += str(self.board_size - 2) + "\n"
             gf += str(self.board_size - 1) + "\n"
 
         p1x = self.board_size - 1
@@ -94,8 +119,9 @@ class DrawScenario(GameFlowScenario):
             gf += str(p2x) + "\n"
             gf += str(self.p2y + self.step * i) + "\n"
 
-        gf += str(p1x) + "\n"
-        gf += str(p1x) + "\n"
+        if half_board_size % 2 == 0:
+            gf += str(p1x) + "\n"
+            gf += str(p1x) + "\n"
 
         return gf
 
