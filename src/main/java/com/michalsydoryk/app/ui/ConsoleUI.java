@@ -3,7 +3,6 @@ package com.michalsydoryk.app.ui;
 import com.michalsydoryk.app.board.Board;
 import com.michalsydoryk.app.board.Board2D;
 
-import java.io.IOException;
 import java.io.PrintStream;
 import java.util.ResourceBundle;
 import java.util.Scanner;

@@ -38,8 +38,6 @@ public class GameConfiguratorTest {
                 addUI(mockUI).
                 build();
         boolean equalsResult = game.equals(expectedGame);
-        System.out.println(game.toString());
-        System.out.println(expectedGame.toString());
         //Then
         Assert.assertTrue(equalsResult, "Crated game is not same as expected!");
     }

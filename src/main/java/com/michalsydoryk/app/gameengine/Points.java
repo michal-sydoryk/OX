@@ -4,9 +4,8 @@ import java.math.BigDecimal;
 import java.util.Objects;
 
 class Points {
-
     private final BigDecimal INITIAL_VALUE = BigDecimal.ZERO;
-    BigDecimal value;
+    private BigDecimal value;
 
     Points() {
         value = INITIAL_VALUE;

@@ -28,11 +28,9 @@ class Players {
         playerHowStartsEarlierGame = playerDeque.getFirst();
     }
 
-
     Player getActive(){
         return playerDeque.peekFirst();
     }
-
 
     Deque<Player> getPlayerDeque() {
         return new LinkedList<>(playerDeque);
@@ -45,10 +43,4 @@ class Players {
         Players players = (Players) o;
         return Objects.equals(playerDeque, players.playerDeque);
     }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(playerDeque, playerHowStartsEarlierGame);
-    }
-
 }

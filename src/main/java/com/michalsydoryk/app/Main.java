@@ -6,7 +6,6 @@ import com.michalsydoryk.app.gameengine.GameConfigurator;
 import com.michalsydoryk.app.ui.ConsoleUI;
 import com.michalsydoryk.app.ui.UI;
 
-import java.util.ResourceBundle;
 import java.util.Scanner;
 
 public class Main {

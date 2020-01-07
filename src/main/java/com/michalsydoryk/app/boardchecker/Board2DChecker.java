@@ -2,8 +2,11 @@ package com.michalsydoryk.app.boardchecker;
 
 import com.michalsydoryk.app.board.Board;
 import com.michalsydoryk.app.board.Coordinates2D;
-import com.michalsydoryk.app.boardchecker.RightUpDiagonalChecker;
 
+/**
+ * This class represents a winning combination checker\
+ * for 2 dimensional board and 2 dimensional coordinates.
+ */
 public class Board2DChecker extends BoardCheckerAbstract<Board, Coordinates2D> {
 
     public Board2DChecker(Board board, int combinationSize) {
@@ -24,6 +27,11 @@ public class Board2DChecker extends BoardCheckerAbstract<Board, Coordinates2D> {
         return CheckResult.NOTHING;
     }
 
+    /**
+     * Additional function that check if there
+     * is board with not empty fields.
+     * @return true if board is full.
+     */
     private boolean checkForFullBoard(){
         return board.isFull();
     }

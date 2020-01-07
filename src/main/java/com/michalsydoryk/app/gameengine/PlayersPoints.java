@@ -49,10 +49,6 @@ class PlayersPoints {
 
     }
 
-    Points getPoints(Player player){
-        return playerPointsMap.get(player);
-    }
-
     boolean haveGameWinner(){
         List<Points> pointsList = new ArrayList(playerPointsMap.values());
         Points pointsToCompare = pointsList.get(0);
@@ -86,10 +82,5 @@ class PlayersPoints {
         if (o == null || getClass() != o.getClass()) return false;
         PlayersPoints that = (PlayersPoints) o;
         return Objects.equals(playerPointsMap, that.playerPointsMap);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(playerPointsMap);
     }
 }

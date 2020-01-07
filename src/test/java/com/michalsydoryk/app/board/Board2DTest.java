@@ -10,24 +10,10 @@ import java.util.Set;
 @Test
 public class Board2DTest {
 
-    public void shouldBeTrueIfCoordinatesAreInBoard() {
-        //Given
-        int boardSize = 105;
-        Board2D board = new Board2D.Builder().boardSize(boardSize).build();
-        int x = 102;
-        int y = 2;
-        Coordinates2D coordinates = new Coordinates2D(x, y);
-        Sign xSign = Sign.CROSS;
-        //when
-        boolean inRangeResult = board.coordinatesInBoardSize(coordinates);
-        Assert.assertTrue(inRangeResult);
-    }
-
-
     public void canAddField(){
         //Given
         Board2D board = new Board2D.Builder().build(); //variable board is type board2D
-                                                       // because, to not use getSignFromField()
+                                                       // because, we don't want to not use getSignFromField()
         int x = 1;
         int y = 2;
         Coordinates2D coordinates = new Coordinates2D(x, y);

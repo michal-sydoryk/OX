@@ -7,11 +7,17 @@ import java.util.Objects;
 import java.util.Set;
 import java.util.TreeMap;
 
+/**
+ * Class that represents 2 dimensional board for OX game
+ */
 public final class Board2D implements Board<Coordinates2D> {
     final TreeMap<Coordinates2D, Sign> fields;
     private final int boardSize;
     private BigDecimal numberOfFilledFields;
 
+    /**
+     * Inner static Builder class
+     */
     public static class Builder{
         private int boardSize = MAX_SIZE;
 
@@ -42,7 +48,7 @@ public final class Board2D implements Board<Coordinates2D> {
         return false;
     }
 
-    boolean coordinatesInBoardSize(Coordinates2D coordinates){
+    private boolean coordinatesInBoardSize(Coordinates2D coordinates){
         int max = Math.max(coordinates.getX(), coordinates.getY());
         int min = Math.min(coordinates.getX(), coordinates.getY());
         return ((max <= boardSize) && (min >= MIN_INDEX));
@@ -89,10 +95,5 @@ public final class Board2D implements Board<Coordinates2D> {
         return boardSize == board2D.boardSize &&
                 Objects.equals(fields, board2D.fields) &&
                 Objects.equals(numberOfFilledFields, board2D.numberOfFilledFields);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(fields, boardSize, numberOfFilledFields);
     }
 }

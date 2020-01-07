@@ -1,7 +1,8 @@
 package com.michalsydoryk.app.board;
 
-import java.util.Objects;
-
+/**
+ * This class represents 2 dimensional coordinates.
+ */
 public class Coordinates2D {
     private final int x;
     private final int y;
@@ -26,16 +27,5 @@ public class Coordinates2D {
         Coordinates2D that = (Coordinates2D) o;
         return x == that.x &&
                 y == that.y;
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(x, y);
-    }
-
-    @Override
-    public String toString() {
-        return "[x=" + x +
-                ", y=" + y + "]";
     }
 }

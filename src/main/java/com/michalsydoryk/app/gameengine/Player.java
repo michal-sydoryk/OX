@@ -30,9 +30,4 @@ class Player {
         return Objects.equals(name, player.name) &&
                 sign == player.sign;
     }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(name, sign);
-    }
 }

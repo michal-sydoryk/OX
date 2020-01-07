@@ -1,10 +1,13 @@
 package com.michalsydoryk.app.gameengine;
 
 import com.michalsydoryk.app.board.Board;
-import com.michalsydoryk.app.board.Board2D;
 import com.michalsydoryk.app.sign.Sign;
 import com.michalsydoryk.app.ui.UI;
 
+/**
+ * Class which takes basic configuration for game.
+ * It's also run a GameBuilder.
+ */
 public class GameConfigurator {
     UI ui;
 
@@ -38,9 +41,7 @@ public class GameConfigurator {
 
     private Player addPlayer(Sign sign){
         ui.print("enter_player_name", sign.toString());
-
         String playerName = ui.takeInput();
-
         if (isValidName(playerName)) return new Player(playerName, sign);
 
         ui.print("wrong_length_of_player_name");
@@ -77,9 +78,7 @@ public class GameConfigurator {
             ui.print("choose_board_size_info");
             ui.printEmptyBoard(boardSize);
             ui.print("enter_a_number_then_confirm");
-
         }
-
         return boardSize;
     }
 
@@ -100,6 +99,4 @@ public class GameConfigurator {
             }
         }
     }
-
-
 }

@@ -1,6 +1,5 @@
 package com.michalsydoryk.app.board;
 
-
 import java.util.Comparator;
 
 class Coordinates2DComparator implements Comparator<Coordinates2D> {

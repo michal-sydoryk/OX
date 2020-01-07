@@ -1,7 +1,5 @@
 package com.michalsydoryk.app.ui;
 
-import com.michalsydoryk.app.ui.UI;
-
 import java.util.Locale;
 import java.util.ResourceBundle;
 

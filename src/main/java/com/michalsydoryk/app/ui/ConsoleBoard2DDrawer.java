@@ -9,8 +9,10 @@ import java.util.Queue;
 import java.util.Set;
 import java.util.stream.Collectors;
 
+/**
+ * Class which transform Board to String representation.
+ */
 class ConsoleBoard2DDrawer extends AbstractBoardDrawer<Board, String> {
-    private final int MAX_SIZE = 40;
     private final String EMPTY_LINE = "_";
     private final String BAR = "|";
     private final String EMPTY_LINE_BOTTOM_BOARD = " ";
@@ -22,7 +24,6 @@ class ConsoleBoard2DDrawer extends AbstractBoardDrawer<Board, String> {
                                              " 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 3 ";
     private final String INDEXES_DOWN = "0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 " +
                                                "0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 ";
-
 
     ConsoleBoard2DDrawer(Board board) {
         super(board);
@@ -90,7 +91,6 @@ class ConsoleBoard2DDrawer extends AbstractBoardDrawer<Board, String> {
                 break;
             }
         }
-
         return stringBuilder.toString();
     }
 
@@ -138,7 +138,6 @@ class ConsoleBoard2DDrawer extends AbstractBoardDrawer<Board, String> {
                 break;
             }
         }
-
         return stringBuilder.toString();
     }
 
@@ -150,5 +149,4 @@ class ConsoleBoard2DDrawer extends AbstractBoardDrawer<Board, String> {
                 .collect(Collectors.toCollection(LinkedList::new));
         return rowCoorQueue;
     }
-
 }

@@ -13,6 +13,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
+/**
+ * Class that represents a game.
+ */
 public class Game {
     private final Board board;
     private final BoardChecker boardChecker;
@@ -124,8 +127,6 @@ public class Game {
                     ui.print("wrong_number_for_choose_player");
             }
         }
-
-
     }
 
     private boolean gameIsFinished(int roundCounter){
@@ -222,13 +223,6 @@ public class Game {
         Game game = (Game) o;
         return  Objects.equals(board, game.board) &&
                 Objects.equals(boardChecker, game.boardChecker) &&
-                Objects.equals(players, game.players) &&
-                Objects.equals(playersPoints, game.playersPoints);
+                Objects.equals(players, game.players);
     }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(board, boardChecker, players, playersPoints, REQUIRED_POINT_NUMBER, NUMBER_OF_ROUNDS, ui);
-    }
-
 }

@@ -2,8 +2,13 @@ package com.michalsydoryk.app.boardchecker;
 
 import java.util.LinkedList;
 import java.util.List;
-import java.util.Objects;
 
+/**\
+ * Abstract class that represent checker.
+ * Is's based on List of UnitChecker's.
+ * @param <T> type of board.
+ * @param <Q> type of coordinates.
+ */
 abstract class BoardCheckerAbstract<T, Q>  implements BoardChecker<Q>{
     protected final T board;
     protected final List<UnitChecker> unitCheckers;
@@ -21,10 +26,5 @@ abstract class BoardCheckerAbstract<T, Q>  implements BoardChecker<Q>{
         if (o == null || getClass() != o.getClass()) return false;
         BoardCheckerAbstract<?, ?> that = (BoardCheckerAbstract<?, ?>) o;
         return combinationSize == that.combinationSize;
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(combinationSize);
     }
 }
