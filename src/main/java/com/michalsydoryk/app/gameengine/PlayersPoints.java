@@ -80,4 +80,16 @@ class PlayersPoints {
         return stringBuilder.toString();
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        PlayersPoints that = (PlayersPoints) o;
+        return Objects.equals(playerPointsMap, that.playerPointsMap);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(playerPointsMap);
+    }
 }

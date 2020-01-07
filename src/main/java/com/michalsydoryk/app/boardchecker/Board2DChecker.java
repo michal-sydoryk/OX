@@ -28,4 +28,8 @@ public class Board2DChecker extends BoardCheckerAbstract<Board, Coordinates2D> {
         return board.isFull();
     }
 
+    @Override
+    public boolean equals(Object obj) {
+        return super.equals(obj);
+    }
 }

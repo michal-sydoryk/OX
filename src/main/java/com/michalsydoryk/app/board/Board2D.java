@@ -3,6 +3,7 @@ package com.michalsydoryk.app.board;
 import com.michalsydoryk.app.sign.Sign;
 
 import java.math.BigDecimal;
+import java.util.Objects;
 import java.util.Set;
 import java.util.TreeMap;
 
@@ -80,4 +81,18 @@ public final class Board2D implements Board<Coordinates2D> {
         fields.clear();
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Board2D board2D = (Board2D) o;
+        return boardSize == board2D.boardSize &&
+                Objects.equals(fields, board2D.fields) &&
+                Objects.equals(numberOfFilledFields, board2D.numberOfFilledFields);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(fields, boardSize, numberOfFilledFields);
+    }
 }

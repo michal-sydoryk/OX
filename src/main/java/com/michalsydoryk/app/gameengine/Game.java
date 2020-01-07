@@ -11,6 +11,7 @@ import com.michalsydoryk.app.ui.UI;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class Game {
     private final Board board;
@@ -212,6 +213,22 @@ public class Game {
 
         }
         return number;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Game game = (Game) o;
+        return  Objects.equals(board, game.board) &&
+                Objects.equals(boardChecker, game.boardChecker) &&
+                Objects.equals(players, game.players) &&
+                Objects.equals(playersPoints, game.playersPoints);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(board, boardChecker, players, playersPoints, REQUIRED_POINT_NUMBER, NUMBER_OF_ROUNDS, ui);
     }
 
 }

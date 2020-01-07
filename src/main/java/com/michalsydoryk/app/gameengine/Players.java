@@ -2,6 +2,7 @@ package com.michalsydoryk.app.gameengine;
 
 import java.util.Deque;
 import java.util.LinkedList;
+import java.util.Objects;
 
 class Players {
     private final Deque<Player> playerDeque;
@@ -37,5 +38,17 @@ class Players {
         return new LinkedList<>(playerDeque);
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Players players = (Players) o;
+        return Objects.equals(playerDeque, players.playerDeque);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(playerDeque, playerHowStartsEarlierGame);
+    }
 
 }
